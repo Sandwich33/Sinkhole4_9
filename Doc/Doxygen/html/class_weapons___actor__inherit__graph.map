@@ -1,0 +1,5 @@
+<map id="Weapons_Actor" name="Weapons_Actor">
+<area shape="rect" id="node2" href="$class_a_w_p___weapons.html" title="{AWP_Weapons\n||+ AWP_Weapons()\l+ ~AWP_Weapons()\l}" alt="" coords="5,453,148,545"/>
+<area shape="rect" id="node3" href="$class_m4_a1___weapons.html" title="{M4A1_Weapons\n||+ M4A1_Weapons()\l+ ~M4A1_Weapons()\l}" alt="" coords="173,453,319,545"/>
+<area shape="rect" id="node4" href="$class_shot_gun_weapons.html" title="{ShotGunWeapons\n||+ ShotGunWeapons()\l+ ~ShotGunWeapons()\l}" alt="" coords="344,453,500,545"/>
+</map>

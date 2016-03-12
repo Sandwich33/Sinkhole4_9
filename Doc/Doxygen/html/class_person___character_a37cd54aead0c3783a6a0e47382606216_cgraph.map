@@ -1,0 +1,14 @@
+<map id="Person_Character::actionFire" name="Person_Character::actionFire">
+<area shape="rect" id="node2" href="$class_person___character.html#a28d17bdc4815d2aa467ddd484a9c273d" title="총을 쏠 수 있는 상황인지를 판단. " alt="" coords="245,31,423,57"/>
+<area shape="rect" id="node3" href="$class_weapons___actor.html#a386d7f1cdcdd6f989cbd91a4612094c9" title="Weapons_Actor::actionFire" alt="" coords="244,81,424,108"/>
+<area shape="rect" id="node4" href="$class_person___character.html#ae24a8beecb67858f956a8d163a4d9333" title="사격중 Aim에 관한 처리를 함. " alt="" coords="247,132,421,159"/>
+<area shape="rect" id="node5" href="$class_weapons___actor.html#afeff0a9b2ae132677c1f268b305852f0" title="Weapons_Actor::getAim" alt="" coords="491,107,655,133"/>
+<area shape="rect" id="node6" href="$class_person___character.html#a7d0f5b22056e049f5a46ca0b2abb91ae" title="사격중 실제 사격에 관한 처리를 함. " alt="" coords="472,157,675,184"/>
+<area shape="rect" id="node7" href="$class_weapons___actor.html#a222c02127cd7ec162e747a382bc3acb9" title="Weapons_Actor::onFire" alt="" coords="747,5,905,32"/>
+<area shape="rect" id="node8" href="$class_weapons___actor.html#a8fca2bbfe8830abe9feec1ee82565a1e" title="Weapons_Actor::delayFire" alt="" coords="738,56,914,83"/>
+<area shape="rect" id="node9" href="$class_weapons___actor.html#a89dec27e708d9944b1f4f17c5b6da210" title="Weapons_Actor::createParticle" alt="" coords="725,107,927,133"/>
+<area shape="rect" id="node10" href="$class_weapons___actor.html#a5452db7714a6fd6fc8d4e60387ca1484" title="Weapons_Actor::playFireSound" alt="" coords="723,157,929,184"/>
+<area shape="rect" id="node11" href="$class_weapons___actor.html#a62f4a9add9f4521b19f82e38777fcc85" title="Weapons_Actor::getDemage\lActor" alt="" coords="731,209,921,250"/>
+<area shape="rect" id="node12" href="$class_weapons___actor.html#ab19a4d70050baea3347948f457b4316f" title="Weapons_Actor::doFire" alt="" coords="747,275,905,301"/>
+<area shape="rect" id="node13" href="$class_weapons___actor.html#aad412298d60d3ffd391c1e3b925eb206" title="Weapons_Actor::waitingFire" alt="" coords="733,325,919,352"/>
+</map>

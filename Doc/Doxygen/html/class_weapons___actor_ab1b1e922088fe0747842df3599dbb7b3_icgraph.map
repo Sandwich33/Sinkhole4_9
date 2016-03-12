@@ -1,0 +1,4 @@
+<map id="Weapons_Actor::actionReload" name="Weapons_Actor::actionReload">
+<area shape="rect" id="node2" href="$class_person___character.html#a72fb7de186f6b9c0091062998673bfe1" title="재장전을 알리는 이벤트. " alt="" coords="252,5,421,47"/>
+<area shape="rect" id="node3" href="$class_person___character.html#a593f0cb97f1f20e42c4ac6642f7dcefe" title="재장전 Action 을 처리. " alt="" coords="469,5,639,47"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Person_Character::ingFire" name="Person_Character::ingFire">
+<area shape="rect" id="node2" href="$class_person___character.html#a37cd54aead0c3783a6a0e47382606216" title="사격 Action 을 처리. " alt="" coords="227,5,417,32"/>
+<area shape="rect" id="node3" href="$class_person___character.html#a49833f356173ccfe8857fcbc8e7cf2ad" title="Tick 이벤트. " alt="" coords="243,56,401,83"/>
+</map>

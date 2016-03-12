@@ -1,0 +1,7 @@
+<map id="Person_Character" name="Person_Character">
+<area shape="rect" id="node2" href="$class_a_i___person.html" title="{AI_Person\n||+ actionAI_OnFile()\l}" alt="" coords="185,681,320,758"/>
+<area shape="rect" id="node6" href="$class_player___person.html" title="{Player_Person\n|+ fire_input_tag\l+ jumping\l|+ Player_Person()\l+ ~Player_Person()\l+ setViewTarget()\l+ getAimInfo()\l+ getBulletInfo()\l}" alt="" coords="344,644,479,795"/>
+<area shape="rect" id="node3" href="$class_a_w_p___a_i___person.html" title="{AWP_AI_Person\n||+ AWP_AI_Person()\l+ ~AWP_AI_Person()\l}" alt="" coords="5,843,153,935"/>
+<area shape="rect" id="node4" href="$class_m4_a1___a_i___person.html" title="{M4A1_AI_Person\n||+ M4A1_AI_Person()\l+ ~M4A1_AI_Person()\l}" alt="" coords="177,843,328,935"/>
+<area shape="rect" id="node5" href="$class_shotgun___a_i___person.html" title="{Shotgun_AI_Person\n||+ Shotgun_AI_Person()\l+ ~Shotgun_AI_Person()\l}" alt="" coords="353,843,518,935"/>
+</map>

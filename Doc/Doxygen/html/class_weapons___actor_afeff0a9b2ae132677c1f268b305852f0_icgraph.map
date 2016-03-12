@@ -1,0 +1,5 @@
+<map id="Weapons_Actor::getAim" name="Weapons_Actor::getAim">
+<area shape="rect" id="node2" href="$class_person___character.html#ae24a8beecb67858f956a8d163a4d9333" title="사격중 Aim에 관한 처리를 함. " alt="" coords="217,31,391,57"/>
+<area shape="rect" id="node3" href="$class_person___character.html#a37cd54aead0c3783a6a0e47382606216" title="사격 Action 을 처리. " alt="" coords="439,5,629,32"/>
+<area shape="rect" id="node4" href="$class_person___character.html#a49833f356173ccfe8857fcbc8e7cf2ad" title="Tick 이벤트. " alt="" coords="455,56,613,83"/>
+</map>

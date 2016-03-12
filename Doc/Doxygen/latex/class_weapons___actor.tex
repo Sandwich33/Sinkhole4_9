@@ -1,0 +1,424 @@
+\hypertarget{class_weapons___actor}{}\section{Weapons\+\_\+\+Actor Class Reference}
+\label{class_weapons___actor}\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+
+
+무기(총)의 기본형 클래스.  
+
+
+
+
+{\ttfamily \#include $<$Weapons\+\_\+\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for Weapons\+\_\+\+Actor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Weapons\+\_\+\+Actor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_weapons___actor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Construction \hyperlink{class_weapons___actor_a47da85d09a9191edbee8f5454f8a5118}{Script} ()
+\begin{DoxyCompactList}\small\item\em 컨스트럭션 스크립트. \end{DoxyCompactList}\item 
+bool \hyperlink{class_weapons___actor_a386d7f1cdcdd6f989cbd91a4612094c9}{action\+Fire} (bool \+\_\+pressed)
+\item 
+void \hyperlink{class_weapons___actor_ab19a4d70050baea3347948f457b4316f}{do\+Fire} (Actor \+\_\+demage\+\_\+causer, Hit\+Result \+\_\+hit\+\_\+info)
+\item 
+void \hyperlink{class_weapons___actor_afeff0a9b2ae132677c1f268b305852f0}{get\+Aim} (Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Vector2D \+\_\+screen\+\_\+point)
+\item 
+bool \hyperlink{class_weapons___actor_a8fca2bbfe8830abe9feec1ee82565a1e}{delay\+Fire} (float \+\_\+delta\+\_\+seconds)
+\item 
+bool \hyperlink{class_weapons___actor_a222c02127cd7ec162e747a382bc3acb9}{on\+Fire} ()
+\item 
+void \hyperlink{class_weapons___actor_a89dec27e708d9944b1f4f17c5b6da210}{create\+Particle} ()
+\item 
+void \hyperlink{class_weapons___actor_a5452db7714a6fd6fc8d4e60387ca1484}{play\+Fire\+Sound} ()
+\item 
+void \hyperlink{class_weapons___actor_a62f4a9add9f4521b19f82e38777fcc85}{get\+Demage\+Actor} (bool \+\_\+in\+\_\+aim\+\_\+data, Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Hit\+Result\mbox{[}$\,$\mbox{]}$\ast$\+\_\+out\+\_\+hit, bool $\ast$\+\_\+return\+\_\+value)
+\item 
+int \hyperlink{class_weapons___actor_ab1b1e922088fe0747842df3599dbb7b3}{action\+Reload} (int \+\_\+total\+\_\+bullet)
+\item 
+void \hyperlink{class_weapons___actor_a8b36c9a754942e42e22601add407e257}{on\+Reload\+Animation} ()
+\item 
+void \hyperlink{class_weapons___actor_aad412298d60d3ffd391c1e3b925eb206}{waiting\+Fire} (int \+\_\+delta\+\_\+seconds)
+\item 
+void \hyperlink{class_weapons___actor_a8e5bd4c8a55510f6b7db7674273128fa}{get\+Recoil\+Line} (bool \+\_\+in\+\_\+aim\+\_\+data, Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Vector $\ast$\+\_\+out\+\_\+start\+\_\+location, Vector $\ast$\+\_\+out\+\_\+end\+\_\+location, \+\_\+\+E\+Object\+Type $\ast$\+\_\+object\+\_\+type)
+\item 
+Vector \hyperlink{class_weapons___actor_a6963343558cb76d4bf1d2ae105c35bff}{get\+Look\+Vector} ()
+\item 
+void \hyperlink{class_weapons___actor_a0c8b9ce144acf091d45cbb640409f76e}{play\+Reload\+Sound} ()
+\item 
+void \hyperlink{class_weapons___actor_a516b61bac1106db521e14a13655a2006}{play\+Zoomin\+Sound} ()
+\item 
+float \hyperlink{class_weapons___actor_a4075270dddcd840e6996ce3062acca46}{get\+Aim\+Info} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_weapons___actor_acb9cfe5f22387762744bf5badabe4336}{F\+I\+R\+E\+\_\+\+S\+P\+E\+ED}
+\item 
+float \hyperlink{class_weapons___actor_aa175cd3f4bb5dfd572fc56c966deb105}{R\+E\+C\+O\+I\+L\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+AX}
+\item 
+int \hyperlink{class_weapons___actor_a3ada6991a9ec6db336c9ebc5af923c3d}{in\+\_\+bullet}
+\item 
+int \hyperlink{class_weapons___actor_a50e014c2ea202f57948e3cd81ca22491}{M\+A\+X\+\_\+\+B\+U\+L\+L\+ET}
+\item 
+float \hyperlink{class_weapons___actor_aea43a4cdbf104cbb2a46112a14488bfd}{D\+E\+M\+A\+GE}
+\item 
+Gun\+Type\+Enum \hyperlink{class_weapons___actor_a4707d7bf1fa123913b897bddfc0a2684}{gun\+\_\+type}
+\item 
+Controller \hyperlink{class_weapons___actor_aad6b8ee12d9a949b589c7b70721fd28a}{player\+\_\+controller}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_weapons___actor_a03094917a8513d50bf93da99b09b6295}{can\+\_\+fire}
+\item 
+float \hyperlink{class_weapons___actor_a301ddf96a3148e09e550e355d36fbd02}{delta\+\_\+time}
+\item 
+float \hyperlink{class_weapons___actor_a22d3ee32aeffc1eea855101fff73d6dc}{recoil\+\_\+range}
+\item 
+float \hyperlink{class_weapons___actor_aebb36d9d9ad6635929b41673ab76f5ba}{recoil}
+\item 
+float \hyperlink{class_weapons___actor_aced1279aeae15c3bb043ea43c5e80f03}{R\+E\+C\+O\+I\+L\+\_\+\+D\+E\+F\+A\+U\+LT}
+\item 
+float \hyperlink{class_weapons___actor_ae45bc96cd29cd0e41fa28e445495835f}{R\+A\+N\+GE}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+무기(총)의 기본형 클래스. 
+
+\subsection{Member Function Documentation}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!action\+Fire@{action\+Fire}}
+\index{action\+Fire@{action\+Fire}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{action\+Fire(bool \+\_\+pressed)}{actionFire(bool _pressed)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Weapons\+\_\+\+Actor\+::action\+Fire (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+pressed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a386d7f1cdcdd6f989cbd91a4612094c9}{}\label{class_weapons___actor_a386d7f1cdcdd6f989cbd91a4612094c9}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a386d7f1cdcdd6f989cbd91a4612094c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!action\+Reload@{action\+Reload}}
+\index{action\+Reload@{action\+Reload}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{action\+Reload(int \+\_\+total\+\_\+bullet)}{actionReload(int _total_bullet)}}]{\setlength{\rightskip}{0pt plus 5cm}int Weapons\+\_\+\+Actor\+::action\+Reload (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+total\+\_\+bullet}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_ab1b1e922088fe0747842df3599dbb7b3}{}\label{class_weapons___actor_ab1b1e922088fe0747842df3599dbb7b3}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_ab1b1e922088fe0747842df3599dbb7b3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!create\+Particle@{create\+Particle}}
+\index{create\+Particle@{create\+Particle}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{create\+Particle()}{createParticle()}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::create\+Particle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a89dec27e708d9944b1f4f17c5b6da210}{}\label{class_weapons___actor_a89dec27e708d9944b1f4f17c5b6da210}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a89dec27e708d9944b1f4f17c5b6da210_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!delay\+Fire@{delay\+Fire}}
+\index{delay\+Fire@{delay\+Fire}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{delay\+Fire(float \+\_\+delta\+\_\+seconds)}{delayFire(float _delta_seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Weapons\+\_\+\+Actor\+::delay\+Fire (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+delta\+\_\+seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a8fca2bbfe8830abe9feec1ee82565a1e}{}\label{class_weapons___actor_a8fca2bbfe8830abe9feec1ee82565a1e}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a8fca2bbfe8830abe9feec1ee82565a1e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!do\+Fire@{do\+Fire}}
+\index{do\+Fire@{do\+Fire}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{do\+Fire(\+Actor \+\_\+demage\+\_\+causer, Hit\+Result \+\_\+hit\+\_\+info)}{doFire(Actor _demage_causer, HitResult _hit_info)}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::do\+Fire (
+\begin{DoxyParamCaption}
+\item[{Actor}]{\+\_\+demage\+\_\+causer, }
+\item[{Hit\+Result}]{\+\_\+hit\+\_\+info}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_ab19a4d70050baea3347948f457b4316f}{}\label{class_weapons___actor_ab19a4d70050baea3347948f457b4316f}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_ab19a4d70050baea3347948f457b4316f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!get\+Aim@{get\+Aim}}
+\index{get\+Aim@{get\+Aim}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{get\+Aim(\+Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Vector2\+D \+\_\+screen\+\_\+point)}{getAim(Vector _start_location, Vector _end_location, Vector2D _screen_point)}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::get\+Aim (
+\begin{DoxyParamCaption}
+\item[{Vector}]{\+\_\+start\+\_\+location, }
+\item[{Vector}]{\+\_\+end\+\_\+location, }
+\item[{Vector2D}]{\+\_\+screen\+\_\+point}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_afeff0a9b2ae132677c1f268b305852f0}{}\label{class_weapons___actor_afeff0a9b2ae132677c1f268b305852f0}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_afeff0a9b2ae132677c1f268b305852f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!get\+Aim\+Info@{get\+Aim\+Info}}
+\index{get\+Aim\+Info@{get\+Aim\+Info}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{get\+Aim\+Info()}{getAimInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}float Weapons\+\_\+\+Actor\+::get\+Aim\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a4075270dddcd840e6996ce3062acca46}{}\label{class_weapons___actor_a4075270dddcd840e6996ce3062acca46}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!get\+Demage\+Actor@{get\+Demage\+Actor}}
+\index{get\+Demage\+Actor@{get\+Demage\+Actor}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{get\+Demage\+Actor(bool \+\_\+in\+\_\+aim\+\_\+data, Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Hit\+Result[]$\ast$\+\_\+out\+\_\+hit, bool $\ast$\+\_\+return\+\_\+value)}{getDemageActor(bool _in_aim_data, Vector _start_location, Vector _end_location, HitResult[]*_out_hit, bool *_return_value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::get\+Demage\+Actor (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+in\+\_\+aim\+\_\+data, }
+\item[{Vector}]{\+\_\+start\+\_\+location, }
+\item[{Vector}]{\+\_\+end\+\_\+location, }
+\item[{Hit\+Result $\ast$\mbox{[}$\,$\mbox{]}}]{\+\_\+out\+\_\+hit, }
+\item[{bool $\ast$}]{\+\_\+return\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a62f4a9add9f4521b19f82e38777fcc85}{}\label{class_weapons___actor_a62f4a9add9f4521b19f82e38777fcc85}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a62f4a9add9f4521b19f82e38777fcc85_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!get\+Look\+Vector@{get\+Look\+Vector}}
+\index{get\+Look\+Vector@{get\+Look\+Vector}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{get\+Look\+Vector()}{getLookVector()}}]{\setlength{\rightskip}{0pt plus 5cm}Vector Weapons\+\_\+\+Actor\+::get\+Look\+Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a6963343558cb76d4bf1d2ae105c35bff}{}\label{class_weapons___actor_a6963343558cb76d4bf1d2ae105c35bff}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!get\+Recoil\+Line@{get\+Recoil\+Line}}
+\index{get\+Recoil\+Line@{get\+Recoil\+Line}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{get\+Recoil\+Line(bool \+\_\+in\+\_\+aim\+\_\+data, Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Vector $\ast$\+\_\+out\+\_\+start\+\_\+location, Vector $\ast$\+\_\+out\+\_\+end\+\_\+location, \+\_\+\+E\+Object\+Type $\ast$\+\_\+object\+\_\+type)}{getRecoilLine(bool _in_aim_data, Vector _start_location, Vector _end_location, Vector *_out_start_location, Vector *_out_end_location, _EObjectType *_object_type)}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::get\+Recoil\+Line (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+in\+\_\+aim\+\_\+data, }
+\item[{Vector}]{\+\_\+start\+\_\+location, }
+\item[{Vector}]{\+\_\+end\+\_\+location, }
+\item[{Vector $\ast$}]{\+\_\+out\+\_\+start\+\_\+location, }
+\item[{Vector $\ast$}]{\+\_\+out\+\_\+end\+\_\+location, }
+\item[{\+\_\+\+E\+Object\+Type $\ast$}]{\+\_\+object\+\_\+type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a8e5bd4c8a55510f6b7db7674273128fa}{}\label{class_weapons___actor_a8e5bd4c8a55510f6b7db7674273128fa}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!on\+Fire@{on\+Fire}}
+\index{on\+Fire@{on\+Fire}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{on\+Fire()}{onFire()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Weapons\+\_\+\+Actor\+::on\+Fire (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a222c02127cd7ec162e747a382bc3acb9}{}\label{class_weapons___actor_a222c02127cd7ec162e747a382bc3acb9}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a222c02127cd7ec162e747a382bc3acb9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!on\+Reload\+Animation@{on\+Reload\+Animation}}
+\index{on\+Reload\+Animation@{on\+Reload\+Animation}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{on\+Reload\+Animation()}{onReloadAnimation()}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::on\+Reload\+Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a8b36c9a754942e42e22601add407e257}{}\label{class_weapons___actor_a8b36c9a754942e42e22601add407e257}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a8b36c9a754942e42e22601add407e257_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!play\+Fire\+Sound@{play\+Fire\+Sound}}
+\index{play\+Fire\+Sound@{play\+Fire\+Sound}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{play\+Fire\+Sound()}{playFireSound()}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::play\+Fire\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a5452db7714a6fd6fc8d4e60387ca1484}{}\label{class_weapons___actor_a5452db7714a6fd6fc8d4e60387ca1484}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a5452db7714a6fd6fc8d4e60387ca1484_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!play\+Reload\+Sound@{play\+Reload\+Sound}}
+\index{play\+Reload\+Sound@{play\+Reload\+Sound}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{play\+Reload\+Sound()}{playReloadSound()}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::play\+Reload\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a0c8b9ce144acf091d45cbb640409f76e}{}\label{class_weapons___actor_a0c8b9ce144acf091d45cbb640409f76e}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a0c8b9ce144acf091d45cbb640409f76e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!play\+Zoomin\+Sound@{play\+Zoomin\+Sound}}
+\index{play\+Zoomin\+Sound@{play\+Zoomin\+Sound}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{play\+Zoomin\+Sound()}{playZoominSound()}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::play\+Zoomin\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a516b61bac1106db521e14a13655a2006}{}\label{class_weapons___actor_a516b61bac1106db521e14a13655a2006}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a516b61bac1106db521e14a13655a2006_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!Script@{Script}}
+\index{Script@{Script}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{Script()}{Script()}}]{\setlength{\rightskip}{0pt plus 5cm}Construction Weapons\+\_\+\+Actor\+::\+Script (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_a47da85d09a9191edbee8f5454f8a5118}{}\label{class_weapons___actor_a47da85d09a9191edbee8f5454f8a5118}
+
+
+컨스트럭션 스크립트. 
+
+Zoom\+Camera 의 위치를 잡아준다. \index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!waiting\+Fire@{waiting\+Fire}}
+\index{waiting\+Fire@{waiting\+Fire}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{waiting\+Fire(int \+\_\+delta\+\_\+seconds)}{waitingFire(int _delta_seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::waiting\+Fire (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+delta\+\_\+seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{class_weapons___actor_aad412298d60d3ffd391c1e3b925eb206}{}\label{class_weapons___actor_aad412298d60d3ffd391c1e3b925eb206}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_aad412298d60d3ffd391c1e3b925eb206_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!can\+\_\+fire@{can\+\_\+fire}}
+\index{can\+\_\+fire@{can\+\_\+fire}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{can\+\_\+fire}{can_fire}}]{\setlength{\rightskip}{0pt plus 5cm}bool Weapons\+\_\+\+Actor\+::can\+\_\+fire\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_weapons___actor_a03094917a8513d50bf93da99b09b6295}{}\label{class_weapons___actor_a03094917a8513d50bf93da99b09b6295}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!delta\+\_\+time@{delta\+\_\+time}}
+\index{delta\+\_\+time@{delta\+\_\+time}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{delta\+\_\+time}{delta_time}}]{\setlength{\rightskip}{0pt plus 5cm}float Weapons\+\_\+\+Actor\+::delta\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_weapons___actor_a301ddf96a3148e09e550e355d36fbd02}{}\label{class_weapons___actor_a301ddf96a3148e09e550e355d36fbd02}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!D\+E\+M\+A\+GE@{D\+E\+M\+A\+GE}}
+\index{D\+E\+M\+A\+GE@{D\+E\+M\+A\+GE}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{D\+E\+M\+A\+GE}{DEMAGE}}]{\setlength{\rightskip}{0pt plus 5cm}float Weapons\+\_\+\+Actor\+::\+D\+E\+M\+A\+GE}\hypertarget{class_weapons___actor_aea43a4cdbf104cbb2a46112a14488bfd}{}\label{class_weapons___actor_aea43a4cdbf104cbb2a46112a14488bfd}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!F\+I\+R\+E\+\_\+\+S\+P\+E\+ED@{F\+I\+R\+E\+\_\+\+S\+P\+E\+ED}}
+\index{F\+I\+R\+E\+\_\+\+S\+P\+E\+ED@{F\+I\+R\+E\+\_\+\+S\+P\+E\+ED}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+E\+\_\+\+S\+P\+E\+ED}{FIRE_SPEED}}]{\setlength{\rightskip}{0pt plus 5cm}float Weapons\+\_\+\+Actor\+::\+F\+I\+R\+E\+\_\+\+S\+P\+E\+ED}\hypertarget{class_weapons___actor_acb9cfe5f22387762744bf5badabe4336}{}\label{class_weapons___actor_acb9cfe5f22387762744bf5badabe4336}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!gun\+\_\+type@{gun\+\_\+type}}
+\index{gun\+\_\+type@{gun\+\_\+type}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{gun\+\_\+type}{gun_type}}]{\setlength{\rightskip}{0pt plus 5cm}Gun\+Type\+Enum Weapons\+\_\+\+Actor\+::gun\+\_\+type}\hypertarget{class_weapons___actor_a4707d7bf1fa123913b897bddfc0a2684}{}\label{class_weapons___actor_a4707d7bf1fa123913b897bddfc0a2684}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!in\+\_\+bullet@{in\+\_\+bullet}}
+\index{in\+\_\+bullet@{in\+\_\+bullet}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{in\+\_\+bullet}{in_bullet}}]{\setlength{\rightskip}{0pt plus 5cm}int Weapons\+\_\+\+Actor\+::in\+\_\+bullet}\hypertarget{class_weapons___actor_a3ada6991a9ec6db336c9ebc5af923c3d}{}\label{class_weapons___actor_a3ada6991a9ec6db336c9ebc5af923c3d}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!M\+A\+X\+\_\+\+B\+U\+L\+L\+ET@{M\+A\+X\+\_\+\+B\+U\+L\+L\+ET}}
+\index{M\+A\+X\+\_\+\+B\+U\+L\+L\+ET@{M\+A\+X\+\_\+\+B\+U\+L\+L\+ET}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+B\+U\+L\+L\+ET}{MAX_BULLET}}]{\setlength{\rightskip}{0pt plus 5cm}int Weapons\+\_\+\+Actor\+::\+M\+A\+X\+\_\+\+B\+U\+L\+L\+ET}\hypertarget{class_weapons___actor_a50e014c2ea202f57948e3cd81ca22491}{}\label{class_weapons___actor_a50e014c2ea202f57948e3cd81ca22491}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!player\+\_\+controller@{player\+\_\+controller}}
+\index{player\+\_\+controller@{player\+\_\+controller}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{player\+\_\+controller}{player_controller}}]{\setlength{\rightskip}{0pt plus 5cm}Controller Weapons\+\_\+\+Actor\+::player\+\_\+controller}\hypertarget{class_weapons___actor_aad6b8ee12d9a949b589c7b70721fd28a}{}\label{class_weapons___actor_aad6b8ee12d9a949b589c7b70721fd28a}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!R\+A\+N\+GE@{R\+A\+N\+GE}}
+\index{R\+A\+N\+GE@{R\+A\+N\+GE}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{R\+A\+N\+GE}{RANGE}}]{\setlength{\rightskip}{0pt plus 5cm}float Weapons\+\_\+\+Actor\+::\+R\+A\+N\+GE\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_weapons___actor_ae45bc96cd29cd0e41fa28e445495835f}{}\label{class_weapons___actor_ae45bc96cd29cd0e41fa28e445495835f}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!recoil@{recoil}}
+\index{recoil@{recoil}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{recoil}{recoil}}]{\setlength{\rightskip}{0pt plus 5cm}float Weapons\+\_\+\+Actor\+::recoil\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_weapons___actor_aebb36d9d9ad6635929b41673ab76f5ba}{}\label{class_weapons___actor_aebb36d9d9ad6635929b41673ab76f5ba}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!R\+E\+C\+O\+I\+L\+\_\+\+D\+E\+F\+A\+U\+LT@{R\+E\+C\+O\+I\+L\+\_\+\+D\+E\+F\+A\+U\+LT}}
+\index{R\+E\+C\+O\+I\+L\+\_\+\+D\+E\+F\+A\+U\+LT@{R\+E\+C\+O\+I\+L\+\_\+\+D\+E\+F\+A\+U\+LT}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{R\+E\+C\+O\+I\+L\+\_\+\+D\+E\+F\+A\+U\+LT}{RECOIL_DEFAULT}}]{\setlength{\rightskip}{0pt plus 5cm}float Weapons\+\_\+\+Actor\+::\+R\+E\+C\+O\+I\+L\+\_\+\+D\+E\+F\+A\+U\+LT\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_weapons___actor_aced1279aeae15c3bb043ea43c5e80f03}{}\label{class_weapons___actor_aced1279aeae15c3bb043ea43c5e80f03}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!recoil\+\_\+range@{recoil\+\_\+range}}
+\index{recoil\+\_\+range@{recoil\+\_\+range}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{recoil\+\_\+range}{recoil_range}}]{\setlength{\rightskip}{0pt plus 5cm}float Weapons\+\_\+\+Actor\+::recoil\+\_\+range\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_weapons___actor_a22d3ee32aeffc1eea855101fff73d6dc}{}\label{class_weapons___actor_a22d3ee32aeffc1eea855101fff73d6dc}
+\index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!R\+E\+C\+O\+I\+L\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+AX@{R\+E\+C\+O\+I\+L\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+AX}}
+\index{R\+E\+C\+O\+I\+L\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+AX@{R\+E\+C\+O\+I\+L\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+AX}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
+\subsubsection[{\texorpdfstring{R\+E\+C\+O\+I\+L\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+AX}{RECOIL_RANGE_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}float Weapons\+\_\+\+Actor\+::\+R\+E\+C\+O\+I\+L\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+AX}\hypertarget{class_weapons___actor_aa175cd3f4bb5dfd572fc56c966deb105}{}\label{class_weapons___actor_aa175cd3f4bb5dfd572fc56c966deb105}
