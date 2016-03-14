@@ -1,0 +1,3 @@
+<map id="Player_Person::InputAction_Crouch_Pressed" name="Player_Person::InputAction_Crouch_Pressed">
+<area shape="rect" id="node2" href="$class_person___character.html#a0991452dd5a0ea32b814cb38e1ed7ae7" title="앉는 Action 을 처리. " alt="" coords="233,5,403,47"/>
+</map>

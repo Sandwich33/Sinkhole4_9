@@ -11,7 +11,7 @@ var annotated_dup =
     [ "Person_Character", "class_person___character.html", "class_person___character" ],
     [ "Player_Person", "class_player___person.html", "class_player___person" ],
     [ "Shotgun_AI_Person", "class_shotgun___a_i___person.html", "class_shotgun___a_i___person" ],
-    [ "ShotGunWeapons", "class_shot_gun_weapons.html", "class_shot_gun_weapons" ],
+    [ "ShotGun_Weapons", "class_shot_gun___weapons.html", "class_shot_gun___weapons" ],
     [ "Spider_Enemy", "class_spider___enemy.html", "class_spider___enemy" ],
     [ "Weapons_Actor", "class_weapons___actor.html", "class_weapons___actor" ],
     [ "Wolf_Enemy", "class_wolf___enemy.html", "class_wolf___enemy" ]

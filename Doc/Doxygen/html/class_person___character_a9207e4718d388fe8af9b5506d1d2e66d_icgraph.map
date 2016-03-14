@@ -1,0 +1,4 @@
+<map id="Person_Character::actionJump" name="Person_Character::actionJump">
+<area shape="rect" id="node2" href="$class_player___person.html#a369de9678e64b2e1a1c720855a1d8357" title="Jump 이벤트. " alt="" coords="253,5,433,47"/>
+<area shape="rect" id="node3" href="$class_player___person.html#a08614e238304288b7b9eb72a315a3767" title="Jump 이벤트. " alt="" coords="253,71,433,112"/>
+</map>

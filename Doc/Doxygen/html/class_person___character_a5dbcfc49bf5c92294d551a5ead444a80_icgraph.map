@@ -1,4 +1,6 @@
 <map id="Person_Character::endReloadAnim" name="Person_Character::endReloadAnim">
-<area shape="rect" id="node2" href="$class_person___character.html#a72fb7de186f6b9c0091062998673bfe1" title="재장전을 알리는 이벤트. " alt="" coords="279,5,448,47"/>
-<area shape="rect" id="node3" href="$class_person___character.html#a593f0cb97f1f20e42c4ac6642f7dcefe" title="재장전 Action 을 처리. " alt="" coords="496,5,665,47"/>
+<area shape="rect" id="node2" href="$class_person___character.html#a72fb7de186f6b9c0091062998673bfe1" title="재장전을 알리는 이벤트. " alt="" coords="279,39,448,80"/>
+<area shape="rect" id="node3" href="$class_person___character.html#a593f0cb97f1f20e42c4ac6642f7dcefe" title="재장전 Action 을 처리. " alt="" coords="496,39,665,80"/>
+<area shape="rect" id="node4" href="$class_a_i___person.html#a21ffa62d7f7c59a7c8a496c5012ef721" title="재장전 " alt="" coords="735,5,872,47"/>
+<area shape="rect" id="node5" href="$class_player___person.html#a44841a3a300d9ead0ae1a38f5f4701aa" title="재장전 이벤트. " alt="" coords="713,71,893,112"/>
 </map>

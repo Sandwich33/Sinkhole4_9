@@ -89,7 +89,7 @@
     <ClInclude Include="M4A1_Weapons.h" />
     <ClInclude Include="Person_Character.h" />
     <ClInclude Include="Player_Person.h" />
-    <ClInclude Include="ShotGunWeapons.h" />
+    <ClInclude Include="ShotGun_Weapons.h" />
     <ClInclude Include="Shotgun_AI_Person.h" />
     <ClInclude Include="Spider_Enemy.h" />
     <ClInclude Include="stdafx.h" />

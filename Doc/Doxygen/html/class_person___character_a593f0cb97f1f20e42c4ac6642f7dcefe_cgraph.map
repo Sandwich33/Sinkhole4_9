@@ -1,7 +1,7 @@
 <map id="Person_Character::actionReload" name="Person_Character::actionReload">
-<area shape="rect" id="node2" href="$class_weapons___actor.html#a8b36c9a754942e42e22601add407e257" title="Weapons_Actor::onReloadAnimation" alt="" coords="223,5,457,32"/>
-<area shape="rect" id="node3" href="$class_weapons___actor.html#a0c8b9ce144acf091d45cbb640409f76e" title="Weapons_Actor::playReload\lSound" alt="" coords="247,57,433,98"/>
+<area shape="rect" id="node2" href="$class_weapons___actor.html#a8b36c9a754942e42e22601add407e257" title="//////// " alt="" coords="223,5,457,32"/>
+<area shape="rect" id="node3" href="$class_weapons___actor.html#a0c8b9ce144acf091d45cbb640409f76e" title="//////// " alt="" coords="247,57,433,98"/>
 <area shape="rect" id="node4" href="$class_person___character.html#a72fb7de186f6b9c0091062998673bfe1" title="재장전을 알리는 이벤트. " alt="" coords="255,122,425,163"/>
-<area shape="rect" id="node5" href="$class_weapons___actor.html#ab1b1e922088fe0747842df3599dbb7b3" title="Weapons_Actor::actionReload" alt="" coords="519,104,717,131"/>
+<area shape="rect" id="node5" href="$class_weapons___actor.html#ab1b1e922088fe0747842df3599dbb7b3" title="//////// " alt="" coords="519,104,717,131"/>
 <area shape="rect" id="node6" href="$class_person___character.html#a5dbcfc49bf5c92294d551a5ead444a80" title="재장전 애니메이션 완전 종료. " alt="" coords="505,155,731,181"/>
 </map>

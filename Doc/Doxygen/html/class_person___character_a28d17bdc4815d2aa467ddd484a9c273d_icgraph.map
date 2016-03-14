@@ -1,3 +1,5 @@
 <map id="Person_Character::canFire" name="Person_Character::canFire">
-<area shape="rect" id="node2" href="$class_person___character.html#a37cd54aead0c3783a6a0e47382606216" title="사격 Action 을 처리. " alt="" coords="231,5,421,32"/>
+<area shape="rect" id="node2" href="$class_person___character.html#a37cd54aead0c3783a6a0e47382606216" title="사격 Action 을 처리. " alt="" coords="231,46,421,73"/>
+<area shape="rect" id="node3" href="$class_player___person.html#a912c134fda9c35f9bd78d20cf76a7b67" title="사격개시 이벤트. " alt="" coords="469,5,649,47"/>
+<area shape="rect" id="node4" href="$class_player___person.html#afbf8372d9b3f256e0a55507ed88bcac9" title="사격종료 이벤트. " alt="" coords="469,71,649,112"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="Player_Person::InputAction_Jump_Pressed" name="Player_Person::InputAction_Jump_Pressed">
+<area shape="rect" id="node2" href="$class_player___person.html#a2719b6d6bb77d38be7cf5e5f677ade24" title="카메라 위치 선정. " alt="" coords="235,5,432,32"/>
+<area shape="rect" id="node3" href="$class_person___character.html#a9207e4718d388fe8af9b5506d1d2e66d" title="Jump Action 을 처리. " alt="" coords="233,56,433,83"/>
+</map>

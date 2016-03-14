@@ -1,0 +1,4 @@
+<map id="Person_Character::actionFire" name="Person_Character::actionFire">
+<area shape="rect" id="node2" href="$class_player___person.html#a912c134fda9c35f9bd78d20cf76a7b67" title="사격개시 이벤트. " alt="" coords="244,5,424,47"/>
+<area shape="rect" id="node3" href="$class_player___person.html#afbf8372d9b3f256e0a55507ed88bcac9" title="사격종료 이벤트. " alt="" coords="244,71,424,112"/>
+</map>

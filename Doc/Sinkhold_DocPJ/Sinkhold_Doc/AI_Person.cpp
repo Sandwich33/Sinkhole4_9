@@ -2,11 +2,14 @@
 #include "AI_Person.h"
 
 
-AI_Person::AI_Person()
-{
+EventGraph AI_Person::Tick(float DeltaSeconds){
+	Gun.onFire();
+	Gun.waitingFire();
 }
-
-
-AI_Person::~AI_Person()
-{
+void AI_Person::actionAI_OnFile(float _delta_seconds, Vector _end_location, Object _get_object){
+	Gun.actionFire();
+	ingFire_Fire();
+}
+void AI_Person::actionAI_Reload(){
+	actionReload();
 }

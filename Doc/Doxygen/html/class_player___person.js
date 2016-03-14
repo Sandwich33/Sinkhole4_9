@@ -1,10 +1,26 @@
 var class_player___person =
 [
-    [ "Player_Person", "class_player___person.html#a3f466e7d7e79ca4e178e660719c48777", null ],
-    [ "~Player_Person", "class_player___person.html#ab4c1f8d76f85d1a4f6b21ed49ee2a1b4", null ],
+    [ "endReloadAnim", "class_player___person.html#a9b61abe3ce82c372cfd2764c3555519e", null ],
     [ "getAimInfo", "class_player___person.html#a9d2fb283896181096721f63cca4fbaf1", null ],
     [ "getBulletInfo", "class_player___person.html#aab48e1eb2c70ac97cf6c5cee99e19b21", null ],
+    [ "InputAction_Crouch_Pressed", "class_player___person.html#a9800183b485ccf5c0c74a481bd9c05ac", null ],
+    [ "InputAction_Fire_Pressed", "class_player___person.html#a912c134fda9c35f9bd78d20cf76a7b67", null ],
+    [ "InputAction_Fire_Releasd", "class_player___person.html#afbf8372d9b3f256e0a55507ed88bcac9", null ],
+    [ "InputAction_Ironsights_Pressed", "class_player___person.html#ab4e2db16a377d6ebd2c229ae2d7bce16", null ],
+    [ "InputAction_Jump_Pressed", "class_player___person.html#a369de9678e64b2e1a1c720855a1d8357", null ],
+    [ "InputAction_Jump_Releasd", "class_player___person.html#a08614e238304288b7b9eb72a315a3767", null ],
+    [ "InputAction_LookUp", "class_player___person.html#ae3f98b4ac80e453c32b261afa2a2f933", null ],
+    [ "InputAction_MoveForward", "class_player___person.html#a955d5e05a9f36c5554ed9fe48c3a7200", null ],
+    [ "InputAction_MoveRight", "class_player___person.html#af9b6b3a41cfcf5ad41eb49108a580e4a", null ],
+    [ "InputAction_Pause_Pressed", "class_player___person.html#a4df97a9a6657eae7f0831a79498444a5", null ],
+    [ "InputAction_Reload_Pressed", "class_player___person.html#a44841a3a300d9ead0ae1a38f5f4701aa", null ],
+    [ "InputAction_Sprint_Pressed", "class_player___person.html#a9fb9f094c0ef83ed87e477e7e91f27e3", null ],
+    [ "InputAction_Sprint_Releasd", "class_player___person.html#a5b3eac9c463f0abddf7de0052bbee6b1", null ],
+    [ "InputAction_Tablet_Pressed", "class_player___person.html#a8c8dc86d7b6fa1fd26db5bbb035d84c3", null ],
+    [ "InputAction_Turn", "class_player___person.html#a95d1ad3a1cc2e766d8d20816b625b8c0", null ],
+    [ "Script", "class_player___person.html#aed98240a8754d1b4fee94a426717d99f", null ],
     [ "setViewTarget", "class_player___person.html#a2719b6d6bb77d38be7cf5e5f677ade24", null ],
+    [ "Tick", "class_player___person.html#a7219dd86f30bced16e6b570315d9e74f", null ],
     [ "fire_input_tag", "class_player___person.html#abd97b17132011c46ee81603f813a43d5", null ],
     [ "jumping", "class_player___person.html#a1ad501a127f6f2803929aa40df0ad93f", null ]
 ];

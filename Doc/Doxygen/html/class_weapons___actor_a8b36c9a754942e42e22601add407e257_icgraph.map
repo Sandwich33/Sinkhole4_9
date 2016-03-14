@@ -1,3 +1,5 @@
 <map id="Weapons_Actor::onReloadAnimation" name="Weapons_Actor::onReloadAnimation">
-<area shape="rect" id="node2" href="$class_person___character.html#a593f0cb97f1f20e42c4ac6642f7dcefe" title="재장전 Action 을 처리. " alt="" coords="288,5,457,47"/>
+<area shape="rect" id="node2" href="$class_person___character.html#a593f0cb97f1f20e42c4ac6642f7dcefe" title="재장전 Action 을 처리. " alt="" coords="288,39,457,80"/>
+<area shape="rect" id="node3" href="$class_a_i___person.html#a21ffa62d7f7c59a7c8a496c5012ef721" title="재장전 " alt="" coords="527,5,664,47"/>
+<area shape="rect" id="node4" href="$class_player___person.html#a44841a3a300d9ead0ae1a38f5f4701aa" title="재장전 이벤트. " alt="" coords="505,71,685,112"/>
 </map>

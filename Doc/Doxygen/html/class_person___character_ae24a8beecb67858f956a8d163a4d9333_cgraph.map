@@ -1,11 +1,12 @@
 <map id="Person_Character::ingFire" name="Person_Character::ingFire">
-<area shape="rect" id="node2" href="$class_weapons___actor.html#afeff0a9b2ae132677c1f268b305852f0" title="Weapons_Actor::getAim" alt="" coords="246,107,410,133"/>
+<area shape="rect" id="node2" href="$class_weapons___actor.html#afeff0a9b2ae132677c1f268b305852f0" title="//////// " alt="" coords="246,107,410,133"/>
 <area shape="rect" id="node3" href="$class_person___character.html#a7d0f5b22056e049f5a46ca0b2abb91ae" title="사격중 실제 사격에 관한 처리를 함. " alt="" coords="227,157,429,184"/>
-<area shape="rect" id="node4" href="$class_weapons___actor.html#a222c02127cd7ec162e747a382bc3acb9" title="Weapons_Actor::onFire" alt="" coords="501,5,660,32"/>
-<area shape="rect" id="node5" href="$class_weapons___actor.html#a8fca2bbfe8830abe9feec1ee82565a1e" title="Weapons_Actor::delayFire" alt="" coords="493,56,669,83"/>
-<area shape="rect" id="node6" href="$class_weapons___actor.html#a89dec27e708d9944b1f4f17c5b6da210" title="Weapons_Actor::createParticle" alt="" coords="479,107,682,133"/>
-<area shape="rect" id="node7" href="$class_weapons___actor.html#a5452db7714a6fd6fc8d4e60387ca1484" title="Weapons_Actor::playFireSound" alt="" coords="477,157,684,184"/>
-<area shape="rect" id="node8" href="$class_weapons___actor.html#a62f4a9add9f4521b19f82e38777fcc85" title="Weapons_Actor::getDemage\lActor" alt="" coords="486,209,675,250"/>
-<area shape="rect" id="node9" href="$class_weapons___actor.html#ab19a4d70050baea3347948f457b4316f" title="Weapons_Actor::doFire" alt="" coords="501,275,660,301"/>
-<area shape="rect" id="node10" href="$class_weapons___actor.html#aad412298d60d3ffd391c1e3b925eb206" title="Weapons_Actor::waitingFire" alt="" coords="488,325,673,352"/>
+<area shape="rect" id="node4" href="$class_weapons___actor.html#a222c02127cd7ec162e747a382bc3acb9" title="//////// " alt="" coords="501,5,660,32"/>
+<area shape="rect" id="node5" href="$class_weapons___actor.html#a8fca2bbfe8830abe9feec1ee82565a1e" title="//////// " alt="" coords="493,56,669,83"/>
+<area shape="rect" id="node6" href="$class_weapons___actor.html#a89dec27e708d9944b1f4f17c5b6da210" title="//////// " alt="" coords="479,107,682,133"/>
+<area shape="rect" id="node7" href="$class_weapons___actor.html#a5452db7714a6fd6fc8d4e60387ca1484" title="//////// " alt="" coords="477,157,684,184"/>
+<area shape="rect" id="node8" href="$class_weapons___actor.html#a62f4a9add9f4521b19f82e38777fcc85" title="//////// " alt="" coords="486,209,675,250"/>
+<area shape="rect" id="node10" href="$class_weapons___actor.html#ab19a4d70050baea3347948f457b4316f" title="총알에 맞은 엑터에게 데미지를 입힌다. " alt="" coords="501,275,660,301"/>
+<area shape="rect" id="node11" href="$class_weapons___actor.html#aad412298d60d3ffd391c1e3b925eb206" title="//////// " alt="" coords="488,325,673,352"/>
+<area shape="rect" id="node9" href="$class_weapons___actor.html#a8e5bd4c8a55510f6b7db7674273128fa" title="//////// " alt="" coords="732,216,933,243"/>
 </map>

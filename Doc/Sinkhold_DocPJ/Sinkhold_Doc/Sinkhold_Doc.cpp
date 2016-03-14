@@ -5,7 +5,7 @@
 @mainpage Sinkhole
 @brief Unreal Engine 4 로 제작한 게임으로, 주요 구조의 문서.
 @details ;
-@details 해당 문서는 'doxygen' 이라는 프로그램으로 제작되었으며, Unreal Engine 4 의 Blueprint 소스는 번역이 불가능하여 임시로 제작한 Cpp 코드로 문서를 제작함.
+@details 해당 문서는 'doxygen' 이라는 프로그램으로 제작되었으며, Unreal Engine 4 의 Blueprint 소스는 번역이 불가능하여 임시로 제작한 Cpp 코드로 문서를 제작 했습니다.
 @details 해당 문서 및 문서 제작용 프로젝트에는 Unreal Engine 4의 기본 제공 클래스 내용을 담고 있지 않습니다.
 @details Unreal Engine 4의 Blueprint class에는 Construction Script(컨스트럭션 스크립트), Event Graph, Macros 가 존재합니다. 이를 이 문서에서는 각각의 함수로 표현합니다.
 @details * Construction Script [https://docs.unrealengine.com/latest/KOR/Engine/Blueprints/UserGuide/UserConstructionScript/index.html]

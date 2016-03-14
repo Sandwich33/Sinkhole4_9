@@ -110,8 +110,8 @@ public:
 	/**
 	@brief 현재 움직임 정보를 한번에 얻을 수 있는 함수.
 	@details 애니메이션 처리를 돕기 위해 현재 움직임에 대한 정보를 한꺼번에 얻을 수 있는 함수이다.
-	@param _sprint, _crouch, _prone, _jump, _ironsights 캐릭터의 현재 행동을 알 수 있다.
-	@param _gun_type 총기 종류 (서브머신건, 샷건, 스나이퍼건) 를 알 수 있다.
+	@return _sprint, _crouch, _prone, _jump, _ironsights 캐릭터의 현재 행동을 알 수 있다.
+	@return _gun_type 총기 종류 (서브머신건, 샷건, 스나이퍼건) 를 알 수 있다.
 	*/
 	void getMovementValues(bool *_sprint, bool * _crouch, bool * _prone, bool * _jump, bool * _ironsights, GunType* _gun_type);
 	

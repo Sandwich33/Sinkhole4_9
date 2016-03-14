@@ -2,6 +2,11 @@
 \label{class_player___person}\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}}
 
 
+플레이어 클래스.  
+
+
+
+
 {\ttfamily \#include $<$Player\+\_\+\+Person.\+h$>$}
 
 
@@ -25,16 +30,48 @@ Collaboration diagram for Player\+\_\+\+Person\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_player___person_a3f466e7d7e79ca4e178e660719c48777}{Player\+\_\+\+Person} ()
-\item 
-\hyperlink{class_player___person_ab4c1f8d76f85d1a4f6b21ed49ee2a1b4}{$\sim$\+Player\+\_\+\+Person} ()
-\item 
+Construction \hyperlink{class_player___person_aed98240a8754d1b4fee94a426717d99f}{Script} ()
+\begin{DoxyCompactList}\small\item\em 컨스트럭션 스크립트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a955d5e05a9f36c5554ed9fe48c3a7200}{Input\+Action\+\_\+\+Move\+Forward} (float Axis\+Value)
+\begin{DoxyCompactList}\small\item\em 앞/뒤 이동 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_af9b6b3a41cfcf5ad41eb49108a580e4a}{Input\+Action\+\_\+\+Move\+Right} (float Axis\+Value)
+\begin{DoxyCompactList}\small\item\em 좌/우 이동 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a95d1ad3a1cc2e766d8d20816b625b8c0}{Input\+Action\+\_\+\+Turn} (float Axis\+Value)
+\begin{DoxyCompactList}\small\item\em 좌/우 방향전환 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_ae3f98b4ac80e453c32b261afa2a2f933}{Input\+Action\+\_\+\+Look\+Up} (float Axis\+Value)
+\begin{DoxyCompactList}\small\item\em 상/하 방향전환 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a7219dd86f30bced16e6b570315d9e74f}{Tick} (float Delta\+Seconds)
+\begin{DoxyCompactList}\small\item\em Tick 이벤트. \end{DoxyCompactList}\item 
+void \hyperlink{class_player___person_a9b61abe3ce82c372cfd2764c3555519e}{end\+Reload\+Anim} ()
+\begin{DoxyCompactList}\small\item\em 재장전 애니메이션 완전 종료. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a9800183b485ccf5c0c74a481bd9c05ac}{Input\+Action\+\_\+\+Crouch\+\_\+\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em 앉기 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a369de9678e64b2e1a1c720855a1d8357}{Input\+Action\+\_\+\+Jump\+\_\+\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Jump 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a08614e238304288b7b9eb72a315a3767}{Input\+Action\+\_\+\+Jump\+\_\+\+Releasd} ()
+\begin{DoxyCompactList}\small\item\em Jump 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a9fb9f094c0ef83ed87e477e7e91f27e3}{Input\+Action\+\_\+\+Sprint\+\_\+\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em 달리기 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a5b3eac9c463f0abddf7de0052bbee6b1}{Input\+Action\+\_\+\+Sprint\+\_\+\+Releasd} ()
+\begin{DoxyCompactList}\small\item\em 달리기 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_ab4e2db16a377d6ebd2c229ae2d7bce16}{Input\+Action\+\_\+\+Ironsights\+\_\+\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em 정조준 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a912c134fda9c35f9bd78d20cf76a7b67}{Input\+Action\+\_\+\+Fire\+\_\+\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em 사격개시 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_afbf8372d9b3f256e0a55507ed88bcac9}{Input\+Action\+\_\+\+Fire\+\_\+\+Releasd} ()
+\begin{DoxyCompactList}\small\item\em 사격종료 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a44841a3a300d9ead0ae1a38f5f4701aa}{Input\+Action\+\_\+\+Reload\+\_\+\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em 재장전 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a8c8dc86d7b6fa1fd26db5bbb035d84c3}{Input\+Action\+\_\+\+Tablet\+\_\+\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em 태블릿 꺼내기 이벤트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_player___person_a4df97a9a6657eae7f0831a79498444a5}{Input\+Action\+\_\+\+Pause\+\_\+\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em 일시정지 이벤트. \end{DoxyCompactList}\item 
 void \hyperlink{class_player___person_a2719b6d6bb77d38be7cf5e5f677ade24}{set\+View\+Target} (bool \+\_\+me)
-\item 
+\begin{DoxyCompactList}\small\item\em 카메라 위치 선정. \end{DoxyCompactList}\item 
 void \hyperlink{class_player___person_a9d2fb283896181096721f63cca4fbaf1}{get\+Aim\+Info} (float $\ast$\+\_\+recoil, Vector2D $\ast$\+\_\+screen\+\_\+point, bool $\ast$\+\_\+show\+\_\+aim)
-\item 
+\begin{DoxyCompactList}\small\item\em 에임 정보를 준다. \end{DoxyCompactList}\item 
 void \hyperlink{class_player___person_aab48e1eb2c70ac97cf6c5cee99e19b21}{get\+Bullet\+Info} (int $\ast$\+\_\+bullet, int $\ast$\+\_\+have\+\_\+bullet)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 화면에 표시할 총알의 정보를 준다. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,24 +81,34 @@ bool \hyperlink{class_player___person_a1ad501a127f6f2803929aa40df0ad93f}{jumping
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
-\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
-\subsubsection[{\texorpdfstring{Player\+\_\+\+Person()}{Player_Person()}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+\_\+\+Person\+::\+Player\+\_\+\+Person (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{class_player___person_a3f466e7d7e79ca4e178e660719c48777}{}\label{class_player___person_a3f466e7d7e79ca4e178e660719c48777}
-\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!````~Player\+\_\+\+Person@{$\sim$\+Player\+\_\+\+Person}}
-\index{````~Player\+\_\+\+Person@{$\sim$\+Player\+\_\+\+Person}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
-\subsubsection[{\texorpdfstring{$\sim$\+Player\+\_\+\+Person()}{~Player_Person()}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+\_\+\+Person\+::$\sim$\+Player\+\_\+\+Person (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{class_player___person_ab4c1f8d76f85d1a4f6b21ed49ee2a1b4}{}\label{class_player___person_ab4c1f8d76f85d1a4f6b21ed49ee2a1b4}
+\subsection{Detailed Description}
+플레이어 클래스. 
 
+.... 
 
 \subsection{Member Function Documentation}
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!end\+Reload\+Anim@{end\+Reload\+Anim}}
+\index{end\+Reload\+Anim@{end\+Reload\+Anim}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{end\+Reload\+Anim()}{endReloadAnim()}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+\_\+\+Person\+::end\+Reload\+Anim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a9b61abe3ce82c372cfd2764c3555519e}{}\label{class_player___person_a9b61abe3ce82c372cfd2764c3555519e}
+
+
+재장전 애니메이션 완전 종료. 
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a9b61abe3ce82c372cfd2764c3555519e_cgraph}
+\end{center}
+\end{figure}
+
+
 \index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!get\+Aim\+Info@{get\+Aim\+Info}}
 \index{get\+Aim\+Info@{get\+Aim\+Info}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
 \subsubsection[{\texorpdfstring{get\+Aim\+Info(float $\ast$\+\_\+recoil, Vector2\+D $\ast$\+\_\+screen\+\_\+point, bool $\ast$\+\_\+show\+\_\+aim)}{getAimInfo(float *_recoil, Vector2D *_screen_point, bool *_show_aim)}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+\_\+\+Person\+::get\+Aim\+Info (
@@ -71,6 +118,28 @@ bool \hyperlink{class_player___person_a1ad501a127f6f2803929aa40df0ad93f}{jumping
 \item[{bool $\ast$}]{\+\_\+show\+\_\+aim}
 \end{DoxyParamCaption}
 )}\hypertarget{class_player___person_a9d2fb283896181096721f63cca4fbaf1}{}\label{class_player___person_a9d2fb283896181096721f63cca4fbaf1}
+
+
+에임 정보를 준다. 
+
+에임을 그리는데 있어 필요한 정보들을 넘겨준다.. \begin{DoxyReturn}{Returns}
+\+\_\+recoil 반동의 정도 
+
+\+\_\+screen\+\_\+point 에임을 표시할 화면상의 위치 
+
+\+\_\+show\+\_\+aim 에임 표시 여부 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a9d2fb283896181096721f63cca4fbaf1_cgraph}
+\end{center}
+\end{figure}
+
+
 \index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!get\+Bullet\+Info@{get\+Bullet\+Info}}
 \index{get\+Bullet\+Info@{get\+Bullet\+Info}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
 \subsubsection[{\texorpdfstring{get\+Bullet\+Info(int $\ast$\+\_\+bullet, int $\ast$\+\_\+have\+\_\+bullet)}{getBulletInfo(int *_bullet, int *_have_bullet)}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+\_\+\+Person\+::get\+Bullet\+Info (
@@ -79,13 +148,395 @@ bool \hyperlink{class_player___person_a1ad501a127f6f2803929aa40df0ad93f}{jumping
 \item[{int $\ast$}]{\+\_\+have\+\_\+bullet}
 \end{DoxyParamCaption}
 )}\hypertarget{class_player___person_aab48e1eb2c70ac97cf6c5cee99e19b21}{}\label{class_player___person_aab48e1eb2c70ac97cf6c5cee99e19b21}
-\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!set\+View\+Target@{set\+View\+Target}}
+
+
+화면에 표시할 총알의 정보를 준다. 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+bullet 장전되어 있는 총알의 수 
+
+\+\_\+have\+\_\+bullet 소유하고 있는 총알의 수 
+\end{DoxyReturn}
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Crouch\+\_\+\+Pressed@{Input\+Action\+\_\+\+Crouch\+\_\+\+Pressed}}
+\index{Input\+Action\+\_\+\+Crouch\+\_\+\+Pressed@{Input\+Action\+\_\+\+Crouch\+\_\+\+Pressed}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Crouch\+\_\+\+Pressed()}{InputAction_Crouch_Pressed()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Crouch\+\_\+\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a9800183b485ccf5c0c74a481bd9c05ac}{}\label{class_player___person_a9800183b485ccf5c0c74a481bd9c05ac}
+
+
+앉기 이벤트. 
+
+토글을 이용하여 앉았다 일어섰다 한다. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a9800183b485ccf5c0c74a481bd9c05ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Fire\+\_\+\+Pressed@{Input\+Action\+\_\+\+Fire\+\_\+\+Pressed}}
+\index{Input\+Action\+\_\+\+Fire\+\_\+\+Pressed@{Input\+Action\+\_\+\+Fire\+\_\+\+Pressed}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Fire\+\_\+\+Pressed()}{InputAction_Fire_Pressed()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Fire\+\_\+\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a912c134fda9c35f9bd78d20cf76a7b67}{}\label{class_player___person_a912c134fda9c35f9bd78d20cf76a7b67}
+
+
+사격개시 이벤트. 
+
+키 이벤트로 점프가 들어온다.
+
+Pressed 는 눌렀다는 의미. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a912c134fda9c35f9bd78d20cf76a7b67_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Fire\+\_\+\+Releasd@{Input\+Action\+\_\+\+Fire\+\_\+\+Releasd}}
+\index{Input\+Action\+\_\+\+Fire\+\_\+\+Releasd@{Input\+Action\+\_\+\+Fire\+\_\+\+Releasd}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Fire\+\_\+\+Releasd()}{InputAction_Fire_Releasd()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Fire\+\_\+\+Releasd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_afbf8372d9b3f256e0a55507ed88bcac9}{}\label{class_player___person_afbf8372d9b3f256e0a55507ed88bcac9}
+
+
+사격종료 이벤트. 
+
+키 이벤트로 점프가 들어온다.
+
+Releasd 는 눌렀다 뗌을 의미. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_afbf8372d9b3f256e0a55507ed88bcac9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Ironsights\+\_\+\+Pressed@{Input\+Action\+\_\+\+Ironsights\+\_\+\+Pressed}}
+\index{Input\+Action\+\_\+\+Ironsights\+\_\+\+Pressed@{Input\+Action\+\_\+\+Ironsights\+\_\+\+Pressed}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Ironsights\+\_\+\+Pressed()}{InputAction_Ironsights_Pressed()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Ironsights\+\_\+\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_ab4e2db16a377d6ebd2c229ae2d7bce16}{}\label{class_player___person_ab4e2db16a377d6ebd2c229ae2d7bce16}
+
+
+정조준 이벤트. 
+
+토글을 이용. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_ab4e2db16a377d6ebd2c229ae2d7bce16_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Jump\+\_\+\+Pressed@{Input\+Action\+\_\+\+Jump\+\_\+\+Pressed}}
+\index{Input\+Action\+\_\+\+Jump\+\_\+\+Pressed@{Input\+Action\+\_\+\+Jump\+\_\+\+Pressed}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Jump\+\_\+\+Pressed()}{InputAction_Jump_Pressed()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Jump\+\_\+\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a369de9678e64b2e1a1c720855a1d8357}{}\label{class_player___person_a369de9678e64b2e1a1c720855a1d8357}
+
+
+Jump 이벤트. 
+
+키 이벤트로 점프가 들어온다.
+
+Pressed 는 눌렀다는 의미. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a369de9678e64b2e1a1c720855a1d8357_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Jump\+\_\+\+Releasd@{Input\+Action\+\_\+\+Jump\+\_\+\+Releasd}}
+\index{Input\+Action\+\_\+\+Jump\+\_\+\+Releasd@{Input\+Action\+\_\+\+Jump\+\_\+\+Releasd}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Jump\+\_\+\+Releasd()}{InputAction_Jump_Releasd()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Jump\+\_\+\+Releasd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a08614e238304288b7b9eb72a315a3767}{}\label{class_player___person_a08614e238304288b7b9eb72a315a3767}
+
+
+Jump 이벤트. 
+
+키 이벤트로 점프가 들어온다.
+
+Releasd 는 눌렀다 뗌을 의미. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a08614e238304288b7b9eb72a315a3767_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Look\+Up@{Input\+Action\+\_\+\+Look\+Up}}
+\index{Input\+Action\+\_\+\+Look\+Up@{Input\+Action\+\_\+\+Look\+Up}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Look\+Up(float Axis\+Value)}{InputAction_LookUp(float AxisValue)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Look\+Up (
+\begin{DoxyParamCaption}
+\item[{float}]{Axis\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_ae3f98b4ac80e453c32b261afa2a2f933}{}\label{class_player___person_ae3f98b4ac80e453c32b261afa2a2f933}
+
+
+상/하 방향전환 이벤트. 
+
+마우스를 사용하여 상하 화면 전환을 한다. 
+\begin{DoxyParams}{Parameters}
+{\em Axis\+Value} & 마우스를 움직인 정도를 나타낸다. \\
+\hline
+\end{DoxyParams}
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Move\+Forward@{Input\+Action\+\_\+\+Move\+Forward}}
+\index{Input\+Action\+\_\+\+Move\+Forward@{Input\+Action\+\_\+\+Move\+Forward}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Move\+Forward(float Axis\+Value)}{InputAction_MoveForward(float AxisValue)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Move\+Forward (
+\begin{DoxyParamCaption}
+\item[{float}]{Axis\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a955d5e05a9f36c5554ed9fe48c3a7200}{}\label{class_player___person_a955d5e05a9f36c5554ed9fe48c3a7200}
+
+
+앞/뒤 이동 이벤트. 
+
+키 설정에서 앞 뒤 버튼으로 등록한 키 입력을 받으면 동작한다. 
+\begin{DoxyParams}{Parameters}
+{\em Axis\+Value} & 누른 정도의 값을 나타낸다. \\
+\hline
+\end{DoxyParams}
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Move\+Right@{Input\+Action\+\_\+\+Move\+Right}}
+\index{Input\+Action\+\_\+\+Move\+Right@{Input\+Action\+\_\+\+Move\+Right}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Move\+Right(float Axis\+Value)}{InputAction_MoveRight(float AxisValue)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Move\+Right (
+\begin{DoxyParamCaption}
+\item[{float}]{Axis\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_af9b6b3a41cfcf5ad41eb49108a580e4a}{}\label{class_player___person_af9b6b3a41cfcf5ad41eb49108a580e4a}
+
+
+좌/우 이동 이벤트. 
+
+키 설정에서 좌 우 버튼으로 등록한 키 입력을 받으면 동작한다. 
+\begin{DoxyParams}{Parameters}
+{\em Axis\+Value} & 누른 정도의 값을 나타낸다. \\
+\hline
+\end{DoxyParams}
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Pause\+\_\+\+Pressed@{Input\+Action\+\_\+\+Pause\+\_\+\+Pressed}}
+\index{Input\+Action\+\_\+\+Pause\+\_\+\+Pressed@{Input\+Action\+\_\+\+Pause\+\_\+\+Pressed}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Pause\+\_\+\+Pressed()}{InputAction_Pause_Pressed()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Pause\+\_\+\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a4df97a9a6657eae7f0831a79498444a5}{}\label{class_player___person_a4df97a9a6657eae7f0831a79498444a5}
+
+
+일시정지 이벤트. 
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Reload\+\_\+\+Pressed@{Input\+Action\+\_\+\+Reload\+\_\+\+Pressed}}
+\index{Input\+Action\+\_\+\+Reload\+\_\+\+Pressed@{Input\+Action\+\_\+\+Reload\+\_\+\+Pressed}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Reload\+\_\+\+Pressed()}{InputAction_Reload_Pressed()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Reload\+\_\+\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a44841a3a300d9ead0ae1a38f5f4701aa}{}\label{class_player___person_a44841a3a300d9ead0ae1a38f5f4701aa}
+
+
+재장전 이벤트. 
+
+키 이벤트로 점프가 들어온다.
+
+Pressed 는 눌렀다는 의미. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a44841a3a300d9ead0ae1a38f5f4701aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Sprint\+\_\+\+Pressed@{Input\+Action\+\_\+\+Sprint\+\_\+\+Pressed}}
+\index{Input\+Action\+\_\+\+Sprint\+\_\+\+Pressed@{Input\+Action\+\_\+\+Sprint\+\_\+\+Pressed}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Sprint\+\_\+\+Pressed()}{InputAction_Sprint_Pressed()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Sprint\+\_\+\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a9fb9f094c0ef83ed87e477e7e91f27e3}{}\label{class_player___person_a9fb9f094c0ef83ed87e477e7e91f27e3}
+
+
+달리기 이벤트. 
+
+키 이벤트로 점프가 들어온다.
+
+Pressed 는 눌렀다는 의미. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a9fb9f094c0ef83ed87e477e7e91f27e3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Sprint\+\_\+\+Releasd@{Input\+Action\+\_\+\+Sprint\+\_\+\+Releasd}}
+\index{Input\+Action\+\_\+\+Sprint\+\_\+\+Releasd@{Input\+Action\+\_\+\+Sprint\+\_\+\+Releasd}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Sprint\+\_\+\+Releasd()}{InputAction_Sprint_Releasd()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Sprint\+\_\+\+Releasd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a5b3eac9c463f0abddf7de0052bbee6b1}{}\label{class_player___person_a5b3eac9c463f0abddf7de0052bbee6b1}
+
+
+달리기 이벤트. 
+
+키 이벤트로 점프가 들어온다.
+
+Releasd 는 눌렀다 뗌을 의미. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a5b3eac9c463f0abddf7de0052bbee6b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a5b3eac9c463f0abddf7de0052bbee6b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Tablet\+\_\+\+Pressed@{Input\+Action\+\_\+\+Tablet\+\_\+\+Pressed}}
+\index{Input\+Action\+\_\+\+Tablet\+\_\+\+Pressed@{Input\+Action\+\_\+\+Tablet\+\_\+\+Pressed}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Tablet\+\_\+\+Pressed()}{InputAction_Tablet_Pressed()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Tablet\+\_\+\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a8c8dc86d7b6fa1fd26db5bbb035d84c3}{}\label{class_player___person_a8c8dc86d7b6fa1fd26db5bbb035d84c3}
+
+
+태블릿 꺼내기 이벤트. 
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Input\+Action\+\_\+\+Turn@{Input\+Action\+\_\+\+Turn}}
+\index{Input\+Action\+\_\+\+Turn@{Input\+Action\+\_\+\+Turn}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Input\+Action\+\_\+\+Turn(float Axis\+Value)}{InputAction_Turn(float AxisValue)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Input\+Action\+\_\+\+Turn (
+\begin{DoxyParamCaption}
+\item[{float}]{Axis\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a95d1ad3a1cc2e766d8d20816b625b8c0}{}\label{class_player___person_a95d1ad3a1cc2e766d8d20816b625b8c0}
+
+
+좌/우 방향전환 이벤트. 
+
+마우스를 사용하여 좌우 화면 전환을 한다. 
+\begin{DoxyParams}{Parameters}
+{\em Axis\+Value} & 마우스를 움직인 정도를 나타낸다. \\
+\hline
+\end{DoxyParams}
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Script@{Script}}
+\index{Script@{Script}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Script()}{Script()}}]{\setlength{\rightskip}{0pt plus 5cm}Construction Player\+\_\+\+Person\+::\+Script (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_aed98240a8754d1b4fee94a426717d99f}{}\label{class_player___person_aed98240a8754d1b4fee94a426717d99f}
+
+
+컨스트럭션 스크립트. 
+
+플레이어의 경우 Character에서 제공하는 Mesh 를 사용할 수 없어 새로운 Mesh를 만든 후 그 매시를 캐릭터로 등록한다.
+
+캐릭터와 무기를 소켓 결합 시킨다. \index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!set\+View\+Target@{set\+View\+Target}}
 \index{set\+View\+Target@{set\+View\+Target}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
 \subsubsection[{\texorpdfstring{set\+View\+Target(bool \+\_\+me)}{setViewTarget(bool _me)}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+\_\+\+Person\+::set\+View\+Target (
 \begin{DoxyParamCaption}
 \item[{bool}]{\+\_\+me}
 \end{DoxyParamCaption}
 )}\hypertarget{class_player___person_a2719b6d6bb77d38be7cf5e5f677ade24}{}\label{class_player___person_a2719b6d6bb77d38be7cf5e5f677ade24}
+
+
+카메라 위치 선정. 
+
+정조준의 경우와 일반적인 경우 카메라 위치가 다르다. 때에 따라서 적절하게 카메라 위치를 잡아준다. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+me} & true 일 경우 무조건 일반 카메라 위치로 표시한다. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a2719b6d6bb77d38be7cf5e5f677ade24_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player\+\_\+\+Person@{Player\+\_\+\+Person}!Tick@{Tick}}
+\index{Tick@{Tick}!Player\+\_\+\+Person@{Player\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Tick(float Delta\+Seconds)}{Tick(float DeltaSeconds)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Player\+\_\+\+Person\+::\+Tick (
+\begin{DoxyParamCaption}
+\item[{float}]{Delta\+Seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player___person_a7219dd86f30bced16e6b570315d9e74f}{}\label{class_player___person_a7219dd86f30bced16e6b570315d9e74f}
+
+
+Tick 이벤트. 
+
+매 프레임마다 실행되는 이벤트.
+
+부모 Tick 을 실행 한다.
+
+점프 및 앉기 의 상태를 체크한 후 적절한 카메라 움직임을 보여준다. 
+\begin{DoxyParams}[1]{Parameters}
+\textquotesingle{}https\+://docs.\+unrealengine.\+com/latest/\+K\+O\+R/\+Engine/\+Blueprints/\+User\+Guide/\+Events/index.\+html & {\em eventtick\textquotesingle{}} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player___person_a7219dd86f30bced16e6b570315d9e74f_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 \subsection{Member Data Documentation}

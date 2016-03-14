@@ -1,5 +1,5 @@
 <map id="M4A1_AI_Person" name="M4A1_AI_Person">
-<area shape="rect" id="node2" href="$class_a_i___person.html" title="{AI_Person\n||+ actionAI_OnFile()\l}" alt="" coords="36,1093,171,1171"/>
+<area shape="rect" id="node2" href="$class_a_i___person.html" title="AI 팀원 클래스. " alt="" coords="35,1093,171,1200"/>
 <area shape="rect" id="node3" href="$class_person___character.html" title="아군 캐릭터의 기본형 클래스. " alt="" coords="5,468,201,1044"/>
 <area shape="rect" id="node4" href="$class_weapons___actor.html" title="무기(총)의 기본형 클래스. " alt="" coords="19,5,187,405"/>
 </map>

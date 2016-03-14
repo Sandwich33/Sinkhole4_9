@@ -1,4 +1,4 @@
 <map id="Shotgun_AI_Person" name="Shotgun_AI_Person">
-<area shape="rect" id="node2" href="$class_a_i___person.html" title="{AI_Person\n||+ actionAI_OnFile()\l}" alt="" coords="36,644,171,721"/>
+<area shape="rect" id="node2" href="$class_a_i___person.html" title="AI 팀원 클래스. " alt="" coords="35,644,171,751"/>
 <area shape="rect" id="node3" href="$class_person___character.html" title="아군 캐릭터의 기본형 클래스. " alt="" coords="5,5,201,596"/>
 </map>

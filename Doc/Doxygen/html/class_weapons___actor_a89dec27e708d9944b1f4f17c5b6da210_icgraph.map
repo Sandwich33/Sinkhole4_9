@@ -1,6 +1,10 @@
 <map id="Weapons_Actor::createParticle" name="Weapons_Actor::createParticle">
-<area shape="rect" id="node2" href="$class_person___character.html#a7d0f5b22056e049f5a46ca0b2abb91ae" title="사격중 실제 사격에 관한 처리를 함. " alt="" coords="256,31,459,57"/>
-<area shape="rect" id="node3" href="$class_person___character.html#ae24a8beecb67858f956a8d163a4d9333" title="사격중 Aim에 관한 처리를 함. " alt="" coords="507,31,680,57"/>
-<area shape="rect" id="node4" href="$class_person___character.html#a37cd54aead0c3783a6a0e47382606216" title="사격 Action 을 처리. " alt="" coords="728,5,919,32"/>
-<area shape="rect" id="node5" href="$class_person___character.html#a49833f356173ccfe8857fcbc8e7cf2ad" title="Tick 이벤트. " alt="" coords="744,56,903,83"/>
+<area shape="rect" id="node2" href="$class_person___character.html#a7d0f5b22056e049f5a46ca0b2abb91ae" title="사격중 실제 사격에 관한 처리를 함. " alt="" coords="256,77,459,103"/>
+<area shape="rect" id="node3" href="$class_a_i___person.html#aa6625ce68ebad8cdc678c872f41b5944" title="사격 명령이 들어옴. " alt="" coords="525,40,662,81"/>
+<area shape="rect" id="node4" href="$class_person___character.html#ae24a8beecb67858f956a8d163a4d9333" title="사격중 Aim에 관한 처리를 함. " alt="" coords="507,106,680,133"/>
+<area shape="rect" id="node5" href="$class_person___character.html#a37cd54aead0c3783a6a0e47382606216" title="사격 Action 을 처리. " alt="" coords="728,78,919,105"/>
+<area shape="rect" id="node8" href="$class_person___character.html#a49833f356173ccfe8857fcbc8e7cf2ad" title="Tick 이벤트. " alt="" coords="744,133,903,159"/>
+<area shape="rect" id="node6" href="$class_player___person.html#a912c134fda9c35f9bd78d20cf76a7b67" title="사격개시 이벤트. " alt="" coords="967,5,1147,47"/>
+<area shape="rect" id="node7" href="$class_player___person.html#afbf8372d9b3f256e0a55507ed88bcac9" title="사격종료 이벤트. " alt="" coords="967,71,1147,112"/>
+<area shape="rect" id="node9" href="$class_player___person.html#a7219dd86f30bced16e6b570315d9e74f" title="Tick 이벤트. " alt="" coords="987,137,1126,163"/>
 </map>

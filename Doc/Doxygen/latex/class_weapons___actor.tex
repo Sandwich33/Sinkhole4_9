@@ -33,37 +33,37 @@ Collaboration diagram for Weapons\+\_\+\+Actor\+:\nopagebreak
 Construction \hyperlink{class_weapons___actor_a47da85d09a9191edbee8f5454f8a5118}{Script} ()
 \begin{DoxyCompactList}\small\item\em 컨스트럭션 스크립트. \end{DoxyCompactList}\item 
 bool \hyperlink{class_weapons___actor_a386d7f1cdcdd6f989cbd91a4612094c9}{action\+Fire} (bool \+\_\+pressed)
-\item 
+\begin{DoxyCompactList}\small\item\em Weapons 에게 방아쇠를 당겼음을 알려준다. \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_ab19a4d70050baea3347948f457b4316f}{do\+Fire} (Actor \+\_\+demage\+\_\+causer, Hit\+Result \+\_\+hit\+\_\+info)
-\item 
+\begin{DoxyCompactList}\small\item\em 총알에 맞은 엑터에게 데미지를 입힌다. \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_afeff0a9b2ae132677c1f268b305852f0}{get\+Aim} (Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Vector2D \+\_\+screen\+\_\+point)
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 bool \hyperlink{class_weapons___actor_a8fca2bbfe8830abe9feec1ee82565a1e}{delay\+Fire} (float \+\_\+delta\+\_\+seconds)
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 bool \hyperlink{class_weapons___actor_a222c02127cd7ec162e747a382bc3acb9}{on\+Fire} ()
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_a89dec27e708d9944b1f4f17c5b6da210}{create\+Particle} ()
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_a5452db7714a6fd6fc8d4e60387ca1484}{play\+Fire\+Sound} ()
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_a62f4a9add9f4521b19f82e38777fcc85}{get\+Demage\+Actor} (bool \+\_\+in\+\_\+aim\+\_\+data, Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Hit\+Result\mbox{[}$\,$\mbox{]}$\ast$\+\_\+out\+\_\+hit, bool $\ast$\+\_\+return\+\_\+value)
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 int \hyperlink{class_weapons___actor_ab1b1e922088fe0747842df3599dbb7b3}{action\+Reload} (int \+\_\+total\+\_\+bullet)
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_a8b36c9a754942e42e22601add407e257}{on\+Reload\+Animation} ()
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_aad412298d60d3ffd391c1e3b925eb206}{waiting\+Fire} (int \+\_\+delta\+\_\+seconds)
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_a8e5bd4c8a55510f6b7db7674273128fa}{get\+Recoil\+Line} (bool \+\_\+in\+\_\+aim\+\_\+data, Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Vector $\ast$\+\_\+out\+\_\+start\+\_\+location, Vector $\ast$\+\_\+out\+\_\+end\+\_\+location, \+\_\+\+E\+Object\+Type $\ast$\+\_\+object\+\_\+type)
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 Vector \hyperlink{class_weapons___actor_a6963343558cb76d4bf1d2ae105c35bff}{get\+Look\+Vector} ()
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_a0c8b9ce144acf091d45cbb640409f76e}{play\+Reload\+Sound} ()
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 void \hyperlink{class_weapons___actor_a516b61bac1106db521e14a13655a2006}{play\+Zoomin\+Sound} ()
-\item 
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\item 
 float \hyperlink{class_weapons___actor_a4075270dddcd840e6996ce3062acca46}{get\+Aim\+Info} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em //////// \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -111,7 +111,20 @@ float \hyperlink{class_weapons___actor_ae45bc96cd29cd0e41fa28e445495835f}{R\+A\+
 )}\hypertarget{class_weapons___actor_a386d7f1cdcdd6f989cbd91a4612094c9}{}\label{class_weapons___actor_a386d7f1cdcdd6f989cbd91a4612094c9}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Weapons 에게 방아쇠를 당겼음을 알려준다. 
+
+사용자가 발사 버튼을 눌렀음을 Weapons 의 can\+\_\+fire 변수에 알려준다. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pressed} & 키의 상태 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+\_\+pressed 의 값을 그대로 리턴해준다. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -129,7 +142,20 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_ab1b1e922088fe0747842df3599dbb7b3}{}\label{class_weapons___actor_ab1b1e922088fe0747842df3599dbb7b3}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+//////// 
+
+//////// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+total\+\_\+bullet} & //////// \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+--- //////// 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -147,7 +173,12 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_a89dec27e708d9944b1f4f17c5b6da210}{}\label{class_weapons___actor_a89dec27e708d9944b1f4f17c5b6da210}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+//////// 
+
+//////// 
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -165,7 +196,20 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_a8fca2bbfe8830abe9feec1ee82565a1e}{}\label{class_weapons___actor_a8fca2bbfe8830abe9feec1ee82565a1e}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+//////// 
+
+//////// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+\_\+seconds} & //////// \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-- //////// 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -184,7 +228,19 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_ab19a4d70050baea3347948f457b4316f}{}\label{class_weapons___actor_ab19a4d70050baea3347948f457b4316f}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+총알에 맞은 엑터에게 데미지를 입힌다. 
+
+총알에 맞은 엑터에게 데미지 이벤트를 날린다. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+demage\+\_\+durser} & //////// \\
+\hline
+{\em \+\_\+hit\+\_\+info} & //////// \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -204,6 +260,19 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_afeff0a9b2ae132677c1f268b305852f0}{}\label{class_weapons___actor_afeff0a9b2ae132677c1f268b305852f0}
 
 
+//////// 
+
+//////// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+start\+\_\+location} & //////// \\
+\hline
+{\em \+\_\+end\+\_\+location} & //////// \\
+\hline
+{\em \+\_\+screen\+\_\+point} & //////// \\
+\hline
+\end{DoxyParams}
+
+
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -220,6 +289,21 @@ Here is the caller graph for this function\+:\nopagebreak
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{class_weapons___actor_a4075270dddcd840e6996ce3062acca46}{}\label{class_weapons___actor_a4075270dddcd840e6996ce3062acca46}
+
+
+//////// 
+
+//////// 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a4075270dddcd840e6996ce3062acca46_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!get\+Demage\+Actor@{get\+Demage\+Actor}}
 \index{get\+Demage\+Actor@{get\+Demage\+Actor}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
 \subsubsection[{\texorpdfstring{get\+Demage\+Actor(bool \+\_\+in\+\_\+aim\+\_\+data, Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Hit\+Result[]$\ast$\+\_\+out\+\_\+hit, bool $\ast$\+\_\+return\+\_\+value)}{getDemageActor(bool _in_aim_data, Vector _start_location, Vector _end_location, HitResult[]*_out_hit, bool *_return_value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::get\+Demage\+Actor (
@@ -233,7 +317,37 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_a62f4a9add9f4521b19f82e38777fcc85}{}\label{class_weapons___actor_a62f4a9add9f4521b19f82e38777fcc85}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+//////// 
+
+//////// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+in\+\_\+aim\+\_\+data} & //////// \\
+\hline
+{\em \+\_\+start\+\_\+location} & //////// \\
+\hline
+{\em \+\_\+end\+\_\+location} & //////// \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+\_\+out\+\_\+hit //////// 
+
+\+\_\+return\+\_\+value //////// 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a62f4a9add9f4521b19f82e38777fcc85_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -249,6 +363,13 @@ Here is the caller graph for this function\+:\nopagebreak
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{class_weapons___actor_a6963343558cb76d4bf1d2ae105c35bff}{}\label{class_weapons___actor_a6963343558cb76d4bf1d2ae105c35bff}
+
+
+//////// 
+
+//////// \begin{DoxyReturn}{Returns}
+--- //////// 
+\end{DoxyReturn}
 \index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!get\+Recoil\+Line@{get\+Recoil\+Line}}
 \index{get\+Recoil\+Line@{get\+Recoil\+Line}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
 \subsubsection[{\texorpdfstring{get\+Recoil\+Line(bool \+\_\+in\+\_\+aim\+\_\+data, Vector \+\_\+start\+\_\+location, Vector \+\_\+end\+\_\+location, Vector $\ast$\+\_\+out\+\_\+start\+\_\+location, Vector $\ast$\+\_\+out\+\_\+end\+\_\+location, \+\_\+\+E\+Object\+Type $\ast$\+\_\+object\+\_\+type)}{getRecoilLine(bool _in_aim_data, Vector _start_location, Vector _end_location, Vector *_out_start_location, Vector *_out_end_location, _EObjectType *_object_type)}}]{\setlength{\rightskip}{0pt plus 5cm}void Weapons\+\_\+\+Actor\+::get\+Recoil\+Line (
@@ -261,6 +382,37 @@ Here is the caller graph for this function\+:\nopagebreak
 \item[{\+\_\+\+E\+Object\+Type $\ast$}]{\+\_\+object\+\_\+type}
 \end{DoxyParamCaption}
 )}\hypertarget{class_weapons___actor_a8e5bd4c8a55510f6b7db7674273128fa}{}\label{class_weapons___actor_a8e5bd4c8a55510f6b7db7674273128fa}
+
+
+//////// 
+
+//////// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+in\+\_\+aim\+\_\+data} & //////// \\
+\hline
+{\em \+\_\+start\+\_\+location} & //////// \\
+\hline
+{\em \+\_\+end\+\_\+location} & //////// \\
+\hline
+{\em \+\_\+out\+\_\+start\+\_\+location} & //////// \\
+\hline
+{\em \+\_\+out\+\_\+end\+\_\+location} & //////// \\
+\hline
+{\em \+\_\+object\+\_\+type} & //////// \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapons___actor_a8e5bd4c8a55510f6b7db7674273128fa_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}!on\+Fire@{on\+Fire}}
 \index{on\+Fire@{on\+Fire}!Weapons\+\_\+\+Actor@{Weapons\+\_\+\+Actor}}
 \subsubsection[{\texorpdfstring{on\+Fire()}{onFire()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Weapons\+\_\+\+Actor\+::on\+Fire (
@@ -270,7 +422,15 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_a222c02127cd7ec162e747a382bc3acb9}{}\label{class_weapons___actor_a222c02127cd7ec162e747a382bc3acb9}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+//////// 
+
+//////// \begin{DoxyReturn}{Returns}
+-- //////// 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -288,7 +448,12 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_a8b36c9a754942e42e22601add407e257}{}\label{class_weapons___actor_a8b36c9a754942e42e22601add407e257}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+//////// 
+
+//////// 
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -306,7 +471,12 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_a5452db7714a6fd6fc8d4e60387ca1484}{}\label{class_weapons___actor_a5452db7714a6fd6fc8d4e60387ca1484}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+//////// 
+
+//////// 
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -324,7 +494,12 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\hypertarget{class_weapons___actor_a0c8b9ce144acf091d45cbb640409f76e}{}\label{class_weapons___actor_a0c8b9ce144acf091d45cbb640409f76e}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+//////// 
+
+//////// 
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -341,6 +516,10 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{DoxyParamCaption}
 )}\hypertarget{class_weapons___actor_a516b61bac1106db521e14a13655a2006}{}\label{class_weapons___actor_a516b61bac1106db521e14a13655a2006}
 
+
+//////// 
+
+//////// 
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -371,7 +550,17 @@ Zoom\+Camera 의 위치를 잡아준다. \index{Weapons\+\_\+\+Actor@{Weapons\+\
 )}\hypertarget{class_weapons___actor_aad412298d60d3ffd391c1e3b925eb206}{}\label{class_weapons___actor_aad412298d60d3ffd391c1e3b925eb206}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+//////// 
+
+//////// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+\_\+seconds} & //////// \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

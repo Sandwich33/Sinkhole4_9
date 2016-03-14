@@ -2,15 +2,21 @@
 \label{class_a_i___person}\index{A\+I\+\_\+\+Person@{A\+I\+\_\+\+Person}}
 
 
+AI 팀원 클래스.  
+
+
+
+
 {\ttfamily \#include $<$A\+I\+\_\+\+Person.\+h$>$}
 
 
 
-Inheritance diagram for A\+I\+\_\+\+Person\+:\nopagebreak
+Inheritance diagram for A\+I\+\_\+\+Person\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_a_i___person__inherit__graph}
+\includegraphics[height=550pt]{class_a_i___person__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -25,10 +31,19 @@ Collaboration diagram for A\+I\+\_\+\+Person\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+Event\+Graph \hyperlink{class_a_i___person_a4d637f505caf3a5e7abf665986b5e8d2}{Tick} (float Delta\+Seconds)
+\begin{DoxyCompactList}\small\item\em Tick 이벤트. \end{DoxyCompactList}\item 
 void \hyperlink{class_a_i___person_aa6625ce68ebad8cdc678c872f41b5944}{action\+A\+I\+\_\+\+On\+File} (float \+\_\+delta\+\_\+seconds, Vector \+\_\+end\+\_\+location, Object \+\_\+get\+\_\+object)
-\begin{DoxyCompactList}\small\item\em 대 제목??? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 사격 명령이 들어옴. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_i___person_a21ffa62d7f7c59a7c8a496c5012ef721}{action\+A\+I\+\_\+\+Reload} ()
+\begin{DoxyCompactList}\small\item\em 재장전 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+AI 팀원 클래스. 
+
+.... 
 
 \subsection{Member Function Documentation}
 \index{A\+I\+\_\+\+Person@{A\+I\+\_\+\+Person}!action\+A\+I\+\_\+\+On\+File@{action\+A\+I\+\_\+\+On\+File}}
@@ -42,12 +57,80 @@ void \hyperlink{class_a_i___person_aa6625ce68ebad8cdc678c872f41b5944}{action\+A\
 )}\hypertarget{class_a_i___person_aa6625ce68ebad8cdc678c872f41b5944}{}\label{class_a_i___person_aa6625ce68ebad8cdc678c872f41b5944}
 
 
-대 제목??? 
+사격 명령이 들어옴. 
 
-내용
-
-줄바꿔 내용 
+AI 처리 블루프린트에서 사격 명령(이벤트)를 실행. 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+delta\+\_\+seconds} & 는 어쩌구다 \\
+{\em \+\_\+delta\+\_\+seconds} & 프레임간 시간 간격 \\
+\hline
+{\em \+\_\+end\+\_\+location} & 사격 포인트 \\
+\hline
+{\em \+\_\+get\+\_\+object} & 사격대상 \\
 \hline
 \end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_i___person_aa6625ce68ebad8cdc678c872f41b5944_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{A\+I\+\_\+\+Person@{A\+I\+\_\+\+Person}!action\+A\+I\+\_\+\+Reload@{action\+A\+I\+\_\+\+Reload}}
+\index{action\+A\+I\+\_\+\+Reload@{action\+A\+I\+\_\+\+Reload}!A\+I\+\_\+\+Person@{A\+I\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{action\+A\+I\+\_\+\+Reload()}{actionAI_Reload()}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+I\+\_\+\+Person\+::action\+A\+I\+\_\+\+Reload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_a_i___person_a21ffa62d7f7c59a7c8a496c5012ef721}{}\label{class_a_i___person_a21ffa62d7f7c59a7c8a496c5012ef721}
+
+
+재장전 
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_i___person_a21ffa62d7f7c59a7c8a496c5012ef721_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{A\+I\+\_\+\+Person@{A\+I\+\_\+\+Person}!Tick@{Tick}}
+\index{Tick@{Tick}!A\+I\+\_\+\+Person@{A\+I\+\_\+\+Person}}
+\subsubsection[{\texorpdfstring{Tick(float Delta\+Seconds)}{Tick(float DeltaSeconds)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph A\+I\+\_\+\+Person\+::\+Tick (
+\begin{DoxyParamCaption}
+\item[{float}]{Delta\+Seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{class_a_i___person_a4d637f505caf3a5e7abf665986b5e8d2}{}\label{class_a_i___person_a4d637f505caf3a5e7abf665986b5e8d2}
+
+
+Tick 이벤트. 
+
+매 프레임마다 실행되는 이벤트.
+
+총을 쏘고 있는 중인지 체크한다.
+
+디버깅용 Hp Bar를 표시한다. 
+\begin{DoxyParams}[1]{Parameters}
+\textquotesingle{}https\+://docs.\+unrealengine.\+com/latest/\+K\+O\+R/\+Engine/\+Blueprints/\+User\+Guide/\+Events/index.\+html & {\em eventtick\textquotesingle{}} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_a_i___person_a4d637f505caf3a5e7abf665986b5e8d2_cgraph}
+\end{center}
+\end{figure}
+
+

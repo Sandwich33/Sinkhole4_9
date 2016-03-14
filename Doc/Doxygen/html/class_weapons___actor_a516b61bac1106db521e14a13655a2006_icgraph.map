@@ -1,3 +1,4 @@
 <map id="Weapons_Actor::playZoominSound" name="Weapons_Actor::playZoominSound">
 <area shape="rect" id="node2" href="$class_person___character.html#a5cb52252ac24772509d8277dd45ea16c" title="정조준 Action 을 처리. " alt="" coords="243,5,412,47"/>
+<area shape="rect" id="node3" href="$class_player___person.html#ab4e2db16a377d6ebd2c229ae2d7bce16" title="정조준 이벤트. " alt="" coords="460,5,640,47"/>
 </map>

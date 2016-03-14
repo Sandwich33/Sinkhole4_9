@@ -1,0 +1,7 @@
+<map id="Player_Person::InputAction_Ironsights_Pressed" name="Player_Person::InputAction_Ironsights_Pressed">
+<area shape="rect" id="node2" href="$class_person___character.html#a5cb52252ac24772509d8277dd45ea16c" title="정조준 Action 을 처리. " alt="" coords="239,5,408,47"/>
+<area shape="rect" id="node4" href="$class_player___person.html#a2719b6d6bb77d38be7cf5e5f677ade24" title="카메라 위치 선정. " alt="" coords="461,71,659,98"/>
+<area shape="rect" id="node5" href="$class_player___person.html#a5b3eac9c463f0abddf7de0052bbee6b1" title="달리기 이벤트. " alt="" coords="233,123,413,164"/>
+<area shape="rect" id="node3" href="$class_weapons___actor.html#a516b61bac1106db521e14a13655a2006" title="//////// " alt="" coords="465,5,655,47"/>
+<area shape="rect" id="node6" href="$class_person___character.html#af2570b18cab60a6967ea9572afd34392" title="달리는 Action 을 처리. " alt="" coords="475,123,645,164"/>
+</map>

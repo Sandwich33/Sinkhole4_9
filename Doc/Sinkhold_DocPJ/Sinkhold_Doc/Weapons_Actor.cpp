@@ -2,11 +2,9 @@
 #include "Weapons_Actor.h"
 
 
-Weapons_Actor::Weapons_Actor()
+void Weapons_Actor::getDemageActor(bool _in_aim_data, Vector _start_location, Vector _end_location, HitResult[] * _out_hit, bool *_return_value)
 {
+	getRecoilLine();
+
 }
 
-
-Weapons_Actor::~Weapons_Actor()
-{
-}

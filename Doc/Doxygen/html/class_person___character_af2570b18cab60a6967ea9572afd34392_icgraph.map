@@ -1,0 +1,5 @@
+<map id="Person_Character::actionSprint" name="Person_Character::actionSprint">
+<area shape="rect" id="node2" href="$class_player___person.html#a9fb9f094c0ef83ed87e477e7e91f27e3" title="달리기 이벤트. " alt="" coords="223,5,403,47"/>
+<area shape="rect" id="node3" href="$class_player___person.html#a5b3eac9c463f0abddf7de0052bbee6b1" title="달리기 이벤트. " alt="" coords="223,71,403,112"/>
+<area shape="rect" id="node4" href="$class_player___person.html#ab4e2db16a377d6ebd2c229ae2d7bce16" title="정조준 이벤트. " alt="" coords="451,71,631,112"/>
+</map>
