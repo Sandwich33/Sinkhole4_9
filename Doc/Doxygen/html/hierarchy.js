@@ -17,6 +17,7 @@ var hierarchy =
     [ "Weapons_Actor", "class_weapons___actor.html", [
       [ "AWP_Weapons", "class_a_w_p___weapons.html", null ],
       [ "M4A1_Weapons", "class_m4_a1___weapons.html", null ],
-      [ "ShotGun_Weapons", "class_shot_gun___weapons.html", null ]
+      [ "ShotGun_Weapons", "class_shot_gun___weapons.html", null ],
+      [ "ShotGunWeapons", "class_shot_gun_weapons.html", null ]
     ] ]
 ];

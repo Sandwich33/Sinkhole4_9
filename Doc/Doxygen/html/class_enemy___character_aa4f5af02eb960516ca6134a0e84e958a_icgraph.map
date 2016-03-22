@@ -1,0 +1,3 @@
+<map id="Enemy_Character::alarmGettingAttacked" name="Enemy_Character::alarmGettingAttacked">
+<area shape="rect" id="node2" href="$class_enemy___character.html#ae989f213471b46262de4e372ecbe5c63" title="데미지 처리 이벤트. " alt="" coords="261,13,467,39"/>
+</map>

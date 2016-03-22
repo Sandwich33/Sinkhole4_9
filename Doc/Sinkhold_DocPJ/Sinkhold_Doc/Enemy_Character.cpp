@@ -2,11 +2,8 @@
 #include "Enemy_Character.h"
 
 
-Enemy_Character::Enemy_Character()
-{
-}
-
-
-Enemy_Character::~Enemy_Character()
-{
+EventGraph Enemy_Character::AnyDamage(float Damage, Object DamageType, Actor InstigatedBy, Actor DamageCauser){
+	isTeamKill();
+	onDie();
+	alarmGettingAttacked();
 }

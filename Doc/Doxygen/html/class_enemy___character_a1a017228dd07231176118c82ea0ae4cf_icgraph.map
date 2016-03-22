@@ -1,0 +1,3 @@
+<map id="Enemy_Character::onDie" name="Enemy_Character::onDie">
+<area shape="rect" id="node2" href="$class_enemy___character.html#ae989f213471b46262de4e372ecbe5c63" title="데미지 처리 이벤트. " alt="" coords="220,5,425,32"/>
+</map>

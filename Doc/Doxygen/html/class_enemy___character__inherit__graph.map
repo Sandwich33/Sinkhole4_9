@@ -1,6 +1,6 @@
 <map id="Enemy_Character" name="Enemy_Character">
-<area shape="rect" id="node2" href="$class_bear___enemy.html" title="{Bear_Enemy\n||+ Bear_Enemy()\l+ ~Bear_Enemy()\l}" alt="" coords="5,145,131,237"/>
-<area shape="rect" id="node3" href="$class_giant___enemy.html" title="{Giant_Enemy\n||+ Giant_Enemy()\l+ ~Giant_Enemy()\l}" alt="" coords="155,145,285,237"/>
-<area shape="rect" id="node4" href="$class_spider___enemy.html" title="{Spider_Enemy\n||+ Spider_Enemy()\l+ ~Spider_Enemy()\l}" alt="" coords="309,145,443,237"/>
-<area shape="rect" id="node5" href="$class_wolf___enemy.html" title="{Wolf_Enemy\n||+ Wolf_Enemy()\l+ ~Wolf_Enemy()\l}" alt="" coords="467,145,591,237"/>
+<area shape="rect" id="node2" href="$class_bear___enemy.html" title="{Bear_Enemy\n||+ Bear_Enemy()\l+ ~Bear_Enemy()\l}" alt="" coords="5,365,131,457"/>
+<area shape="rect" id="node3" href="$class_giant___enemy.html" title="{Giant_Enemy\n||+ Giant_Enemy()\l+ ~Giant_Enemy()\l}" alt="" coords="155,365,285,457"/>
+<area shape="rect" id="node4" href="$class_spider___enemy.html" title="{Spider_Enemy\n||+ Spider_Enemy()\l+ ~Spider_Enemy()\l}" alt="" coords="309,365,443,457"/>
+<area shape="rect" id="node5" href="$class_wolf___enemy.html" title="{Wolf_Enemy\n||+ Wolf_Enemy()\l+ ~Wolf_Enemy()\l}" alt="" coords="467,365,591,457"/>
 </map>

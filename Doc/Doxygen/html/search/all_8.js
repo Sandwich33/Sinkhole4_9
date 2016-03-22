@@ -21,5 +21,5 @@ var searchData=
   ['inputaction_5fturn',['InputAction_Turn',['../class_player___person.html#a95d1ad3a1cc2e766d8d20816b625b8c0',1,'Player_Person']]],
   ['ironsights_5fpressed',['Ironsights_pressed',['../class_person___character.html#a396ae4ccdc46544ebd28130bec8a46ea',1,'Person_Character']]],
   ['is_5fplay_5freload',['is_play_reload',['../class_person___character.html#af129a2f5b6da8448d8ee036761b9b737',1,'Person_Character']]],
-  ['isteamkill',['isTeamKill',['../class_person___character.html#ab255a951f0403e71fac4d2660b692204',1,'Person_Character']]]
+  ['isteamkill',['isTeamKill',['../class_enemy___character.html#a05b0072de08ac991ff3bc139c4be350f',1,'Enemy_Character::isTeamKill()'],['../class_person___character.html#ab255a951f0403e71fac4d2660b692204',1,'Person_Character::isTeamKill()']]]
 ];

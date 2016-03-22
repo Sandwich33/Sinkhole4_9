@@ -9,11 +9,12 @@ var searchData=
   ['actionreload',['actionReload',['../class_person___character.html#a593f0cb97f1f20e42c4ac6642f7dcefe',1,'Person_Character::actionReload()'],['../class_weapons___actor.html#ab1b1e922088fe0747842df3599dbb7b3',1,'Weapons_Actor::actionReload()']]],
   ['actionsprint',['actionSprint',['../class_person___character.html#af2570b18cab60a6967ea9572afd34392',1,'Person_Character']]],
   ['ai_5fperson',['AI_Person',['../class_a_i___person.html',1,'']]],
+  ['alarmgettingattacked',['alarmGettingAttacked',['../class_enemy___character.html#aa4f5af02eb960516ca6134a0e84e958a',1,'Enemy_Character']]],
   ['anim_5fdeath',['Anim_Death',['../class_person___character.html#a9e4810e11470421fc099e96537fa1de7',1,'Person_Character']]],
   ['anim_5ffire',['Anim_Fire',['../class_person___character.html#a226fe0bb104ba89be5c1eabfa3b7b74a',1,'Person_Character']]],
   ['anim_5freload',['Anim_Reload',['../class_person___character.html#aab5d72e6f9818ddea6da9517217851d9',1,'Person_Character']]],
-  ['anydamage',['AnyDamage',['../class_person___character.html#a7e5f3df07b9a156ad0eceb1f6c8e615c',1,'Person_Character']]],
-  ['applydemage',['applyDemage',['../class_person___character.html#af2ac7f312634c0f8c2c889cd7dd55c01',1,'Person_Character']]],
-  ['awp_5fai_5fperson',['AWP_AI_Person',['../class_a_w_p___a_i___person.html',1,'AWP_AI_Person'],['../class_a_w_p___a_i___person.html#a90c8dc4ce858341203965f1dfac61aa8',1,'AWP_AI_Person::AWP_AI_Person()']]],
+  ['anydamage',['AnyDamage',['../class_enemy___character.html#ae989f213471b46262de4e372ecbe5c63',1,'Enemy_Character::AnyDamage()'],['../class_person___character.html#a7e5f3df07b9a156ad0eceb1f6c8e615c',1,'Person_Character::AnyDamage()']]],
+  ['applydemage',['applyDemage',['../class_enemy___character.html#acb2526ab98b23f7928215895caf0532c',1,'Enemy_Character::applyDemage()'],['../class_person___character.html#af2ac7f312634c0f8c2c889cd7dd55c01',1,'Person_Character::applyDemage()']]],
+  ['awp_5fai_5fperson',['AWP_AI_Person',['../class_a_w_p___a_i___person.html',1,'']]],
   ['awp_5fweapons',['AWP_Weapons',['../class_a_w_p___weapons.html',1,'']]]
 ];

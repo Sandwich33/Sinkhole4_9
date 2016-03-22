@@ -1,7 +1,7 @@
 <map id="Person_Character" name="Person_Character">
-<area shape="rect" id="node2" href="$class_a_i___person.html" title="AI 팀원 클래스. " alt="" coords="185,717,321,824"/>
-<area shape="rect" id="node6" href="$class_player___person.html" title="플레이어 클래스. " alt="" coords="345,644,545,897"/>
-<area shape="rect" id="node3" href="$class_a_w_p___a_i___person.html" title="AI 팀원 중 스나이퍼에 알맞게 설정. " alt="" coords="5,945,153,1037"/>
-<area shape="rect" id="node4" href="$class_m4_a1___a_i___person.html" title="AI 팀원 중 M4A1에 알맞게 설정. " alt="" coords="177,945,328,1037"/>
-<area shape="rect" id="node5" href="$class_shotgun___a_i___person.html" title="AI 팀원 중 샷건에 알맞게 설정. " alt="" coords="353,945,518,1037"/>
+<area shape="rect" id="node2" href="$class_a_i___person.html" title="AI 팀원 클래스. " alt="" coords="143,717,279,824"/>
+<area shape="rect" id="node6" href="$class_player___person.html" title="플레이어 클래스. " alt="" coords="303,644,503,897"/>
+<area shape="rect" id="node3" href="$class_a_w_p___a_i___person.html" title="AI 팀원 중 스나이퍼에 알맞게 설정. " alt="" coords="5,945,125,1023"/>
+<area shape="rect" id="node4" href="$class_m4_a1___a_i___person.html" title="AI 팀원 중 M4A1에 알맞게 설정. " alt="" coords="149,945,272,1023"/>
+<area shape="rect" id="node5" href="$class_shotgun___a_i___person.html" title="AI 팀원 중 샷건에 알맞게 설정. " alt="" coords="297,945,434,1023"/>
 </map>

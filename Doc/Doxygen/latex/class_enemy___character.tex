@@ -2,11 +2,17 @@
 \label{class_enemy___character}\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
 
 
+적 기본 클래스.  
+
+
+
+
 {\ttfamily \#include $<$Enemy\+\_\+\+Character.\+h$>$}
 
 
 
-Inheritance diagram for Enemy\+\_\+\+Character\+:\nopagebreak
+Inheritance diagram for Enemy\+\_\+\+Character\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,34 +21,369 @@ Inheritance diagram for Enemy\+\_\+\+Character\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Enemy\+\_\+\+Character\+:\nopagebreak
+Collaboration diagram for Enemy\+\_\+\+Character\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=196pt]{class_enemy___character__coll__graph}
+\includegraphics[width=206pt]{class_enemy___character__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_enemy___character_a8f2645da86add0f1bc40418eea38b486}{Enemy\+\_\+\+Character} ()
+Construction \hyperlink{class_enemy___character_a96c9dc103aa4bcb4ee3a5c8d6dfe340b}{Script} ()
+\begin{DoxyCompactList}\small\item\em 컨스트럭션 스크립트. \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_enemy___character_ae989f213471b46262de4e372ecbe5c63}{Any\+Damage} (float Damage, Object Damage\+Type, Actor Instigated\+By, Actor Damage\+Causer)
+\begin{DoxyCompactList}\small\item\em 데미지 처리 이벤트. \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_a1a017228dd07231176118c82ea0ae4cf}{on\+Die} ()
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_abf821a2be938d0686caf45fa6c738af7}{set\+Can\+Attack} (bool \+\_\+can\+\_\+attack)
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_a74b04f0f28f9122e6474da8ae03abe57}{hit\+Attack} (Hit\+Result \+\_\+hit, Actor \+\_\+other\+\_\+actor)
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_acafb348c1628d5a141d161c03189b4fe}{on\+Attack} ()
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_aa4f5af02eb960516ca6134a0e84e958a}{alarm\+Getting\+Attacked} (Actor \+\_\+demage\+Causer)
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_af291c216d2d7ce2c83e71cb151cf13ee}{receive\+Attack\+Alarm} (Actor \+\_\+demage\+Causer)
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_a8c8cc52e86cc963f5655b148bd39d27a}{play\+Attack\+Sound} ()
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_a7e4f2603e52f32f5823ec13e3bfea030}{play\+Die\+Sound} ()
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_ada6e551c65c0dd91b7e8342036406e7a}{play\+Attack\+Sound2} ()
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy___character_a0cf94922a5d6b054efaa3a37ec4557e6}{play\+Attack\+Sound3} ()
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+Macros \hyperlink{class_enemy___character_a05b0072de08ac991ff3bc139c4be350f}{is\+Team\+Kill} (bool \+\_\+can\+\_\+teamkill, Actor \+\_\+demage\+\_\+curser)
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\item 
+Macros \hyperlink{class_enemy___character_acb2526ab98b23f7928215895caf0532c}{apply\+Demage} (bool \+\_\+demage)
+\begin{DoxyCompactList}\small\item\em ..... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_enemy___character_a7ce5437123b8f9fd4f30aafa263709a2}{$\sim$\+Enemy\+\_\+\+Character} ()
+float \hyperlink{class_enemy___character_af249f722b34df3e44a6fe14330b99bd4}{hp}
+\item 
+float \hyperlink{class_enemy___character_aea87cbc161a3dca85393f7da1e4ae923}{D\+E\+M\+A\+GE}
+\item 
+float \hyperlink{class_enemy___character_a610d52a2f58f031c193b02f36ccaa5e2}{M\+A\+X\+\_\+\+HP}
+\item 
+bool \hyperlink{class_enemy___character_af40d81990cc8500236418d252857ada0}{can\+\_\+attack}
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
-\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
-\subsubsection[{\texorpdfstring{Enemy\+\_\+\+Character()}{Enemy_Character()}}]{\setlength{\rightskip}{0pt plus 5cm}Enemy\+\_\+\+Character\+::\+Enemy\+\_\+\+Character (
+\subsection{Detailed Description}
+적 기본 클래스. 
+
+모든 적들은 해당 클래스를 부모 클래스로 가진다. 
+
+\subsection{Member Function Documentation}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!alarm\+Getting\+Attacked@{alarm\+Getting\+Attacked}}
+\index{alarm\+Getting\+Attacked@{alarm\+Getting\+Attacked}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{alarm\+Getting\+Attacked(\+Actor \+\_\+demage\+Causer)}{alarmGettingAttacked(Actor _demageCauser)}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::alarm\+Getting\+Attacked (
+\begin{DoxyParamCaption}
+\item[{Actor}]{\+\_\+demage\+Causer}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_aa4f5af02eb960516ca6134a0e84e958a}{}\label{class_enemy___character_aa4f5af02eb960516ca6134a0e84e958a}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy___character_aa4f5af02eb960516ca6134a0e84e958a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!Any\+Damage@{Any\+Damage}}
+\index{Any\+Damage@{Any\+Damage}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{Any\+Damage(float Damage, Object Damage\+Type, Actor Instigated\+By, Actor Damage\+Causer)}{AnyDamage(float Damage, Object DamageType, Actor InstigatedBy, Actor DamageCauser)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Enemy\+\_\+\+Character\+::\+Any\+Damage (
+\begin{DoxyParamCaption}
+\item[{float}]{Damage, }
+\item[{Object}]{Damage\+Type, }
+\item[{Actor}]{Instigated\+By, }
+\item[{Actor}]{Damage\+Causer}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_ae989f213471b46262de4e372ecbe5c63}{}\label{class_enemy___character_ae989f213471b46262de4e372ecbe5c63}
+
+
+데미지 처리 이벤트. 
+
+어떠한 종류의 데미지라도 데미지를 입는다면 들어오는 이벤트다.
+
+팀킬 가능 여부를 체크한 뒤 Demage를 Hp에 적용한다.
+
+데미지 처리 후 죽을 경우 적절한 애니메이션을 실행한다.
+
+주변 동료들에게 공격받은 사실을 알림. 
+\begin{DoxyParams}[1]{Parameters}
+\textquotesingle{}https\+://docs.\+unrealengine.\+com/latest/\+K\+O\+R/\+Engine/\+Blueprints/\+User\+Guide/\+Events/index.\+html & {\em eventanydamage\textquotesingle{}} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy___character_ae989f213471b46262de4e372ecbe5c63_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!apply\+Demage@{apply\+Demage}}
+\index{apply\+Demage@{apply\+Demage}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{apply\+Demage(bool \+\_\+demage)}{applyDemage(bool _demage)}}]{\setlength{\rightskip}{0pt plus 5cm}Macros Enemy\+\_\+\+Character\+::apply\+Demage (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+demage}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_acb2526ab98b23f7928215895caf0532c}{}\label{class_enemy___character_acb2526ab98b23f7928215895caf0532c}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!hit\+Attack@{hit\+Attack}}
+\index{hit\+Attack@{hit\+Attack}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{hit\+Attack(\+Hit\+Result \+\_\+hit, Actor \+\_\+other\+\_\+actor)}{hitAttack(HitResult _hit, Actor _other_actor)}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::hit\+Attack (
+\begin{DoxyParamCaption}
+\item[{Hit\+Result}]{\+\_\+hit, }
+\item[{Actor}]{\+\_\+other\+\_\+actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_a74b04f0f28f9122e6474da8ae03abe57}{}\label{class_enemy___character_a74b04f0f28f9122e6474da8ae03abe57}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!is\+Team\+Kill@{is\+Team\+Kill}}
+\index{is\+Team\+Kill@{is\+Team\+Kill}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{is\+Team\+Kill(bool \+\_\+can\+\_\+teamkill, Actor \+\_\+demage\+\_\+curser)}{isTeamKill(bool _can_teamkill, Actor _demage_curser)}}]{\setlength{\rightskip}{0pt plus 5cm}Macros Enemy\+\_\+\+Character\+::is\+Team\+Kill (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+can\+\_\+teamkill, }
+\item[{Actor}]{\+\_\+demage\+\_\+curser}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_a05b0072de08ac991ff3bc139c4be350f}{}\label{class_enemy___character_a05b0072de08ac991ff3bc139c4be350f}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy___character_a05b0072de08ac991ff3bc139c4be350f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!on\+Attack@{on\+Attack}}
+\index{on\+Attack@{on\+Attack}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{on\+Attack()}{onAttack()}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::on\+Attack (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\hypertarget{class_enemy___character_a8f2645da86add0f1bc40418eea38b486}{}\label{class_enemy___character_a8f2645da86add0f1bc40418eea38b486}
-\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!````~Enemy\+\_\+\+Character@{$\sim$\+Enemy\+\_\+\+Character}}
-\index{````~Enemy\+\_\+\+Character@{$\sim$\+Enemy\+\_\+\+Character}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
-\subsubsection[{\texorpdfstring{$\sim$\+Enemy\+\_\+\+Character()}{~Enemy_Character()}}]{\setlength{\rightskip}{0pt plus 5cm}Enemy\+\_\+\+Character\+::$\sim$\+Enemy\+\_\+\+Character (
+)}\hypertarget{class_enemy___character_acafb348c1628d5a141d161c03189b4fe}{}\label{class_enemy___character_acafb348c1628d5a141d161c03189b4fe}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!on\+Die@{on\+Die}}
+\index{on\+Die@{on\+Die}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{on\+Die()}{onDie()}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::on\+Die (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\hypertarget{class_enemy___character_a7ce5437123b8f9fd4f30aafa263709a2}{}\label{class_enemy___character_a7ce5437123b8f9fd4f30aafa263709a2}
+)}\hypertarget{class_enemy___character_a1a017228dd07231176118c82ea0ae4cf}{}\label{class_enemy___character_a1a017228dd07231176118c82ea0ae4cf}
+
+
+..... 
+
+///// 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy___character_a1a017228dd07231176118c82ea0ae4cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!play\+Attack\+Sound@{play\+Attack\+Sound}}
+\index{play\+Attack\+Sound@{play\+Attack\+Sound}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{play\+Attack\+Sound()}{playAttackSound()}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::play\+Attack\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_a8c8cc52e86cc963f5655b148bd39d27a}{}\label{class_enemy___character_a8c8cc52e86cc963f5655b148bd39d27a}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!play\+Attack\+Sound2@{play\+Attack\+Sound2}}
+\index{play\+Attack\+Sound2@{play\+Attack\+Sound2}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{play\+Attack\+Sound2()}{playAttackSound2()}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::play\+Attack\+Sound2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_ada6e551c65c0dd91b7e8342036406e7a}{}\label{class_enemy___character_ada6e551c65c0dd91b7e8342036406e7a}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!play\+Attack\+Sound3@{play\+Attack\+Sound3}}
+\index{play\+Attack\+Sound3@{play\+Attack\+Sound3}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{play\+Attack\+Sound3()}{playAttackSound3()}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::play\+Attack\+Sound3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_a0cf94922a5d6b054efaa3a37ec4557e6}{}\label{class_enemy___character_a0cf94922a5d6b054efaa3a37ec4557e6}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!play\+Die\+Sound@{play\+Die\+Sound}}
+\index{play\+Die\+Sound@{play\+Die\+Sound}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{play\+Die\+Sound()}{playDieSound()}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::play\+Die\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_a7e4f2603e52f32f5823ec13e3bfea030}{}\label{class_enemy___character_a7e4f2603e52f32f5823ec13e3bfea030}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!receive\+Attack\+Alarm@{receive\+Attack\+Alarm}}
+\index{receive\+Attack\+Alarm@{receive\+Attack\+Alarm}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{receive\+Attack\+Alarm(\+Actor \+\_\+demage\+Causer)}{receiveAttackAlarm(Actor _demageCauser)}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::receive\+Attack\+Alarm (
+\begin{DoxyParamCaption}
+\item[{Actor}]{\+\_\+demage\+Causer}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_af291c216d2d7ce2c83e71cb151cf13ee}{}\label{class_enemy___character_af291c216d2d7ce2c83e71cb151cf13ee}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hit} & //// \\
+\hline
+{\em \+\_\+other\+\_\+actor} & /// \\
+\hline
+\end{DoxyParams}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!Script@{Script}}
+\index{Script@{Script}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{Script()}{Script()}}]{\setlength{\rightskip}{0pt plus 5cm}Construction Enemy\+\_\+\+Character\+::\+Script (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_a96c9dc103aa4bcb4ee3a5c8d6dfe340b}{}\label{class_enemy___character_a96c9dc103aa4bcb4ee3a5c8d6dfe340b}
+
+
+컨스트럭션 스크립트. 
+
+HP 초기화
+
+태그(\char`\"{}\+Enemy\char`\"{}) 추가 \index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!set\+Can\+Attack@{set\+Can\+Attack}}
+\index{set\+Can\+Attack@{set\+Can\+Attack}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{set\+Can\+Attack(bool \+\_\+can\+\_\+attack)}{setCanAttack(bool _can_attack)}}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+\_\+\+Character\+::set\+Can\+Attack (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+can\+\_\+attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_enemy___character_abf821a2be938d0686caf45fa6c738af7}{}\label{class_enemy___character_abf821a2be938d0686caf45fa6c738af7}
+
+
+..... 
+
+///// 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+can\+\_\+attack} & 공격 가능/불가능 상태 세팅. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!can\+\_\+attack@{can\+\_\+attack}}
+\index{can\+\_\+attack@{can\+\_\+attack}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{can\+\_\+attack}{can_attack}}]{\setlength{\rightskip}{0pt plus 5cm}bool Enemy\+\_\+\+Character\+::can\+\_\+attack}\hypertarget{class_enemy___character_af40d81990cc8500236418d252857ada0}{}\label{class_enemy___character_af40d81990cc8500236418d252857ada0}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!D\+E\+M\+A\+GE@{D\+E\+M\+A\+GE}}
+\index{D\+E\+M\+A\+GE@{D\+E\+M\+A\+GE}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{D\+E\+M\+A\+GE}{DEMAGE}}]{\setlength{\rightskip}{0pt plus 5cm}float Enemy\+\_\+\+Character\+::\+D\+E\+M\+A\+GE}\hypertarget{class_enemy___character_aea87cbc161a3dca85393f7da1e4ae923}{}\label{class_enemy___character_aea87cbc161a3dca85393f7da1e4ae923}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!hp@{hp}}
+\index{hp@{hp}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{hp}{hp}}]{\setlength{\rightskip}{0pt plus 5cm}float Enemy\+\_\+\+Character\+::hp}\hypertarget{class_enemy___character_af249f722b34df3e44a6fe14330b99bd4}{}\label{class_enemy___character_af249f722b34df3e44a6fe14330b99bd4}
+\index{Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}!M\+A\+X\+\_\+\+HP@{M\+A\+X\+\_\+\+HP}}
+\index{M\+A\+X\+\_\+\+HP@{M\+A\+X\+\_\+\+HP}!Enemy\+\_\+\+Character@{Enemy\+\_\+\+Character}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+HP}{MAX_HP}}]{\setlength{\rightskip}{0pt plus 5cm}float Enemy\+\_\+\+Character\+::\+M\+A\+X\+\_\+\+HP}\hypertarget{class_enemy___character_a610d52a2f58f031c193b02f36ccaa5e2}{}\label{class_enemy___character_a610d52a2f58f031c193b02f36ccaa5e2}
