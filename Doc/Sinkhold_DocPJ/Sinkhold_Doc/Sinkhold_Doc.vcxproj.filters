@@ -69,6 +69,39 @@
     <ClInclude Include="ShotGun_Weapons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EnemyBlackboard_Blackboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Approach_BTTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseEnoughForMeleeAttack_BTDecorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseEnoughForRangedAttack_BTDecorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyAttack_BTTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GiantApproach_BTTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GiantCloseEnoughForRangedAttack_BTDecorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GiantMeleeAttack_BTTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GiantRangedAttack_BTTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanPersonCharacters_BTService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetRandomDestination_BTService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sinkhold_Doc.cpp">
@@ -117,6 +150,39 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Wolf_Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBlackboard_Blackboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Approach_BTTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseEnoughForMeleeAttack_BTDecorator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseEnoughForRangedAttack_BTDecorator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyAttack_BTTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GiantApproach_BTTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GiantCloseEnoughForRangedAttack_BTDecorator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GiantMeleeAttack_BTTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GiantRangedAttack_BTTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanPersonCharacters_BTService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetRandomDestination_BTService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,5 +1,24 @@
 var hierarchy =
 [
+    [ "Blackboard", null, [
+      [ "EnemyBlackboard_Blackboard", "class_enemy_blackboard___blackboard.html", null ]
+    ] ],
+    [ "BTDecorator", null, [
+      [ "CloseEnoughForMeleeAttack_BTDecorator", "class_close_enough_for_melee_attack___b_t_decorator.html", null ],
+      [ "CloseEnoughForRangedAttack_BTDecorator", "class_close_enough_for_ranged_attack___b_t_decorator.html", null ],
+      [ "GiantCloseEnoughForRangedAttack_BTDecorator", "class_giant_close_enough_for_ranged_attack___b_t_decorator.html", null ]
+    ] ],
+    [ "BTService", null, [
+      [ "ScanPersonCharacters_BTService", "class_scan_person_characters___b_t_service.html", null ],
+      [ "SetRandomDestination_BTService", "class_set_random_destination___b_t_service.html", null ]
+    ] ],
+    [ "BTTask", null, [
+      [ "Approach_BTTask", "class_approach___b_t_task.html", null ],
+      [ "EnemyAttack_BTTask", "class_enemy_attack___b_t_task.html", null ],
+      [ "GiantApproach_BTTask", "class_giant_approach___b_t_task.html", null ],
+      [ "GiantMeleeAttack_BTTask", "class_giant_melee_attack___b_t_task.html", null ],
+      [ "GiantRangedAttack_BTTask", "class_giant_ranged_attack___b_t_task.html", null ]
+    ] ],
     [ "Enemy_Character", "class_enemy___character.html", [
       [ "Bear_Enemy", "class_bear___enemy.html", null ],
       [ "Giant_Enemy", "class_giant___enemy.html", null ],

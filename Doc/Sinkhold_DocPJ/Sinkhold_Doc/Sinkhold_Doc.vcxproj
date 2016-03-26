@@ -80,15 +80,26 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI_Person.h" />
+    <ClInclude Include="Approach_BTTask.h" />
     <ClInclude Include="AWP_AI_Person.h" />
     <ClInclude Include="AWP_Weapons.h" />
     <ClInclude Include="Bear_Enemy.h" />
+    <ClInclude Include="CloseEnoughForMeleeAttack_BTDecorator.h" />
+    <ClInclude Include="CloseEnoughForRangedAttack_BTDecorator.h" />
+    <ClInclude Include="EnemyAttack_BTTask.h" />
+    <ClInclude Include="EnemyBlackboard_Blackboard.h" />
     <ClInclude Include="Enemy_Character.h" />
+    <ClInclude Include="GiantApproach_BTTask.h" />
+    <ClInclude Include="GiantCloseEnoughForRangedAttack_BTDecorator.h" />
+    <ClInclude Include="GiantMeleeAttack_BTTask.h" />
+    <ClInclude Include="GiantRangedAttack_BTTask.h" />
     <ClInclude Include="Giant_Enemy.h" />
     <ClInclude Include="M4A1_AI_Person.h" />
     <ClInclude Include="M4A1_Weapons.h" />
     <ClInclude Include="Person_Character.h" />
     <ClInclude Include="Player_Person.h" />
+    <ClInclude Include="ScanPersonCharacters_BTService.h" />
+    <ClInclude Include="SetRandomDestination_BTService.h" />
     <ClInclude Include="ShotGun_Weapons.h" />
     <ClInclude Include="Shotgun_AI_Person.h" />
     <ClInclude Include="Spider_Enemy.h" />
@@ -99,15 +110,26 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AI_Person.cpp" />
+    <ClCompile Include="Approach_BTTask.cpp" />
     <ClCompile Include="AWP_AI_Person.cpp" />
     <ClCompile Include="AWP_Weapons.cpp" />
     <ClCompile Include="Bear_Enemy.cpp" />
+    <ClCompile Include="CloseEnoughForMeleeAttack_BTDecorator.cpp" />
+    <ClCompile Include="CloseEnoughForRangedAttack_BTDecorator.cpp" />
+    <ClCompile Include="EnemyAttack_BTTask.cpp" />
+    <ClCompile Include="EnemyBlackboard_Blackboard.cpp" />
     <ClCompile Include="Enemy_Character.cpp" />
+    <ClCompile Include="GiantApproach_BTTask.cpp" />
+    <ClCompile Include="GiantCloseEnoughForRangedAttack_BTDecorator.cpp" />
+    <ClCompile Include="GiantMeleeAttack_BTTask.cpp" />
+    <ClCompile Include="GiantRangedAttack_BTTask.cpp" />
     <ClCompile Include="Giant_Enemy.cpp" />
     <ClCompile Include="M4A1_AI_Person.cpp" />
     <ClCompile Include="M4A1_Weapons.cpp" />
     <ClCompile Include="Person_Character.cpp" />
     <ClCompile Include="Player_Person.cpp" />
+    <ClCompile Include="ScanPersonCharacters_BTService.cpp" />
+    <ClCompile Include="SetRandomDestination_BTService.cpp" />
     <ClCompile Include="ShotGunWeapons.cpp" />
     <ClCompile Include="Shotgun_AI_Person.cpp" />
     <ClCompile Include="Sinkhold_Doc.cpp" />

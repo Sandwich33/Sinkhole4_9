@@ -1,8 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_person___character.html" title="아군 캐릭터의 기본형 클래스. " alt="" coords="5,81,132,108"/>
-<area shape="rect" id="node2" href="$class_a_i___person.html" title="AI 팀원 클래스. " alt="" coords="192,56,275,83"/>
-<area shape="rect" id="node6" href="$class_player___person.html" title="플레이어 클래스. " alt="" coords="180,107,287,133"/>
-<area shape="rect" id="node3" href="$class_a_w_p___a_i___person.html" title="AI 팀원 중 스나이퍼에 알맞게 설정. " alt="" coords="343,5,463,32"/>
-<area shape="rect" id="node4" href="$class_m4_a1___a_i___person.html" title="AI 팀원 중 M4A1에 알맞게 설정. " alt="" coords="342,56,465,83"/>
-<area shape="rect" id="node5" href="$class_shotgun___a_i___person.html" title="AI 팀원 중 샷건에 알맞게 설정. " alt="" coords="335,107,472,133"/>
+<area shape="rect" id="node2" href="$class_close_enough_for_melee_attack___b_t_decorator.html" title="적 AI 데코레이터 " alt="" coords="153,5,343,47"/>
+<area shape="rect" id="node3" href="$class_close_enough_for_ranged_attack___b_t_decorator.html" title="적 AI 데코레이터 " alt="" coords="148,71,348,112"/>
+<area shape="rect" id="node4" href="$class_giant_close_enough_for_ranged_attack___b_t_decorator.html" title="적 AI 데코레이터 " alt="" coords="151,136,345,177"/>
 </map>
