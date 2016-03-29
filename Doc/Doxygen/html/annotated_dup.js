@@ -9,6 +9,7 @@ var annotated_dup =
     [ "CloseEnoughForMeleeAttack_BTDecorator", "class_close_enough_for_melee_attack___b_t_decorator.html", "class_close_enough_for_melee_attack___b_t_decorator" ],
     [ "CloseEnoughForRangedAttack_BTDecorator", "class_close_enough_for_ranged_attack___b_t_decorator.html", "class_close_enough_for_ranged_attack___b_t_decorator" ],
     [ "Enemy_Character", "class_enemy___character.html", "class_enemy___character" ],
+    [ "EnemyAIController_AIController", "class_enemy_a_i_controller___a_i_controller.html", "class_enemy_a_i_controller___a_i_controller" ],
     [ "EnemyAttack_BTTask", "class_enemy_attack___b_t_task.html", "class_enemy_attack___b_t_task" ],
     [ "EnemyBlackboard_Blackboard", "class_enemy_blackboard___blackboard.html", "class_enemy_blackboard___blackboard" ],
     [ "Giant_Enemy", "class_giant___enemy.html", "class_giant___enemy" ],

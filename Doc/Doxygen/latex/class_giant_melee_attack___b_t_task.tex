@@ -11,7 +11,8 @@
 
 
 
-Inheritance diagram for Giant\+Melee\+Attack\+\_\+\+B\+T\+Task\+:\nopagebreak
+Inheritance diagram for Giant\+Melee\+Attack\+\_\+\+B\+T\+Task\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,13 +21,21 @@ Inheritance diagram for Giant\+Melee\+Attack\+\_\+\+B\+T\+Task\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Giant\+Melee\+Attack\+\_\+\+B\+T\+Task\+:\nopagebreak
+Collaboration diagram for Giant\+Melee\+Attack\+\_\+\+B\+T\+Task\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=213pt]{class_giant_melee_attack___b_t_task__coll__graph}
 \end{center}
 \end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Graph \hyperlink{class_giant_melee_attack___b_t_task_ab61144023115cd885efb224bdd6e4f05}{Receive\+Tick} ()
+\begin{DoxyCompactList}\small\item\em 태스크 틱 이벤트 \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_giant_melee_attack___b_t_task_a520142e850626032ecadda6f62b04c9b}{Receive\+Execute} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 태스크 실행 이벤트 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -45,6 +54,38 @@ Pawn \hyperlink{class_giant_melee_attack___b_t_task_a30dd53d02e844eab55652c2fc62
 적 AI 태스크 
 
 자이언트 전용 근접 공격 기능과 범위 공격 스킬. 
+
+\subsection{Member Function Documentation}
+\index{Giant\+Melee\+Attack\+\_\+\+B\+T\+Task@{Giant\+Melee\+Attack\+\_\+\+B\+T\+Task}!Receive\+Execute@{Receive\+Execute}}
+\index{Receive\+Execute@{Receive\+Execute}!Giant\+Melee\+Attack\+\_\+\+B\+T\+Task@{Giant\+Melee\+Attack\+\_\+\+B\+T\+Task}}
+\subsubsection[{\texorpdfstring{Receive\+Execute(\+Actor Owner\+Actor)}{ReceiveExecute(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Giant\+Melee\+Attack\+\_\+\+B\+T\+Task\+::\+Receive\+Execute (
+\begin{DoxyParamCaption}
+\item[{Actor}]{Owner\+Actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_melee_attack___b_t_task_a520142e850626032ecadda6f62b04c9b}{}\label{class_giant_melee_attack___b_t_task_a520142e850626032ecadda6f62b04c9b}
+
+
+태스크 실행 이벤트 
+
+myself와 my\+Location을 초기화한다. 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+\index{Giant\+Melee\+Attack\+\_\+\+B\+T\+Task@{Giant\+Melee\+Attack\+\_\+\+B\+T\+Task}!Receive\+Tick@{Receive\+Tick}}
+\index{Receive\+Tick@{Receive\+Tick}!Giant\+Melee\+Attack\+\_\+\+B\+T\+Task@{Giant\+Melee\+Attack\+\_\+\+B\+T\+Task}}
+\subsubsection[{\texorpdfstring{Receive\+Tick()}{ReceiveTick()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Giant\+Melee\+Attack\+\_\+\+B\+T\+Task\+::\+Receive\+Tick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_melee_attack___b_t_task_ab61144023115cd885efb224bdd6e4f05}{}\label{class_giant_melee_attack___b_t_task_ab61144023115cd885efb224bdd6e4f05}
+
+
+태스크 틱 이벤트 
+
+자이언트가 공격할 대상을 바라보게 하고 on\+Attack을 호출한다.
+
+쿨타임이 아니면 범위 공격 스킬을 사용할 수 있다. 
 
 \subsection{Member Data Documentation}
 \index{Giant\+Melee\+Attack\+\_\+\+B\+T\+Task@{Giant\+Melee\+Attack\+\_\+\+B\+T\+Task}!my\+Location@{my\+Location}}

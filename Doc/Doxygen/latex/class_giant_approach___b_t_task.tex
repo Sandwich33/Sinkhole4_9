@@ -11,7 +11,8 @@
 
 
 
-Inheritance diagram for Giant\+Approach\+\_\+\+B\+T\+Task\+:\nopagebreak
+Inheritance diagram for Giant\+Approach\+\_\+\+B\+T\+Task\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,13 +21,21 @@ Inheritance diagram for Giant\+Approach\+\_\+\+B\+T\+Task\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Giant\+Approach\+\_\+\+B\+T\+Task\+:\nopagebreak
+Collaboration diagram for Giant\+Approach\+\_\+\+B\+T\+Task\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=199pt]{class_giant_approach___b_t_task__coll__graph}
 \end{center}
 \end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Graph \hyperlink{class_giant_approach___b_t_task_a5f0940b5b43bd1348e59cb06f0fd7d0e}{Receive\+Execute} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 태스크 실행 이벤트 \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_giant_approach___b_t_task_adf870b51e3bbfe5895a4265cf1e2cd9c}{Receive\+Abort} ()
+\begin{DoxyCompactList}\small\item\em 태스크 중단 이벤트 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,6 +47,38 @@ Blackboard\+Key\+Selector \hyperlink{class_giant_approach___b_t_task_a6296d9126f
 적 AI 태스크 
 
 자이언트 전용 대쉬 스킬. 
+
+\subsection{Member Function Documentation}
+\index{Giant\+Approach\+\_\+\+B\+T\+Task@{Giant\+Approach\+\_\+\+B\+T\+Task}!Receive\+Abort@{Receive\+Abort}}
+\index{Receive\+Abort@{Receive\+Abort}!Giant\+Approach\+\_\+\+B\+T\+Task@{Giant\+Approach\+\_\+\+B\+T\+Task}}
+\subsubsection[{\texorpdfstring{Receive\+Abort()}{ReceiveAbort()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Giant\+Approach\+\_\+\+B\+T\+Task\+::\+Receive\+Abort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_approach___b_t_task_adf870b51e3bbfe5895a4265cf1e2cd9c}{}\label{class_giant_approach___b_t_task_adf870b51e3bbfe5895a4265cf1e2cd9c}
+
+
+태스크 중단 이벤트 
+
+제어 흐름이 끊어지면 대쉬를 끝낸다. \index{Giant\+Approach\+\_\+\+B\+T\+Task@{Giant\+Approach\+\_\+\+B\+T\+Task}!Receive\+Execute@{Receive\+Execute}}
+\index{Receive\+Execute@{Receive\+Execute}!Giant\+Approach\+\_\+\+B\+T\+Task@{Giant\+Approach\+\_\+\+B\+T\+Task}}
+\subsubsection[{\texorpdfstring{Receive\+Execute(\+Actor Owner\+Actor)}{ReceiveExecute(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Giant\+Approach\+\_\+\+B\+T\+Task\+::\+Receive\+Execute (
+\begin{DoxyParamCaption}
+\item[{Actor}]{Owner\+Actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_approach___b_t_task_a5f0940b5b43bd1348e59cb06f0fd7d0e}{}\label{class_giant_approach___b_t_task_a5f0940b5b43bd1348e59cb06f0fd7d0e}
+
+
+태스크 실행 이벤트 
+
+자이언트가 공격할 대상에게 접근하게 한다.
+
+쿨타임이 아니면 대쉬 스킬을 사용할 수 있다. 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Data Documentation}
 \index{Giant\+Approach\+\_\+\+B\+T\+Task@{Giant\+Approach\+\_\+\+B\+T\+Task}!target\+To\+Attack@{target\+To\+Attack}}

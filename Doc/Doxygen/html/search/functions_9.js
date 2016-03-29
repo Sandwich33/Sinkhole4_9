@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['moveto',['moveto',['../class_bear_behavior_tree___behavior_tree.html#a5d2bb95c7d460abdc1e47a812ea4a7af',1,'BearBehaviorTree_BehaviorTree']]]
+  ['moveto',['moveTo',['../class_bear_behavior_tree___behavior_tree.html#aba205bd3c0ead482d7dff54693a7b2a2',1,'BearBehaviorTree_BehaviorTree']]]
 ];

@@ -1,0 +1,4 @@
+<map id="ScanPersonCharacters_BTService::ReceiveActivation" name="ScanPersonCharacters_BTService::ReceiveActivation">
+<area shape="rect" id="node2" href="$class_bear_behavior_tree___behavior_tree.html#a1d4c26a6c9f2c056a5d07f956129ba19" title="서비스를 가지는 분기 노드 " alt="" coords="249,5,428,47"/>
+<area shape="rect" id="node3" href="$class_bear_behavior_tree___behavior_tree.html#a67e899c19fdc37eb5ed077d882ae4ad1" title="루트 노드 " alt="" coords="476,5,655,47"/>
+</map>

@@ -11,7 +11,8 @@
 
 
 
-Inheritance diagram for Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator\+:\nopagebreak
+Inheritance diagram for Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,13 +21,19 @@ Inheritance diagram for Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+D
 \end{figure}
 
 
-Collaboration diagram for Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator\+:\nopagebreak
+Collaboration diagram for Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=225pt]{class_giant_close_enough_for_ranged_attack___b_t_decorator__coll__graph}
 \end{center}
 \end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{class_giant_close_enough_for_ranged_attack___b_t_decorator_a44e018d77f40f5aa61a4304b8e8cf15e}{Perform\+Condition\+Check} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 데코레이터 조건 검사 함수 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,6 +47,27 @@ float \hyperlink{class_giant_close_enough_for_ranged_attack___b_t_decorator_a994
 적 AI 데코레이터 
 
 자이언트 전용 원거리 공격을 할 수 있는지 판단하기 위해 공격 대상과의 거리를 검사한다. 
+
+\subsection{Member Function Documentation}
+\index{Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator@{Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator}!Perform\+Condition\+Check@{Perform\+Condition\+Check}}
+\index{Perform\+Condition\+Check@{Perform\+Condition\+Check}!Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator@{Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator}}
+\subsubsection[{\texorpdfstring{Perform\+Condition\+Check(\+Actor Owner\+Actor)}{PerformConditionCheck(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Boolean Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator\+::\+Perform\+Condition\+Check (
+\begin{DoxyParamCaption}
+\item[{Actor}]{Owner\+Actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_close_enough_for_ranged_attack___b_t_decorator_a44e018d77f40f5aa61a4304b8e8cf15e}{}\label{class_giant_close_enough_for_ranged_attack___b_t_decorator_a44e018d77f40f5aa61a4304b8e8cf15e}
+
+
+데코레이터 조건 검사 함수 
+
+자이언트와 공격할 대상 사이의 거리를 검사한다.
+
+거리가 attackable\+Distance의 값보다 작으면 True를 리턴한다. 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Data Documentation}
 \index{Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator@{Giant\+Close\+Enough\+For\+Ranged\+Attack\+\_\+\+B\+T\+Decorator}!attackable\+Distance@{attackable\+Distance}}

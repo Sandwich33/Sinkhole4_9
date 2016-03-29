@@ -11,7 +11,8 @@
 
 
 
-Inheritance diagram for Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task\+:\nopagebreak
+Inheritance diagram for Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,13 +21,21 @@ Inheritance diagram for Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task\+:\nopagebreak
+Collaboration diagram for Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=220pt]{class_giant_ranged_attack___b_t_task__coll__graph}
 \end{center}
 \end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Graph \hyperlink{class_giant_ranged_attack___b_t_task_a08873a799a869f1231ce8d57368ecaad}{Receive\+Tick} ()
+\begin{DoxyCompactList}\small\item\em 태스크 틱 이벤트 \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_giant_ranged_attack___b_t_task_a88fd0faaab423bc283f4ded45881da6f}{Receive\+Execute} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 태스크 실행 이벤트 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -45,6 +54,38 @@ Pawn \hyperlink{class_giant_ranged_attack___b_t_task_a897ee13f9ddeaa6e59a58ac85b
 적 AI 태스크 
 
 자이언트 전용 원거리 공격 스킬. 
+
+\subsection{Member Function Documentation}
+\index{Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task@{Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task}!Receive\+Execute@{Receive\+Execute}}
+\index{Receive\+Execute@{Receive\+Execute}!Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task@{Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task}}
+\subsubsection[{\texorpdfstring{Receive\+Execute(\+Actor Owner\+Actor)}{ReceiveExecute(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task\+::\+Receive\+Execute (
+\begin{DoxyParamCaption}
+\item[{Actor}]{Owner\+Actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_ranged_attack___b_t_task_a88fd0faaab423bc283f4ded45881da6f}{}\label{class_giant_ranged_attack___b_t_task_a88fd0faaab423bc283f4ded45881da6f}
+
+
+태스크 실행 이벤트 
+
+myself와 my\+Location을 초기화한다. 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+\index{Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task@{Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task}!Receive\+Tick@{Receive\+Tick}}
+\index{Receive\+Tick@{Receive\+Tick}!Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task@{Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task}}
+\subsubsection[{\texorpdfstring{Receive\+Tick()}{ReceiveTick()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task\+::\+Receive\+Tick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_ranged_attack___b_t_task_a08873a799a869f1231ce8d57368ecaad}{}\label{class_giant_ranged_attack___b_t_task_a08873a799a869f1231ce8d57368ecaad}
+
+
+태스크 틱 이벤트 
+
+자이언트가 공격할 대상을 바라보게 하고 attack2를 호출한다.
+
+쿨타임이 아니면 범위 공격 스킬을 사용할 수 있다. 
 
 \subsection{Member Data Documentation}
 \index{Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task@{Giant\+Ranged\+Attack\+\_\+\+B\+T\+Task}!my\+Location@{my\+Location}}

@@ -1,5 +1,8 @@
 var hierarchy =
 [
+    [ "AIController", null, [
+      [ "EnemyAIController_AIController", "class_enemy_a_i_controller___a_i_controller.html", null ]
+    ] ],
     [ "BehaviorTree", null, [
       [ "BearBehaviorTree_BehaviorTree", "class_bear_behavior_tree___behavior_tree.html", null ]
     ] ],

@@ -2,7 +2,10 @@
 #include "EnemyAttack_BTTask.h"
 #include "Enemy_Character.h"
 
-
-EventGraph EnemyAttack_BTTask::ReceiveExecute(){
+EventGraph ReceiveTick() {
 	Enemy_Character::onAttack();
+}
+
+EventGraph ReceiveExecute(Actor OwnerActor) {
+
 }

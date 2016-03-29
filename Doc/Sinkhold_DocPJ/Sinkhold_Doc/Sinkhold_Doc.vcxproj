@@ -87,6 +87,7 @@
     <ClInclude Include="Bear_Enemy.h" />
     <ClInclude Include="CloseEnoughForMeleeAttack_BTDecorator.h" />
     <ClInclude Include="CloseEnoughForRangedAttack_BTDecorator.h" />
+    <ClInclude Include="EnemyAIController_AIController.h" />
     <ClInclude Include="EnemyAttack_BTTask.h" />
     <ClInclude Include="EnemyBlackboard_Blackboard.h" />
     <ClInclude Include="Enemy_Character.h" />
@@ -118,6 +119,7 @@
     <ClCompile Include="Bear_Enemy.cpp" />
     <ClCompile Include="CloseEnoughForMeleeAttack_BTDecorator.cpp" />
     <ClCompile Include="CloseEnoughForRangedAttack_BTDecorator.cpp" />
+    <ClCompile Include="EnemyAIController_AIController.cpp" />
     <ClCompile Include="EnemyAttack_BTTask.cpp" />
     <ClCompile Include="EnemyBlackboard_Blackboard.cpp" />
     <ClCompile Include="Enemy_Character.cpp" />

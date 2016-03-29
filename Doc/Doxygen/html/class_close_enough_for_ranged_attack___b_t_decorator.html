@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('class_close_enough_for_ranged_attack__
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_close_enough_for_ranged_attack___b_t_decorator-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -120,13 +121,23 @@ $(document).ready(function(){initNavTree('class_close_enough_for_ranged_attack__
 Inheritance diagram for CloseEnoughForRangedAttack_BTDecorator:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_close_enough_for_ranged_attack___b_t_decorator__inherit__graph.png" border="0" usemap="#_close_enough_for_ranged_attack___b_t_decorator_inherit__map" alt="Inheritance graph"/></div>
+<map name="_close_enough_for_ranged_attack___b_t_decorator_inherit__map" id="_close_enough_for_ranged_attack___b_t_decorator_inherit__map">
+</map>
 </div>
 <div class="dynheader">
 Collaboration diagram for CloseEnoughForRangedAttack_BTDecorator:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_close_enough_for_ranged_attack___b_t_decorator__coll__graph.png" border="0" usemap="#_close_enough_for_ranged_attack___b_t_decorator_coll__map" alt="Collaboration graph"/></div>
+<map name="_close_enough_for_ranged_attack___b_t_decorator_coll__map" id="_close_enough_for_ranged_attack___b_t_decorator_coll__map">
+</map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2f506ba052dcc39bdb8e911633d89664"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_close_enough_for_ranged_attack___b_t_decorator.html#a2f506ba052dcc39bdb8e911633d89664">PerformConditionCheck</a> (Actor OwnerActor)</td></tr>
+<tr class="memdesc:a2f506ba052dcc39bdb8e911633d89664"><td class="mdescLeft">&#160;</td><td class="mdescRight">데코레이터 조건 검사 함수  <a href="#a2f506ba052dcc39bdb8e911633d89664">More...</a><br /></td></tr>
+<tr class="separator:a2f506ba052dcc39bdb8e911633d89664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a830126ebaba4083a84ea549114ef39d7"><td class="memItemLeft" align="right" valign="top">BlackboardKeySelector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_close_enough_for_ranged_attack___b_t_decorator.html#a830126ebaba4083a84ea549114ef39d7">targetToAttack</a></td></tr>
@@ -137,7 +148,33 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>적 AI 데코레이터 </p>
 <p>원거리 공격을 할 수 있는지 판단하기 위해 공격 대상과의 거리를 검사한다. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2f506ba052dcc39bdb8e911633d89664"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Boolean CloseEnoughForRangedAttack_BTDecorator::PerformConditionCheck </td>
+          <td>(</td>
+          <td class="paramtype">Actor&#160;</td>
+          <td class="paramname"><em>OwnerActor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>데코레이터 조건 검사 함수 </p>
+<p>AI 컨트롤러가 컨트롤하는 폰과 공격할 대상 사이의 거리를 검사한다.</p>
+<p>거리가 attackableDistance의 값보다 작으면 True를 리턴한다. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">OwnerActor</td><td>AI 컨트롤러. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a28155d62ff5f45740dad3dfec7254e5e"></a>
 <div class="memitem">
 <div class="memproto">

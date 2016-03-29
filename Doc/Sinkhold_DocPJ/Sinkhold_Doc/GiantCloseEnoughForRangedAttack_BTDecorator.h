@@ -11,5 +11,13 @@ class GiantCloseEnoughForRangedAttack_BTDecorator :
 public:
 	BlackboardKeySelector targetToAttack;
 	float attackableDistance;
+
+	/**
+	@brief 데코레이터 조건 검사 함수
+	@details 자이언트와 공격할 대상 사이의 거리를 검사한다.
+	@details 거리가 attackableDistance의 값보다 작으면 True를 리턴한다.
+	@param OwnerActor AI 컨트롤러.
+	*/
+	Boolean PerformConditionCheck(Actor OwnerActor);
 };
 

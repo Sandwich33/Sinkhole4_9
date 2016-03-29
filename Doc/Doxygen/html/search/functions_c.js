@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['performconditioncheck',['PerformConditionCheck',['../class_close_enough_for_melee_attack___b_t_decorator.html#a86246ade4d7cacd71d6bac34ebf7ee6e',1,'CloseEnoughForMeleeAttack_BTDecorator::PerformConditionCheck()'],['../class_close_enough_for_ranged_attack___b_t_decorator.html#a2f506ba052dcc39bdb8e911633d89664',1,'CloseEnoughForRangedAttack_BTDecorator::PerformConditionCheck()'],['../class_giant_close_enough_for_ranged_attack___b_t_decorator.html#a44e018d77f40f5aa61a4304b8e8cf15e',1,'GiantCloseEnoughForRangedAttack_BTDecorator::PerformConditionCheck()']]],
   ['playattacksound',['playAttackSound',['../class_enemy___character.html#a8c8cc52e86cc963f5655b148bd39d27a',1,'Enemy_Character']]],
   ['playattacksound2',['playAttackSound2',['../class_enemy___character.html#ada6e551c65c0dd91b7e8342036406e7a',1,'Enemy_Character']]],
   ['playattacksound3',['playAttackSound3',['../class_enemy___character.html#a0cf94922a5d6b054efaa3a37ec4557e6',1,'Enemy_Character']]],

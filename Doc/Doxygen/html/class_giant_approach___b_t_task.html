@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('class_giant_approach___b_t_task.html',
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_giant_approach___b_t_task-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -120,13 +121,26 @@ $(document).ready(function(){initNavTree('class_giant_approach___b_t_task.html',
 Inheritance diagram for GiantApproach_BTTask:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_giant_approach___b_t_task__inherit__graph.png" border="0" usemap="#_giant_approach___b_t_task_inherit__map" alt="Inheritance graph"/></div>
+<map name="_giant_approach___b_t_task_inherit__map" id="_giant_approach___b_t_task_inherit__map">
+</map>
 </div>
 <div class="dynheader">
 Collaboration diagram for GiantApproach_BTTask:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_giant_approach___b_t_task__coll__graph.png" border="0" usemap="#_giant_approach___b_t_task_coll__map" alt="Collaboration graph"/></div>
+<map name="_giant_approach___b_t_task_coll__map" id="_giant_approach___b_t_task_coll__map">
+</map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5f0940b5b43bd1348e59cb06f0fd7d0e"><td class="memItemLeft" align="right" valign="top">EventGraph&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_giant_approach___b_t_task.html#a5f0940b5b43bd1348e59cb06f0fd7d0e">ReceiveExecute</a> (Actor OwnerActor)</td></tr>
+<tr class="memdesc:a5f0940b5b43bd1348e59cb06f0fd7d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">태스크 실행 이벤트  <a href="#a5f0940b5b43bd1348e59cb06f0fd7d0e">More...</a><br /></td></tr>
+<tr class="separator:a5f0940b5b43bd1348e59cb06f0fd7d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf870b51e3bbfe5895a4265cf1e2cd9c"><td class="memItemLeft" align="right" valign="top">EventGraph&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_giant_approach___b_t_task.html#adf870b51e3bbfe5895a4265cf1e2cd9c">ReceiveAbort</a> ()</td></tr>
+<tr class="memdesc:adf870b51e3bbfe5895a4265cf1e2cd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">태스크 중단 이벤트  <a href="#adf870b51e3bbfe5895a4265cf1e2cd9c">More...</a><br /></td></tr>
+<tr class="separator:adf870b51e3bbfe5895a4265cf1e2cd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a6296d9126f5fc2e18266249e91090b18"><td class="memItemLeft" align="right" valign="top">BlackboardKeySelector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_giant_approach___b_t_task.html#a6296d9126f5fc2e18266249e91090b18">targetToAttack</a></td></tr>
@@ -135,7 +149,51 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>적 AI 태스크 </p>
 <p>자이언트 전용 대쉬 스킬. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adf870b51e3bbfe5895a4265cf1e2cd9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventGraph GiantApproach_BTTask::ReceiveAbort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>태스크 중단 이벤트 </p>
+<p>제어 흐름이 끊어지면 대쉬를 끝낸다. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f0940b5b43bd1348e59cb06f0fd7d0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventGraph GiantApproach_BTTask::ReceiveExecute </td>
+          <td>(</td>
+          <td class="paramtype">Actor&#160;</td>
+          <td class="paramname"><em>OwnerActor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>태스크 실행 이벤트 </p>
+<p>자이언트가 공격할 대상에게 접근하게 한다.</p>
+<p>쿨타임이 아니면 대쉬 스킬을 사용할 수 있다. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">OwnerActor</td><td>AI 컨트롤러. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a6296d9126f5fc2e18266249e91090b18"></a>
 <div class="memitem">
 <div class="memproto">

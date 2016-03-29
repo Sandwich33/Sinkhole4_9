@@ -105,6 +105,9 @@
     <ClInclude Include="BearBehaviorTree_BehaviorTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EnemyAIController_AIController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sinkhold_Doc.cpp">
@@ -189,6 +192,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BearBehaviorTree_BehaviorTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyAIController_AIController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

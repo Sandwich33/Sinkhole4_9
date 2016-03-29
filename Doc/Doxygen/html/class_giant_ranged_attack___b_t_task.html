@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('class_giant_ranged_attack___b_t_task.h
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_giant_ranged_attack___b_t_task-members.html">List of all members</a>  </div>
@@ -121,13 +122,26 @@ $(document).ready(function(){initNavTree('class_giant_ranged_attack___b_t_task.h
 Inheritance diagram for GiantRangedAttack_BTTask:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_giant_ranged_attack___b_t_task__inherit__graph.png" border="0" usemap="#_giant_ranged_attack___b_t_task_inherit__map" alt="Inheritance graph"/></div>
+<map name="_giant_ranged_attack___b_t_task_inherit__map" id="_giant_ranged_attack___b_t_task_inherit__map">
+</map>
 </div>
 <div class="dynheader">
 Collaboration diagram for GiantRangedAttack_BTTask:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_giant_ranged_attack___b_t_task__coll__graph.png" border="0" usemap="#_giant_ranged_attack___b_t_task_coll__map" alt="Collaboration graph"/></div>
+<map name="_giant_ranged_attack___b_t_task_coll__map" id="_giant_ranged_attack___b_t_task_coll__map">
+</map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a08873a799a869f1231ce8d57368ecaad"><td class="memItemLeft" align="right" valign="top">EventGraph&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_giant_ranged_attack___b_t_task.html#a08873a799a869f1231ce8d57368ecaad">ReceiveTick</a> ()</td></tr>
+<tr class="memdesc:a08873a799a869f1231ce8d57368ecaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">태스크 틱 이벤트  <a href="#a08873a799a869f1231ce8d57368ecaad">More...</a><br /></td></tr>
+<tr class="separator:a08873a799a869f1231ce8d57368ecaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88fd0faaab423bc283f4ded45881da6f"><td class="memItemLeft" align="right" valign="top">EventGraph&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_giant_ranged_attack___b_t_task.html#a88fd0faaab423bc283f4ded45881da6f">ReceiveExecute</a> (Actor OwnerActor)</td></tr>
+<tr class="memdesc:a88fd0faaab423bc283f4ded45881da6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">태스크 실행 이벤트  <a href="#a88fd0faaab423bc283f4ded45881da6f">More...</a><br /></td></tr>
+<tr class="separator:a88fd0faaab423bc283f4ded45881da6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad33350d20d5e08acc84fd65329562c63"><td class="memItemLeft" align="right" valign="top">BlackboardKeySelector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_giant_ranged_attack___b_t_task.html#ad33350d20d5e08acc84fd65329562c63">targetToAttack</a></td></tr>
@@ -143,7 +157,51 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>적 AI 태스크 </p>
 <p>자이언트 전용 원거리 공격 스킬. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a88fd0faaab423bc283f4ded45881da6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventGraph GiantRangedAttack_BTTask::ReceiveExecute </td>
+          <td>(</td>
+          <td class="paramtype">Actor&#160;</td>
+          <td class="paramname"><em>OwnerActor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>태스크 실행 이벤트 </p>
+<p>myself와 myLocation을 초기화한다. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">OwnerActor</td><td>AI 컨트롤러. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a08873a799a869f1231ce8d57368ecaad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventGraph GiantRangedAttack_BTTask::ReceiveTick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>태스크 틱 이벤트 </p>
+<p>자이언트가 공격할 대상을 바라보게 하고 attack2를 호출한다.</p>
+<p>쿨타임이 아니면 범위 공격 스킬을 사용할 수 있다. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ad94fd43a278b675d241d6bfbea59efbf"></a>
 <div class="memitem">
 <div class="memproto">

@@ -9,5 +9,12 @@ class Approach_BTTask :
 {
 public:
 	BlackboardKeySelector targetToAttack;
+
+	/**
+	@brief 태스크 실행 이벤트
+	@details AI 컨트롤러가 컨트롤하는 폰을 공격할 대상의 위치로 이동시킨다.
+	@param OwnerActor AI 컨트롤러.
+	*/
+	EventGraph ReceiveExecute(Actor OwnerActor);
 };
 

@@ -31,9 +31,9 @@ Collaboration diagram for Enemy\+Attack\+\_\+\+B\+T\+Task\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 Event\+Graph \hyperlink{class_enemy_attack___b_t_task_ace9bb26b7392400fac4a24c736b16116}{Receive\+Tick} ()
-\item 
-Event\+Graph \hyperlink{class_enemy_attack___b_t_task_ab1f323dce103c008fa11e1b0f08efc30}{Receive\+Execute} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 태스크 틱 이벤트 \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_enemy_attack___b_t_task_afbbed53ded3752395a71bf1c86d830d2}{Receive\+Execute} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 태스크 실행 이벤트 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -56,22 +56,20 @@ Pawn \hyperlink{class_enemy_attack___b_t_task_a547169bbc795a0fc6e6e12601c40cc47}
 \subsection{Member Function Documentation}
 \index{Enemy\+Attack\+\_\+\+B\+T\+Task@{Enemy\+Attack\+\_\+\+B\+T\+Task}!Receive\+Execute@{Receive\+Execute}}
 \index{Receive\+Execute@{Receive\+Execute}!Enemy\+Attack\+\_\+\+B\+T\+Task@{Enemy\+Attack\+\_\+\+B\+T\+Task}}
-\subsubsection[{\texorpdfstring{Receive\+Execute()}{ReceiveExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Enemy\+Attack\+\_\+\+B\+T\+Task\+::\+Receive\+Execute (
+\subsubsection[{\texorpdfstring{Receive\+Execute(\+Actor Owner\+Actor)}{ReceiveExecute(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Enemy\+Attack\+\_\+\+B\+T\+Task\+::\+Receive\+Execute (
 \begin{DoxyParamCaption}
-{}
+\item[{Actor}]{Owner\+Actor}
 \end{DoxyParamCaption}
-)}\hypertarget{class_enemy_attack___b_t_task_ab1f323dce103c008fa11e1b0f08efc30}{}\label{class_enemy_attack___b_t_task_ab1f323dce103c008fa11e1b0f08efc30}
+)}\hypertarget{class_enemy_attack___b_t_task_afbbed53ded3752395a71bf1c86d830d2}{}\label{class_enemy_attack___b_t_task_afbbed53ded3752395a71bf1c86d830d2}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_enemy_attack___b_t_task_ab1f323dce103c008fa11e1b0f08efc30_cgraph}
-\end{center}
-\end{figure}
+태스크 실행 이벤트 
 
-
+myself와 my\+Location을 초기화한다. 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
 
 
 Here is the caller graph for this function\+:
@@ -79,7 +77,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_enemy_attack___b_t_task_ab1f323dce103c008fa11e1b0f08efc30_icgraph}
+\includegraphics[width=350pt]{class_enemy_attack___b_t_task_afbbed53ded3752395a71bf1c86d830d2_icgraph}
 \end{center}
 \end{figure}
 
@@ -92,6 +90,10 @@ Here is the caller graph for this function\+:
 \end{DoxyParamCaption}
 )}\hypertarget{class_enemy_attack___b_t_task_ace9bb26b7392400fac4a24c736b16116}{}\label{class_enemy_attack___b_t_task_ace9bb26b7392400fac4a24c736b16116}
 
+
+태스크 틱 이벤트 
+
+캐릭터가 공격할 대상을 바라보게 하고 on\+Attack을 호출한다. 
 
 Here is the caller graph for this function\+:
 \nopagebreak
