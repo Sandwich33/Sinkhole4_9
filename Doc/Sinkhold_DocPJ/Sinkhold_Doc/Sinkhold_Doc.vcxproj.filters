@@ -102,6 +102,9 @@
     <ClInclude Include="SetRandomDestination_BTService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BearBehaviorTree_BehaviorTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sinkhold_Doc.cpp">
@@ -183,6 +186,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SetRandomDestination_BTService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BearBehaviorTree_BehaviorTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

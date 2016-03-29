@@ -9,6 +9,9 @@ class EnemyAttack_BTTask :
 	public BTTask
 {
 public:
+	EventGraph ReceiveTick();
+	EventGraph ReceiveExecute();
+
 	BlackboardKeySelector targetToAttack;
 private:
 	Vector myLocation;

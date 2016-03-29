@@ -5,6 +5,7 @@ var annotated_dup =
     [ "AWP_AI_Person", "class_a_w_p___a_i___person.html", null ],
     [ "AWP_Weapons", "class_a_w_p___weapons.html", "class_a_w_p___weapons" ],
     [ "Bear_Enemy", "class_bear___enemy.html", "class_bear___enemy" ],
+    [ "BearBehaviorTree_BehaviorTree", "class_bear_behavior_tree___behavior_tree.html", "class_bear_behavior_tree___behavior_tree" ],
     [ "CloseEnoughForMeleeAttack_BTDecorator", "class_close_enough_for_melee_attack___b_t_decorator.html", "class_close_enough_for_melee_attack___b_t_decorator" ],
     [ "CloseEnoughForRangedAttack_BTDecorator", "class_close_enough_for_ranged_attack___b_t_decorator.html", "class_close_enough_for_ranged_attack___b_t_decorator" ],
     [ "Enemy_Character", "class_enemy___character.html", "class_enemy___character" ],

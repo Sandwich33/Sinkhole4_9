@@ -1,5 +1,8 @@
 var hierarchy =
 [
+    [ "BehaviorTree", null, [
+      [ "BearBehaviorTree_BehaviorTree", "class_bear_behavior_tree___behavior_tree.html", null ]
+    ] ],
     [ "Blackboard", null, [
       [ "EnemyBlackboard_Blackboard", "class_enemy_blackboard___blackboard.html", null ]
     ] ],

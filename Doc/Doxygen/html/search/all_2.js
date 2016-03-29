@@ -3,6 +3,7 @@ var searchData=
   ['can_5fattack',['can_attack',['../class_enemy___character.html#af40d81990cc8500236418d252857ada0',1,'Enemy_Character']]],
   ['can_5ffire',['can_fire',['../class_weapons___actor.html#a03094917a8513d50bf93da99b09b6295',1,'Weapons_Actor']]],
   ['canfire',['canFire',['../class_person___character.html#a28d17bdc4815d2aa467ddd484a9c273d',1,'Person_Character']]],
+  ['closeenough',['closeenough',['../class_bear_behavior_tree___behavior_tree.html#a8fac43750797adcaf988b98ea9e584b3',1,'BearBehaviorTree_BehaviorTree']]],
   ['closeenoughformeleeattack_5fbtdecorator',['CloseEnoughForMeleeAttack_BTDecorator',['../class_close_enough_for_melee_attack___b_t_decorator.html',1,'']]],
   ['closeenoughforrangedattack_5fbtdecorator',['CloseEnoughForRangedAttack_BTDecorator',['../class_close_enough_for_ranged_attack___b_t_decorator.html',1,'']]],
   ['closest',['closest',['../class_scan_person_characters___b_t_service.html#a3ac0ee90b48bc64bb65a64f28aaa14a9',1,'ScanPersonCharacters_BTService']]],

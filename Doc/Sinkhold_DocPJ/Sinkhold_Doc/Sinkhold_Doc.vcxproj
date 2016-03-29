@@ -83,6 +83,7 @@
     <ClInclude Include="Approach_BTTask.h" />
     <ClInclude Include="AWP_AI_Person.h" />
     <ClInclude Include="AWP_Weapons.h" />
+    <ClInclude Include="BearBehaviorTree_BehaviorTree.h" />
     <ClInclude Include="Bear_Enemy.h" />
     <ClInclude Include="CloseEnoughForMeleeAttack_BTDecorator.h" />
     <ClInclude Include="CloseEnoughForRangedAttack_BTDecorator.h" />
@@ -113,6 +114,7 @@
     <ClCompile Include="Approach_BTTask.cpp" />
     <ClCompile Include="AWP_AI_Person.cpp" />
     <ClCompile Include="AWP_Weapons.cpp" />
+    <ClCompile Include="BearBehaviorTree_BehaviorTree.cpp" />
     <ClCompile Include="Bear_Enemy.cpp" />
     <ClCompile Include="CloseEnoughForMeleeAttack_BTDecorator.cpp" />
     <ClCompile Include="CloseEnoughForRangedAttack_BTDecorator.cpp" />

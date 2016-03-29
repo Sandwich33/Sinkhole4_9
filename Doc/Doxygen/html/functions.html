@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_j"><span>j</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
@@ -185,6 +186,12 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_enemy___character.html#acb2526ab98b23f7928215895caf0532c">Enemy_Character</a>
 , <a class="el" href="class_person___character.html#af2ac7f312634c0f8c2c889cd7dd55c01">Person_Character</a>
 </li>
+<li>approach()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#a9024fccd3bdb22ed54a2d956653f3c77">BearBehaviorTree_BehaviorTree</a>
+</li>
+<li>attack()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#a7d65c118fb3a712320e68767efca7156">BearBehaviorTree_BehaviorTree</a>
+</li>
 <li>ATTACKABLE_DISTANCE
 : <a class="el" href="class_close_enough_for_melee_attack___b_t_decorator.html#ad97a0c9cac18c905a4ae4cfe59c07815">CloseEnoughForMeleeAttack_BTDecorator</a>
 </li>
@@ -202,6 +209,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>BeginPlay()
 : <a class="el" href="class_person___character.html#a1819d7afedae25bd00de25ee22791bb3">Person_Character</a>
 </li>
+<li>blackboard
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#af65805184758188534eb2100723629d7">BearBehaviorTree_BehaviorTree</a>
+</li>
 <li>bulletCount
 : <a class="el" href="class_person___character.html#a656ddaa791d3bbd4a7e0e8a4acfd01a4">Person_Character</a>
 </li>
@@ -217,6 +227,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>canFire()
 : <a class="el" href="class_person___character.html#a28d17bdc4815d2aa467ddd484a9c273d">Person_Character</a>
+</li>
+<li>closeenough()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#a8fac43750797adcaf988b98ea9e584b3">BearBehaviorTree_BehaviorTree</a>
 </li>
 <li>closest
 : <a class="el" href="class_scan_person_characters___b_t_service.html#a3ac0ee90b48bc64bb65a64f28aaa14a9">ScanPersonCharacters_BTService</a>
@@ -275,6 +288,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>FIRE_SPEED
 : <a class="el" href="class_weapons___actor.html#acb9cfe5f22387762744bf5badabe4336">Weapons_Actor</a>
 </li>
+<li>foundperson()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#ad69b27f8f47187e6cd2c388bbbae21df">BearBehaviorTree_BehaviorTree</a>
+</li>
 </ul>
 
 
@@ -330,6 +346,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>idle()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#a350ba1088d2150f634458893b4e283a3">BearBehaviorTree_BehaviorTree</a>
+</li>
 <li>in_bullet
 : <a class="el" href="class_weapons___actor.html#a3ada6991a9ec6db336c9ebc5af923c3d">Weapons_Actor</a>
 </li>
@@ -430,6 +449,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>MAX_STAND_SPEED
 : <a class="el" href="class_person___character.html#ae900d1c986f15b8782b966aadb4f6438">Person_Character</a>
 </li>
+<li>moveto()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#a5d2bb95c7d460abdc1e47a812ea4a7af">BearBehaviorTree_BehaviorTree</a>
+</li>
 <li>myLocation
 : <a class="el" href="class_enemy_attack___b_t_task.html#ab57521e6c6d827822ff6be4f5947e912">EnemyAttack_BTTask</a>
 , <a class="el" href="class_giant_melee_attack___b_t_task.html#a6d7cb8d701fc5a62d10180592a1727bf">GiantMeleeAttack_BTTask</a>
@@ -440,6 +462,13 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_enemy_attack___b_t_task.html#a547169bbc795a0fc6e6e12601c40cc47">EnemyAttack_BTTask</a>
 , <a class="el" href="class_giant_melee_attack___b_t_task.html#a30dd53d02e844eab55652c2fc628b53c">GiantMeleeAttack_BTTask</a>
 , <a class="el" href="class_giant_ranged_attack___b_t_task.html#a897ee13f9ddeaa6e59a58ac85b7da3db">GiantRangedAttack_BTTask</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>notclose()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#a30eb18a71578c736ec8a1f0434488ace">BearBehaviorTree_BehaviorTree</a>
 </li>
 </ul>
 
@@ -505,6 +534,12 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>receiveAttackAlarm()
 : <a class="el" href="class_enemy___character.html#af291c216d2d7ce2c83e71cb151cf13ee">Enemy_Character</a>
 </li>
+<li>ReceiveExecute()
+: <a class="el" href="class_enemy_attack___b_t_task.html#ab1f323dce103c008fa11e1b0f08efc30">EnemyAttack_BTTask</a>
+</li>
+<li>ReceiveTick()
+: <a class="el" href="class_enemy_attack___b_t_task.html#ace9bb26b7392400fac4a24c736b16116">EnemyAttack_BTTask</a>
+</li>
 <li>recoil
 : <a class="el" href="class_weapons___actor.html#aebb36d9d9ad6635929b41673ab76f5ba">Weapons_Actor</a>
 </li>
@@ -519,6 +554,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>reloadDispatcher_Event()
 : <a class="el" href="class_person___character.html#a72fb7de186f6b9c0091062998673bfe1">Person_Character</a>
+</li>
+<li>Root()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#ad4f48189adfab95137579f57db934c32">BearBehaviorTree_BehaviorTree</a>
 </li>
 <li>runing_fire
 : <a class="el" href="class_person___character.html#afa2a8bdb460adc470c84059b417ee21e">Person_Character</a>
@@ -535,6 +573,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 , <a class="el" href="class_person___character.html#adf2ca5624b90380520fc5b3d216f2dc8">Person_Character</a>
 , <a class="el" href="class_player___person.html#aed98240a8754d1b4fee94a426717d99f">Player_Person</a>
 , <a class="el" href="class_weapons___actor.html#a47da85d09a9191edbee8f5454f8a5118">Weapons_Actor</a>
+</li>
+<li>Selector()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#aa4c0e29b418915e15eaffc507b57ecc6">BearBehaviorTree_BehaviorTree</a>
 </li>
 <li>setCanAttack()
 : <a class="el" href="class_enemy___character.html#abf821a2be938d0686caf45fa6c738af7">Enemy_Character</a>
@@ -591,6 +632,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
 <li>waitingFire()
 : <a class="el" href="class_weapons___actor.html#aad412298d60d3ffd391c1e3b925eb206">Weapons_Actor</a>
+</li>
+<li>wander()
+: <a class="el" href="class_bear_behavior_tree___behavior_tree.html#ac9bc4af1b6c0cd29a866334af35a0792">BearBehaviorTree_BehaviorTree</a>
 </li>
 <li>Wolf_Enemy()
 : <a class="el" href="class_wolf___enemy.html#a537ed76270461c893580886dcb4b6e8f">Wolf_Enemy</a>
