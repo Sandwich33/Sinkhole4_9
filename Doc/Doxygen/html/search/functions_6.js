@@ -7,5 +7,8 @@ var searchData=
   ['getlookvector',['getLookVector',['../class_a_w_p___weapons.html#a878a7cceb3c17fdd1b3f64f84191e395',1,'AWP_Weapons::getLookVector()'],['../class_weapons___actor.html#a6963343558cb76d4bf1d2ae105c35bff',1,'Weapons_Actor::getLookVector()']]],
   ['getmovementvalues',['getMovementValues',['../class_person___character.html#aaf8b6f95c71b9a20a78d8e40cc5ebfc1',1,'Person_Character']]],
   ['getrecoilline',['getRecoilLine',['../class_weapons___actor.html#a8e5bd4c8a55510f6b7db7674273128fa',1,'Weapons_Actor']]],
-  ['giant_5fenemy',['Giant_Enemy',['../class_giant___enemy.html#a5758c12bf2ab4973307baac4dfc40960',1,'Giant_Enemy']]]
+  ['giant_5fenemy',['Giant_Enemy',['../class_giant___enemy.html#a5758c12bf2ab4973307baac4dfc40960',1,'Giant_Enemy']]],
+  ['giantapproach',['giantApproach',['../class_giant_behavior_tree___behavior_tree.html#a0731104134b84cbba860cd168fc3993a',1,'GiantBehaviorTree_BehaviorTree']]],
+  ['giantmeleeattack',['giantMeleeAttack',['../class_giant_behavior_tree___behavior_tree.html#a314e61e0592a048e3158cf8f93cb97c5',1,'GiantBehaviorTree_BehaviorTree']]],
+  ['giantrangedattack',['giantRangedAttack',['../class_giant_behavior_tree___behavior_tree.html#ac75fb490e2e79c01d24eb4f9a7c6e388',1,'GiantBehaviorTree_BehaviorTree']]]
 ];

@@ -4,7 +4,8 @@ var hierarchy =
       [ "EnemyAIController_AIController", "class_enemy_a_i_controller___a_i_controller.html", null ]
     ] ],
     [ "BehaviorTree", null, [
-      [ "BearBehaviorTree_BehaviorTree", "class_bear_behavior_tree___behavior_tree.html", null ]
+      [ "BearBehaviorTree_BehaviorTree", "class_bear_behavior_tree___behavior_tree.html", null ],
+      [ "GiantBehaviorTree_BehaviorTree", "class_giant_behavior_tree___behavior_tree.html", null ]
     ] ],
     [ "Blackboard", null, [
       [ "EnemyBlackboard_Blackboard", "class_enemy_blackboard___blackboard.html", null ]

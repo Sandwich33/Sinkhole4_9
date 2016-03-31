@@ -14,6 +14,7 @@ var annotated_dup =
     [ "EnemyBlackboard_Blackboard", "class_enemy_blackboard___blackboard.html", "class_enemy_blackboard___blackboard" ],
     [ "Giant_Enemy", "class_giant___enemy.html", "class_giant___enemy" ],
     [ "GiantApproach_BTTask", "class_giant_approach___b_t_task.html", "class_giant_approach___b_t_task" ],
+    [ "GiantBehaviorTree_BehaviorTree", "class_giant_behavior_tree___behavior_tree.html", "class_giant_behavior_tree___behavior_tree" ],
     [ "GiantCloseEnoughForRangedAttack_BTDecorator", "class_giant_close_enough_for_ranged_attack___b_t_decorator.html", "class_giant_close_enough_for_ranged_attack___b_t_decorator" ],
     [ "GiantMeleeAttack_BTTask", "class_giant_melee_attack___b_t_task.html", "class_giant_melee_attack___b_t_task" ],
     [ "GiantRangedAttack_BTTask", "class_giant_ranged_attack___b_t_task.html", "class_giant_ranged_attack___b_t_task" ],

@@ -1,0 +1,530 @@
+\hypertarget{class_giant_behavior_tree___behavior_tree}{}\section{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree Class Reference}
+\label{class_giant_behavior_tree___behavior_tree}\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+
+
+자이언트의 비헤이비어 트리  
+
+
+
+
+{\ttfamily \#include $<$Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree.\+h$>$}
+
+
+
+Inheritance diagram for Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_giant_behavior_tree___behavior_tree__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_giant_behavior_tree___behavior_tree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_a114fdcc0b7b18a7541994c0561d9102d}{root} (\hyperlink{class_enemy_blackboard___blackboard}{Enemy\+Blackboard\+\_\+\+Blackboard} \hyperlink{class_giant_behavior_tree___behavior_tree_a2e26ad9e0c272be24d87a8c1a283895a}{blackboard})
+\begin{DoxyCompactList}\small\item\em 루트 노드 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_a3eba6d53ad774ed86427759a7437ae2c}{selector} (Object target\+To\+Attack, Vector destination)
+\begin{DoxyCompactList}\small\item\em 서비스를 가지는 분기 노드 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_ad75d5834908366c41eeb6bab6b409a6b}{idle} (Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 대기 상태 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_a07dfd4e1bc0e99b7dabed86be3f19257}{found\+Person} (Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 전투 상태 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_ab0fdd6e302f64b84b216cdec31baeb76}{wander} (Vector destination)
+\begin{DoxyCompactList}\small\item\em 어슬렁거리기 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_af346a6b3b986b6f9092255672e3ce833}{adjacent} (Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 근접 상태 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_a3261ee943f9e8045c66bde4489592b42}{near} (Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 가까운 상태 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_a6659209498adb2b5f5b9567bd09262f3}{not\+Close} (Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 멀리 떨어진 상태 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_a760f8efcdfb234c0063f67b5f785d553}{move\+To} (Vector destination)
+\begin{DoxyCompactList}\small\item\em 이동 태스크 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_a314e61e0592a048e3158cf8f93cb97c5}{giant\+Melee\+Attack} (Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 근접 공격 태스크 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_ac75fb490e2e79c01d24eb4f9a7c6e388}{giant\+Ranged\+Attack} (Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 원거리 공격 태스크 \end{DoxyCompactList}\item 
+void \hyperlink{class_giant_behavior_tree___behavior_tree_a0731104134b84cbba860cd168fc3993a}{giant\+Approach} (Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 접근 태스크 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_enemy_blackboard___blackboard}{Enemy\+Blackboard\+\_\+\+Blackboard} \hyperlink{class_giant_behavior_tree___behavior_tree_a2e26ad9e0c272be24d87a8c1a283895a}{blackboard}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+자이언트의 비헤이비어 트리 
+
+자이언트의 행동 방식을 컨트롤 한다. 
+
+\subsection{Member Function Documentation}
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!adjacent@{adjacent}}
+\index{adjacent@{adjacent}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{adjacent(\+Object target\+To\+Attack)}{adjacent(Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::adjacent (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_af346a6b3b986b6f9092255672e3ce833}{}\label{class_giant_behavior_tree___behavior_tree_af346a6b3b986b6f9092255672e3ce833}
+
+
+근접 상태 데코레이터 
+
+적을 근접 공격할 수 있을 정도로 충분히 가까우면 giant\+Melee\+Attack을 호출한다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack} & 공격할 대상. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_af346a6b3b986b6f9092255672e3ce833_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_af346a6b3b986b6f9092255672e3ce833_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!found\+Person@{found\+Person}}
+\index{found\+Person@{found\+Person}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{found\+Person(\+Object target\+To\+Attack)}{foundPerson(Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::found\+Person (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_a07dfd4e1bc0e99b7dabed86be3f19257}{}\label{class_giant_behavior_tree___behavior_tree_a07dfd4e1bc0e99b7dabed86be3f19257}
+
+
+전투 상태 데코레이터 
+
+target\+To\+Attack에 값이 있으면 이쪽으로 분기된다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack} & 공격할 대상. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a07dfd4e1bc0e99b7dabed86be3f19257_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a07dfd4e1bc0e99b7dabed86be3f19257_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!giant\+Approach@{giant\+Approach}}
+\index{giant\+Approach@{giant\+Approach}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{giant\+Approach(\+Object target\+To\+Attack)}{giantApproach(Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::giant\+Approach (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_a0731104134b84cbba860cd168fc3993a}{}\label{class_giant_behavior_tree___behavior_tree_a0731104134b84cbba860cd168fc3993a}
+
+
+접근 태스크 
+
+공격할 대상에게 접근하는 기능을 수행한다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack} & 공격할 대상. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a0731104134b84cbba860cd168fc3993a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a0731104134b84cbba860cd168fc3993a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!giant\+Melee\+Attack@{giant\+Melee\+Attack}}
+\index{giant\+Melee\+Attack@{giant\+Melee\+Attack}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{giant\+Melee\+Attack(\+Object target\+To\+Attack)}{giantMeleeAttack(Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::giant\+Melee\+Attack (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_a314e61e0592a048e3158cf8f93cb97c5}{}\label{class_giant_behavior_tree___behavior_tree_a314e61e0592a048e3158cf8f93cb97c5}
+
+
+근접 공격 태스크 
+
+대상에게 근접 공격 기능을 수행한다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack} & 공격할 대상. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a314e61e0592a048e3158cf8f93cb97c5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a314e61e0592a048e3158cf8f93cb97c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!giant\+Ranged\+Attack@{giant\+Ranged\+Attack}}
+\index{giant\+Ranged\+Attack@{giant\+Ranged\+Attack}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{giant\+Ranged\+Attack(\+Object target\+To\+Attack)}{giantRangedAttack(Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::giant\+Ranged\+Attack (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_ac75fb490e2e79c01d24eb4f9a7c6e388}{}\label{class_giant_behavior_tree___behavior_tree_ac75fb490e2e79c01d24eb4f9a7c6e388}
+
+
+원거리 공격 태스크 
+
+대상에게 원거리 공격 기능을 수행한다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack} & 공격할 대상. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_ac75fb490e2e79c01d24eb4f9a7c6e388_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_ac75fb490e2e79c01d24eb4f9a7c6e388_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!idle@{idle}}
+\index{idle@{idle}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{idle(\+Object target\+To\+Attack)}{idle(Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::idle (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_ad75d5834908366c41eeb6bab6b409a6b}{}\label{class_giant_behavior_tree___behavior_tree_ad75d5834908366c41eeb6bab6b409a6b}
+
+
+대기 상태 데코레이터 
+
+target\+To\+Attack이 비어있을 경우 이쪽으로 분기된다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack} & 공격할 대상. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_ad75d5834908366c41eeb6bab6b409a6b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_ad75d5834908366c41eeb6bab6b409a6b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!move\+To@{move\+To}}
+\index{move\+To@{move\+To}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{move\+To(\+Vector destination)}{moveTo(Vector destination)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::move\+To (
+\begin{DoxyParamCaption}
+\item[{Vector}]{destination}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_a760f8efcdfb234c0063f67b5f785d553}{}\label{class_giant_behavior_tree___behavior_tree_a760f8efcdfb234c0063f67b5f785d553}
+
+
+이동 태스크 
+
+언리얼에서 제공하는 기본 이동 태스크. 
+\begin{DoxyParams}{Parameters}
+{\em destination} & 이동할 목적지. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a760f8efcdfb234c0063f67b5f785d553_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a760f8efcdfb234c0063f67b5f785d553_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!near@{near}}
+\index{near@{near}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{near(\+Object target\+To\+Attack)}{near(Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::near (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_a3261ee943f9e8045c66bde4489592b42}{}\label{class_giant_behavior_tree___behavior_tree_a3261ee943f9e8045c66bde4489592b42}
+
+
+가까운 상태 데코레이터 
+
+적을 원거리 공격할 수 있을 정도로 충분히 가까우면 giant\+Ranged\+Attack을 호출한다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack} & 공격할 대상. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a3261ee943f9e8045c66bde4489592b42_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a3261ee943f9e8045c66bde4489592b42_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!not\+Close@{not\+Close}}
+\index{not\+Close@{not\+Close}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{not\+Close(\+Object target\+To\+Attack)}{notClose(Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::not\+Close (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_a6659209498adb2b5f5b9567bd09262f3}{}\label{class_giant_behavior_tree___behavior_tree_a6659209498adb2b5f5b9567bd09262f3}
+
+
+멀리 떨어진 상태 데코레이터 
+
+적을 근접 공격할 수 있을 정도로 가깝지 않으면 giant\+Approach를 호출한다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack} & 공격할 대상. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a6659209498adb2b5f5b9567bd09262f3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a6659209498adb2b5f5b9567bd09262f3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!root@{root}}
+\index{root@{root}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{root(\+Enemy\+Blackboard\+\_\+\+Blackboard blackboard)}{root(EnemyBlackboard_Blackboard blackboard)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::root (
+\begin{DoxyParamCaption}
+\item[{{\bf Enemy\+Blackboard\+\_\+\+Blackboard}}]{blackboard}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_a114fdcc0b7b18a7541994c0561d9102d}{}\label{class_giant_behavior_tree___behavior_tree_a114fdcc0b7b18a7541994c0561d9102d}
+
+
+루트 노드 
+
+비헤이비어 트리의 루트 노드. 
+\begin{DoxyParams}{Parameters}
+{\em blackboard} & 비헤이비어 트리에서 사용하는 블랙보드. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a114fdcc0b7b18a7541994c0561d9102d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!selector@{selector}}
+\index{selector@{selector}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{selector(\+Object target\+To\+Attack, Vector destination)}{selector(Object targetToAttack, Vector destination)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::selector (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack, }
+\item[{Vector}]{destination}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_a3eba6d53ad774ed86427759a7437ae2c}{}\label{class_giant_behavior_tree___behavior_tree_a3eba6d53ad774ed86427759a7437ae2c}
+
+
+서비스를 가지는 분기 노드 
+
+Scan\+Person\+Character와 Set\+Random\+Destination 서비스를 가지고 있다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack} & 인간 캐릭터를 발견하면 이 변수에 저장된다. \\
+\hline
+{\em destination} & 주위 -\/2000 $\sim$ +2000 범위의 랜덤 위치가 저장된다. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a3eba6d53ad774ed86427759a7437ae2c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_a3eba6d53ad774ed86427759a7437ae2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!wander@{wander}}
+\index{wander@{wander}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{wander(\+Vector destination)}{wander(Vector destination)}}]{\setlength{\rightskip}{0pt plus 5cm}void Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::wander (
+\begin{DoxyParamCaption}
+\item[{Vector}]{destination}
+\end{DoxyParamCaption}
+)}\hypertarget{class_giant_behavior_tree___behavior_tree_ab0fdd6e302f64b84b216cdec31baeb76}{}\label{class_giant_behavior_tree___behavior_tree_ab0fdd6e302f64b84b216cdec31baeb76}
+
+
+어슬렁거리기 데코레이터 
+
+공격할 대상이 없고 destination에 값이 있으면 move\+To를 호출한다. 
+\begin{DoxyParams}{Parameters}
+{\em destination} & 이동할 목적지. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_ab0fdd6e302f64b84b216cdec31baeb76_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_giant_behavior_tree___behavior_tree_ab0fdd6e302f64b84b216cdec31baeb76_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}!blackboard@{blackboard}}
+\index{blackboard@{blackboard}!Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree@{Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree}}
+\subsubsection[{\texorpdfstring{blackboard}{blackboard}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy\+Blackboard\+\_\+\+Blackboard} Giant\+Behavior\+Tree\+\_\+\+Behavior\+Tree\+::blackboard\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_giant_behavior_tree___behavior_tree_a2e26ad9e0c272be24d87a8c1a283895a}{}\label{class_giant_behavior_tree___behavior_tree_a2e26ad9e0c272be24d87a8c1a283895a}

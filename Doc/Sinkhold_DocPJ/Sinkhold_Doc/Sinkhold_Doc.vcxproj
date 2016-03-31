@@ -92,6 +92,7 @@
     <ClInclude Include="EnemyBlackboard_Blackboard.h" />
     <ClInclude Include="Enemy_Character.h" />
     <ClInclude Include="GiantApproach_BTTask.h" />
+    <ClInclude Include="GiantBehaviorTree_BehaviorTree.h" />
     <ClInclude Include="GiantCloseEnoughForRangedAttack_BTDecorator.h" />
     <ClInclude Include="GiantMeleeAttack_BTTask.h" />
     <ClInclude Include="GiantRangedAttack_BTTask.h" />
@@ -124,6 +125,7 @@
     <ClCompile Include="EnemyBlackboard_Blackboard.cpp" />
     <ClCompile Include="Enemy_Character.cpp" />
     <ClCompile Include="GiantApproach_BTTask.cpp" />
+    <ClCompile Include="GiantBehaviorTree_BehaviorTree.cpp" />
     <ClCompile Include="GiantCloseEnoughForRangedAttack_BTDecorator.cpp" />
     <ClCompile Include="GiantMeleeAttack_BTTask.cpp" />
     <ClCompile Include="GiantRangedAttack_BTTask.cpp" />

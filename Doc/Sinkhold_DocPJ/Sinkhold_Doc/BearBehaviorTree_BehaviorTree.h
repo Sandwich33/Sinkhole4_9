@@ -12,7 +12,7 @@ public:
 	/**
 	@brief 루트 노드
 	@details 비헤이비어 트리의 루트 노드.
-	@param blackboard 비헤이비어에서 사용하는 블랙보드.
+	@param blackboard 비헤이비어 트리에서 사용하는 블랙보드.
 	*/
 	void root(EnemyBlackboard_Blackboard blackboard);
 
