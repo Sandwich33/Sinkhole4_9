@@ -1,0 +1,172 @@
+\hypertarget{class_service___destination}{}\section{Service\+\_\+\+Destination Class Reference}
+\label{class_service___destination}\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+
+
+팀원 AI 서비스  
+
+
+
+
+{\ttfamily \#include $<$Service\+\_\+\+Destination.\+h$>$}
+
+
+
+Inheritance diagram for Service\+\_\+\+Destination\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_service___destination__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Service\+\_\+\+Destination\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_service___destination__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Graph \hyperlink{class_service___destination_a8c437b3d32d5112db9fc3bb7ea5c4ab7}{Receive\+Tick} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 서비스 틱 이벤트 \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_service___destination_af36502a82e0508ac5756e5554949c3f4}{Receive\+Activation} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 서비스 활성화 이벤트 \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_service___destination_a7169d7b9c59b120f637504d80abc20a3}{move\+To\+Point\+Event} (Vector Point)
+\begin{DoxyCompactList}\small\item\em 커스텀 이벤트 \end{DoxyCompactList}\item 
+Event\+Graph \hyperlink{class_service___destination_a888c766a24eb777337674cd67fd2ae21}{follow\+On\+Event} ()
+\begin{DoxyCompactList}\small\item\em 커스텀 이벤트 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service___destination_aab020987fc86e7bc721b2b9ecdd6d9f8}{Destination}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service___destination_aa01c366172f8b80aade716cba21820b1}{my\+Character}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service___destination_a29222990051632bee7d566e6ea357749}{bullet}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service___destination_a3bf42785905cc363414a52b61274b793}{Select\+AI}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service___destination_a9d8b0d0d538b168a18c01c411a86afe3}{Command}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service___destination_adb4d684a452e88b7bbf0a1ece04f21e1}{Original\+Rotation}
+\item 
+\hyperlink{class_a_i___person}{A\+I\+\_\+\+Person} \hyperlink{class_service___destination_a5467a698caf1e5021d6d2cc5aa2f7742}{A\+I\+\_\+\+Person\+\_\+\+Ref}
+\item 
+\hyperlink{class_shotgun___a_i___person}{Shotgun\+\_\+\+A\+I\+\_\+\+Person} \hyperlink{class_service___destination_aa76646438b2f815ef439bd27d5514d4b}{Storm\+\_\+\+Ref}
+\item 
+\hyperlink{class_m4_a1___a_i___person}{M4\+A1\+\_\+\+A\+I\+\_\+\+Person} \hyperlink{class_service___destination_aae5ce87069ea53c012fcca9b99d18d51}{M4\+A1\+\_\+\+Ref}
+\item 
+\hyperlink{class_a_w_p___a_i___person}{A\+W\+P\+\_\+\+A\+I\+\_\+\+Person} \hyperlink{class_service___destination_aafe01afb61466c81ccb80e7c5c5d43ee}{A\+W\+P\+\_\+\+Ref}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+팀원 AI 서비스 
+
+명령을 받았을 때, 변경되어야 할 변수들을 Set해준다. 그리고 총알의 장전 수를 최신화한다. 
+
+\subsection{Member Function Documentation}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!follow\+On\+Event@{follow\+On\+Event}}
+\index{follow\+On\+Event@{follow\+On\+Event}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{follow\+On\+Event()}{followOnEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Service\+\_\+\+Destination\+::follow\+On\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_service___destination_a888c766a24eb777337674cd67fd2ae21}{}\label{class_service___destination_a888c766a24eb777337674cd67fd2ae21}
+
+
+커스텀 이벤트 
+
+Command를 Set하고 Destination를 지운다. (목적지를 지운다.) 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!move\+To\+Point\+Event@{move\+To\+Point\+Event}}
+\index{move\+To\+Point\+Event@{move\+To\+Point\+Event}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{move\+To\+Point\+Event(\+Vector Point)}{moveToPointEvent(Vector Point)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Service\+\_\+\+Destination\+::move\+To\+Point\+Event (
+\begin{DoxyParamCaption}
+\item[{Vector}]{Point}
+\end{DoxyParamCaption}
+)}\hypertarget{class_service___destination_a7169d7b9c59b120f637504d80abc20a3}{}\label{class_service___destination_a7169d7b9c59b120f637504d80abc20a3}
+
+
+커스텀 이벤트 
+
+Destination과 Command 변수가 Set된다. (목적지가 Set된다) 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!Receive\+Activation@{Receive\+Activation}}
+\index{Receive\+Activation@{Receive\+Activation}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{Receive\+Activation(\+Actor Owner\+Actor)}{ReceiveActivation(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Service\+\_\+\+Destination\+::\+Receive\+Activation (
+\begin{DoxyParamCaption}
+\item[{Actor}]{Owner\+Actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_service___destination_af36502a82e0508ac5756e5554949c3f4}{}\label{class_service___destination_af36502a82e0508ac5756e5554949c3f4}
+
+
+서비스 활성화 이벤트 
+
+명령을 받았다면 move\+To\+Point\+Event를 활성화되어 Destination과 Command 변수가 Set되고, 아니라면 follow\+On\+Event가 활성화되어 Command를 Set하고 Destination를 지운다. 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!Receive\+Tick@{Receive\+Tick}}
+\index{Receive\+Tick@{Receive\+Tick}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{Receive\+Tick(\+Actor Owner\+Actor)}{ReceiveTick(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Service\+\_\+\+Destination\+::\+Receive\+Tick (
+\begin{DoxyParamCaption}
+\item[{Actor}]{Owner\+Actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_service___destination_a8c437b3d32d5112db9fc3bb7ea5c4ab7}{}\label{class_service___destination_a8c437b3d32d5112db9fc3bb7ea5c4ab7}
+
+
+서비스 틱 이벤트 
+
+총알 수를 Set해주는 서비스
+
+현재의 총알 수를 가저와 bullet 블랙보드 변수에 Set함 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!A\+I\+\_\+\+Person\+\_\+\+Ref@{A\+I\+\_\+\+Person\+\_\+\+Ref}}
+\index{A\+I\+\_\+\+Person\+\_\+\+Ref@{A\+I\+\_\+\+Person\+\_\+\+Ref}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{A\+I\+\_\+\+Person\+\_\+\+Ref}{AI_Person_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+I\+\_\+\+Person} Service\+\_\+\+Destination\+::\+A\+I\+\_\+\+Person\+\_\+\+Ref}\hypertarget{class_service___destination_a5467a698caf1e5021d6d2cc5aa2f7742}{}\label{class_service___destination_a5467a698caf1e5021d6d2cc5aa2f7742}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!A\+W\+P\+\_\+\+Ref@{A\+W\+P\+\_\+\+Ref}}
+\index{A\+W\+P\+\_\+\+Ref@{A\+W\+P\+\_\+\+Ref}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{A\+W\+P\+\_\+\+Ref}{AWP_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+W\+P\+\_\+\+A\+I\+\_\+\+Person} Service\+\_\+\+Destination\+::\+A\+W\+P\+\_\+\+Ref}\hypertarget{class_service___destination_aafe01afb61466c81ccb80e7c5c5d43ee}{}\label{class_service___destination_aafe01afb61466c81ccb80e7c5c5d43ee}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!bullet@{bullet}}
+\index{bullet@{bullet}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{bullet}{bullet}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+\+Destination\+::bullet}\hypertarget{class_service___destination_a29222990051632bee7d566e6ea357749}{}\label{class_service___destination_a29222990051632bee7d566e6ea357749}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!Command@{Command}}
+\index{Command@{Command}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{Command}{Command}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+\+Destination\+::\+Command}\hypertarget{class_service___destination_a9d8b0d0d538b168a18c01c411a86afe3}{}\label{class_service___destination_a9d8b0d0d538b168a18c01c411a86afe3}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!Destination@{Destination}}
+\index{Destination@{Destination}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{Destination}{Destination}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+\+Destination\+::\+Destination}\hypertarget{class_service___destination_aab020987fc86e7bc721b2b9ecdd6d9f8}{}\label{class_service___destination_aab020987fc86e7bc721b2b9ecdd6d9f8}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!M4\+A1\+\_\+\+Ref@{M4\+A1\+\_\+\+Ref}}
+\index{M4\+A1\+\_\+\+Ref@{M4\+A1\+\_\+\+Ref}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{M4\+A1\+\_\+\+Ref}{M4A1_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M4\+A1\+\_\+\+A\+I\+\_\+\+Person} Service\+\_\+\+Destination\+::\+M4\+A1\+\_\+\+Ref}\hypertarget{class_service___destination_aae5ce87069ea53c012fcca9b99d18d51}{}\label{class_service___destination_aae5ce87069ea53c012fcca9b99d18d51}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!my\+Character@{my\+Character}}
+\index{my\+Character@{my\+Character}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{my\+Character}{myCharacter}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+\+Destination\+::my\+Character}\hypertarget{class_service___destination_aa01c366172f8b80aade716cba21820b1}{}\label{class_service___destination_aa01c366172f8b80aade716cba21820b1}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!Original\+Rotation@{Original\+Rotation}}
+\index{Original\+Rotation@{Original\+Rotation}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{Original\+Rotation}{OriginalRotation}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+\+Destination\+::\+Original\+Rotation}\hypertarget{class_service___destination_adb4d684a452e88b7bbf0a1ece04f21e1}{}\label{class_service___destination_adb4d684a452e88b7bbf0a1ece04f21e1}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!Select\+AI@{Select\+AI}}
+\index{Select\+AI@{Select\+AI}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{Select\+AI}{SelectAI}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+\+Destination\+::\+Select\+AI}\hypertarget{class_service___destination_a3bf42785905cc363414a52b61274b793}{}\label{class_service___destination_a3bf42785905cc363414a52b61274b793}
+\index{Service\+\_\+\+Destination@{Service\+\_\+\+Destination}!Storm\+\_\+\+Ref@{Storm\+\_\+\+Ref}}
+\index{Storm\+\_\+\+Ref@{Storm\+\_\+\+Ref}!Service\+\_\+\+Destination@{Service\+\_\+\+Destination}}
+\subsubsection[{\texorpdfstring{Storm\+\_\+\+Ref}{Storm_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shotgun\+\_\+\+A\+I\+\_\+\+Person} Service\+\_\+\+Destination\+::\+Storm\+\_\+\+Ref}\hypertarget{class_service___destination_aa76646438b2f815ef439bd27d5514d4b}{}\label{class_service___destination_aa76646438b2f815ef439bd27d5514d4b}

@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['giant_5fenemy',['Giant_Enemy',['../class_giant___enemy.html',1,'']]],
-  ['giantapproach_5fbttask',['GiantApproach_BTTask',['../class_giant_approach___b_t_task.html',1,'']]],
-  ['giantbehaviortree_5fbehaviortree',['GiantBehaviorTree_BehaviorTree',['../class_giant_behavior_tree___behavior_tree.html',1,'']]],
-  ['giantcloseenoughforrangedattack_5fbtdecorator',['GiantCloseEnoughForRangedAttack_BTDecorator',['../class_giant_close_enough_for_ranged_attack___b_t_decorator.html',1,'']]],
-  ['giantmeleeattack_5fbttask',['GiantMeleeAttack_BTTask',['../class_giant_melee_attack___b_t_task.html',1,'']]],
-  ['giantrangedattack_5fbttask',['GiantRangedAttack_BTTask',['../class_giant_ranged_attack___b_t_task.html',1,'']]]
+  ['enemy_5fcharacter',['Enemy_Character',['../class_enemy___character.html',1,'']]],
+  ['enemyaicontroller_5faicontroller',['EnemyAIController_AIController',['../class_enemy_a_i_controller___a_i_controller.html',1,'']]],
+  ['enemyattack_5fbttask',['EnemyAttack_BTTask',['../class_enemy_attack___b_t_task.html',1,'']]],
+  ['enemyblackboard_5fblackboard',['EnemyBlackboard_Blackboard',['../class_enemy_blackboard___blackboard.html',1,'']]]
 ];

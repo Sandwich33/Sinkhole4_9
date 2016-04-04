@@ -1,7 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$class_approach___b_t_task.html" title="적 AI 태스크 " alt="" coords="149,5,277,32"/>
-<area shape="rect" id="node3" href="$class_enemy_attack___b_t_task.html" title="적 AI 태스크 " alt="" coords="137,56,289,83"/>
-<area shape="rect" id="node4" href="$class_giant_approach___b_t_task.html" title="적 AI 태스크 " alt="" coords="134,107,293,133"/>
-<area shape="rect" id="node5" href="$class_giant_melee_attack___b_t_task.html" title="적 AI 태스크 " alt="" coords="125,157,302,184"/>
-<area shape="rect" id="node6" href="$class_giant_ranged_attack___b_t_task.html" title="적 AI 태스크 " alt="" coords="120,208,307,235"/>
+<area shape="rect" id="node2" href="$class_all___a_i_controller.html" title="팀원 AI 컨트롤러 " alt="" coords="189,5,300,32"/>
+<area shape="rect" id="node3" href="$class_enemy_a_i_controller___a_i_controller.html" title="적 AI 컨트롤러 " alt="" coords="143,56,347,83"/>
 </map>

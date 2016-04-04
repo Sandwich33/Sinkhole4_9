@@ -80,13 +80,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI_Person.h" />
+    <ClInclude Include="All_AIController.h" />
     <ClInclude Include="Approach_BTTask.h" />
     <ClInclude Include="AWP_AI_Person.h" />
     <ClInclude Include="AWP_Weapons.h" />
+    <ClInclude Include="BB_Humen.h" />
     <ClInclude Include="BearBehaviorTree_BehaviorTree.h" />
     <ClInclude Include="Bear_Enemy.h" />
+    <ClInclude Include="BT_Base.h" />
     <ClInclude Include="CloseEnoughForMeleeAttack_BTDecorator.h" />
     <ClInclude Include="CloseEnoughForRangedAttack_BTDecorator.h" />
+    <ClInclude Include="Dec_PlayerCheck.h" />
+    <ClInclude Include="Dec_Rotationinit.h" />
     <ClInclude Include="EnemyAIController_AIController.h" />
     <ClInclude Include="EnemyAttack_BTTask.h" />
     <ClInclude Include="EnemyBlackboard_Blackboard.h" />
@@ -102,6 +107,7 @@
     <ClInclude Include="Person_Character.h" />
     <ClInclude Include="Player_Person.h" />
     <ClInclude Include="ScanPersonCharacters_BTService.h" />
+    <ClInclude Include="Service_Destination.h" />
     <ClInclude Include="SetRandomDestination_BTService.h" />
     <ClInclude Include="ShotGun_Weapons.h" />
     <ClInclude Include="Shotgun_AI_Person.h" />
@@ -113,13 +119,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AI_Person.cpp" />
+    <ClCompile Include="All_AIController.cpp" />
     <ClCompile Include="Approach_BTTask.cpp" />
     <ClCompile Include="AWP_AI_Person.cpp" />
     <ClCompile Include="AWP_Weapons.cpp" />
+    <ClCompile Include="BB_Humen.cpp" />
     <ClCompile Include="BearBehaviorTree_BehaviorTree.cpp" />
     <ClCompile Include="Bear_Enemy.cpp" />
+    <ClCompile Include="BT_Base.cpp" />
     <ClCompile Include="CloseEnoughForMeleeAttack_BTDecorator.cpp" />
     <ClCompile Include="CloseEnoughForRangedAttack_BTDecorator.cpp" />
+    <ClCompile Include="Dec_PlayerCheck.cpp" />
+    <ClCompile Include="Dec_Rotationinit.cpp" />
     <ClCompile Include="EnemyAIController_AIController.cpp" />
     <ClCompile Include="EnemyAttack_BTTask.cpp" />
     <ClCompile Include="EnemyBlackboard_Blackboard.cpp" />
@@ -135,6 +146,7 @@
     <ClCompile Include="Person_Character.cpp" />
     <ClCompile Include="Player_Person.cpp" />
     <ClCompile Include="ScanPersonCharacters_BTService.cpp" />
+    <ClCompile Include="Service_Destination.cpp" />
     <ClCompile Include="SetRandomDestination_BTService.cpp" />
     <ClCompile Include="ShotGunWeapons.cpp" />
     <ClCompile Include="Shotgun_AI_Person.cpp" />

@@ -13,5 +13,6 @@ var searchData=
   ['anydamage',['AnyDamage',['../class_enemy___character.html#ae989f213471b46262de4e372ecbe5c63',1,'Enemy_Character::AnyDamage()'],['../class_person___character.html#a7e5f3df07b9a156ad0eceb1f6c8e615c',1,'Person_Character::AnyDamage()']]],
   ['applydemage',['applyDemage',['../class_enemy___character.html#acb2526ab98b23f7928215895caf0532c',1,'Enemy_Character::applyDemage()'],['../class_person___character.html#af2ac7f312634c0f8c2c889cd7dd55c01',1,'Person_Character::applyDemage()']]],
   ['approach',['approach',['../class_bear_behavior_tree___behavior_tree.html#ae22286b24ddb389f5c147fca13aac2b4',1,'BearBehaviorTree_BehaviorTree']]],
-  ['attack',['attack',['../class_bear_behavior_tree___behavior_tree.html#a03d8bdee8baffed5b5f51351302744da',1,'BearBehaviorTree_BehaviorTree']]]
+  ['attack',['attack',['../class_bear_behavior_tree___behavior_tree.html#a03d8bdee8baffed5b5f51351302744da',1,'BearBehaviorTree_BehaviorTree']]],
+  ['attackandreload',['AttackAndReload',['../class_b_t___base.html#a4473d81f72741d7b1b4956feada36a28',1,'BT_Base']]]
 ];

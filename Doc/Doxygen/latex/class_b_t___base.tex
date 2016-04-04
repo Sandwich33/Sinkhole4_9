@@ -1,0 +1,295 @@
+\hypertarget{class_b_t___base}{}\section{B\+T\+\_\+\+Base Class Reference}
+\label{class_b_t___base}\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+
+
+팀원\+A\+I들의 기본적인 비헤이비어 트리  
+
+
+
+
+{\ttfamily \#include $<$B\+T\+\_\+\+Base.\+h$>$}
+
+
+
+Inheritance diagram for B\+T\+\_\+\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_b_t___base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for B\+T\+\_\+\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_b_t___base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_b_t___base_a54881cf55e411fdbf6c9f98586049742}{root} (\hyperlink{class_b_b___humen}{B\+B\+\_\+\+Humen} blackboard)
+\begin{DoxyCompactList}\small\item\em 루트 노드 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3}{selector} (Object my\+Character, Vector my\+Location, Vector Destination, Bool distance\+Check, Object target\+To\+Attack, Float attack\+Range, Integer bullet, Object Select\+AI, Bool Command, Rotator Original\+Rotation)
+\begin{DoxyCompactList}\small\item\em 서비스를 가지는 분기 노드 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_a68cb1b35bc3105c36e0bd4b8477a1ec9}{Idle} (Bool Command)
+\begin{DoxyCompactList}\small\item\em 대기 상태 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_affb0d6cdaec417994ce78c7608e5bf9e}{Find} (Object target\+To\+Attack, Integer bullet, Bool \hyperlink{class_dec___player_check}{Dec\+\_\+\+Player\+Check})
+\begin{DoxyCompactList}\small\item\em 적 발견 상태 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_a4473d81f72741d7b1b4956feada36a28}{Attack\+And\+Reload} (Object target\+To\+Attack, Integer bullet)
+\begin{DoxyCompactList}\small\item\em 적을 공격하는 태스크 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_a185c89f6b41c5946e6dac9489f251c0f}{Find\+Player} (Bool Command, Object my\+Character, Rotator Original\+Rotation)
+\begin{DoxyCompactList}\small\item\em 플레이어가 범위에 있는지 확인하는 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_a802b9e457808b511a6bc5ea63abd3b87}{Follow\+Me} (Bool Command, Vector Destination, Vector my\+Location, Bool distance\+Check)
+\begin{DoxyCompactList}\small\item\em 나를 따라오게 하는 태스크 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f}{Find\+Enemy} (Object my\+Characyer, Bool Command, Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 적이 범위에 있는지 확인하는 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60}{Move\+Destination} (Bool Command, Vector Destination, Vector, my\+Location, Bool distance\+Check)
+\begin{DoxyCompactList}\small\item\em 명령을 받아서 목적지로 이동하는 태스크 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+팀원\+A\+I들의 기본적인 비헤이비어 트리 
+
+모든 팀원들의 행동 방식을 컨트롤 한다. 
+
+\subsection{Member Function Documentation}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Attack\+And\+Reload@{Attack\+And\+Reload}}
+\index{Attack\+And\+Reload@{Attack\+And\+Reload}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Attack\+And\+Reload(\+Object target\+To\+Attack, Integer bullet)}{AttackAndReload(Object targetToAttack, Integer bullet)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Attack\+And\+Reload (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack, }
+\item[{Integer}]{bullet}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_a4473d81f72741d7b1b4956feada36a28}{}\label{class_b_t___base_a4473d81f72741d7b1b4956feada36a28}
+
+
+적을 공격하는 태스크 
+
+Find에 의해 Attack\+And\+Reload가 실행되면 설정된 target\+To\+Attack의 위치로 공격을 시작함. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack은} & 공격할 대상. \\
+\hline
+{\em bullet은} & 현재 총알이 장전된 수 \\
+\hline
+\end{DoxyParams}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find@{Find}}
+\index{Find@{Find}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Find(\+Object target\+To\+Attack, Integer bullet, Bool Dec\+\_\+\+Player\+Check)}{Find(Object targetToAttack, Integer bullet, Bool Dec_PlayerCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find (
+\begin{DoxyParamCaption}
+\item[{Object}]{target\+To\+Attack, }
+\item[{Integer}]{bullet, }
+\item[{Bool}]{Dec\+\_\+\+Player\+Check}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_affb0d6cdaec417994ce78c7608e5bf9e}{}\label{class_b_t___base_affb0d6cdaec417994ce78c7608e5bf9e}
+
+
+적 발견 상태 데코레이터 
+
+Idle에 의해 Find가 실행되면 target\+To\+Attack = true, bullet $>$ 0, 플레이어가 근처에 있다면 Attack\+And\+Reload가 실행된다. 
+\begin{DoxyParams}{Parameters}
+{\em target\+To\+Attack은} & 공격할 대상. \\
+\hline
+{\em bullet은} & 현재 총알이 장전된 수 \\
+\hline
+{\em Dec\+\_\+\+Player\+Check는} & 설정된 범위안에 플레이어가 있는지 체크. 해당 변수는 따로 만들어진 데코레이터 파일로 인해 반환된다. \\
+\hline
+\end{DoxyParams}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find\+Enemy@{Find\+Enemy}}
+\index{Find\+Enemy@{Find\+Enemy}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Find\+Enemy(\+Object my\+Characyer, Bool Command, Object target\+To\+Attack)}{FindEnemy(Object myCharacyer, Bool Command, Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find\+Enemy (
+\begin{DoxyParamCaption}
+\item[{Object}]{my\+Characyer, }
+\item[{Bool}]{Command, }
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f}{}\label{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f}
+
+
+적이 범위에 있는지 확인하는 데코레이터 
+
+Command == True, target\+To\+Attack == False가 만족하면 my\+Character에 따라 Move\+Destination과 Attack\+And\+Reload를 실행함. 
+\begin{DoxyParams}{Parameters}
+{\em commnad는} & 명령을 내렸는지 확인하는 변수 \\
+\hline
+{\em my\+Character는} & 플레이어 Object \\
+\hline
+{\em target\+To\+Attack은} & 공격할 적 Object \\
+\hline
+\end{DoxyParams}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find\+Player@{Find\+Player}}
+\index{Find\+Player@{Find\+Player}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Find\+Player(\+Bool Command, Object my\+Character, Rotator Original\+Rotation)}{FindPlayer(Bool Command, Object myCharacter, Rotator OriginalRotation)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find\+Player (
+\begin{DoxyParamCaption}
+\item[{Bool}]{Command, }
+\item[{Object}]{my\+Character, }
+\item[{Rotator}]{Original\+Rotation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_a185c89f6b41c5946e6dac9489f251c0f}{}\label{class_b_t___base_a185c89f6b41c5946e6dac9489f251c0f}
+
+
+플레이어가 범위에 있는지 확인하는 데코레이터 
+
+Command == False, my\+Character == True이 만족하면 Follow\+Me를 실행함. 
+\begin{DoxyParams}{Parameters}
+{\em commnad는} & 명령을 내렸는지 확인하는 변수 \\
+\hline
+{\em my\+Character는} & 플레이어 Object \\
+\hline
+{\em Dec\+\_\+\+Rotaioninit가} & 추가되어 있는데, 초기 Rotation 저장을 위한 데코레이터임. (Find\+Player의 분기과정에서 아무런 영향을 주지않음.) \\
+\hline
+\end{DoxyParams}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Follow\+Me@{Follow\+Me}}
+\index{Follow\+Me@{Follow\+Me}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Follow\+Me(\+Bool Command, Vector Destination, Vector my\+Location, Bool distance\+Check)}{FollowMe(Bool Command, Vector Destination, Vector myLocation, Bool distanceCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Follow\+Me (
+\begin{DoxyParamCaption}
+\item[{Bool}]{Command, }
+\item[{Vector}]{Destination, }
+\item[{Vector}]{my\+Location, }
+\item[{Bool}]{distance\+Check}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_a802b9e457808b511a6bc5ea63abd3b87}{}\label{class_b_t___base_a802b9e457808b511a6bc5ea63abd3b87}
+
+
+나를 따라오게 하는 태스크 
+
+Find\+Player가 조건을 만족한다면 나를 따라옴. 
+\begin{DoxyParams}{Parameters}
+{\em Command는} & 명령을 내렸는지에 따른 변수 \\
+\hline
+{\em Destination은} & 명령이동시 목적지의 위치 \\
+\hline
+{\em my\+Location은} & 현재 플레이어의 위치 \\
+\hline
+{\em distance\+Check는} & 플레이어와 A\+I의 거리를 체크하는 부분 \\
+\hline
+\end{DoxyParams}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Idle@{Idle}}
+\index{Idle@{Idle}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Idle(\+Bool Command)}{Idle(Bool Command)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Idle (
+\begin{DoxyParamCaption}
+\item[{Bool}]{Command}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_a68cb1b35bc3105c36e0bd4b8477a1ec9}{}\label{class_b_t___base_a68cb1b35bc3105c36e0bd4b8477a1ec9}
+
+
+대기 상태 데코레이터 
+
+Command가 false라면 Find로 간다. 
+\begin{DoxyParams}{Parameters}
+{\em Command는} & 명령이 내려지지 않음을 체크하기 위함. \\
+\hline
+\end{DoxyParams}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Move\+Destination@{Move\+Destination}}
+\index{Move\+Destination@{Move\+Destination}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Move\+Destination(\+Bool Command, Vector Destination, Vector, my\+Location, Bool distance\+Check)}{MoveDestination(Bool Command, Vector Destination, Vector, myLocation, Bool distanceCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Move\+Destination (
+\begin{DoxyParamCaption}
+\item[{Bool}]{Command, }
+\item[{Vector}]{Destination, }
+\item[{Vector}]{, }
+\item[{my\+Location}]{, }
+\item[{Bool}]{distance\+Check}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60}{}\label{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60}
+
+
+명령을 받아서 목적지로 이동하는 태스크 
+
+Find\+Enemy가 조건을 만족한다면 나를 따라옴. 
+\begin{DoxyParams}{Parameters}
+{\em Command는} & 명령을 내렸는지에 따른 변수 \\
+\hline
+{\em Destination은} & 명령이동시 목적지의 위치 \\
+\hline
+{\em my\+Location은} & 현재 플레이어의 위치 \\
+\hline
+{\em distance\+Check는} & 플레이어와 A\+I의 거리를 체크하는 부분 \\
+\hline
+\end{DoxyParams}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!root@{root}}
+\index{root@{root}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{root(\+B\+B\+\_\+\+Humen blackboard)}{root(BB_Humen blackboard)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::root (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+B\+\_\+\+Humen}}]{blackboard}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_a54881cf55e411fdbf6c9f98586049742}{}\label{class_b_t___base_a54881cf55e411fdbf6c9f98586049742}
+
+
+루트 노드 
+
+비헤이비어 트리의 루트 노드. 
+\begin{DoxyParams}{Parameters}
+{\em blackboard} & 비헤이비어 트리에서 사용하는 블랙보드. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_b_t___base_a54881cf55e411fdbf6c9f98586049742_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!selector@{selector}}
+\index{selector@{selector}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{selector(\+Object my\+Character, Vector my\+Location, Vector Destination, Bool distance\+Check, Object target\+To\+Attack, Float attack\+Range, Integer bullet, Object Select\+A\+I, Bool Command, Rotator Original\+Rotation)}{selector(Object myCharacter, Vector myLocation, Vector Destination, Bool distanceCheck, Object targetToAttack, Float attackRange, Integer bullet, Object SelectAI, Bool Command, Rotator OriginalRotation)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::selector (
+\begin{DoxyParamCaption}
+\item[{Object}]{my\+Character, }
+\item[{Vector}]{my\+Location, }
+\item[{Vector}]{Destination, }
+\item[{Bool}]{distance\+Check, }
+\item[{Object}]{target\+To\+Attack, }
+\item[{Float}]{attack\+Range, }
+\item[{Integer}]{bullet, }
+\item[{Object}]{Select\+AI, }
+\item[{Bool}]{Command, }
+\item[{Rotator}]{Original\+Rotation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3}{}\label{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3}
+
+
+서비스를 가지는 분기 노드 
+
+Service\+\_\+update\+My\+Locaion과 Service\+\_\+\+Scan\+Enemy\+Character, \hyperlink{class_service___destination}{Service\+\_\+\+Destination} 서비스를 가지고 있다. 
+\begin{DoxyParams}{Parameters}
+{\em my\+Character는} & 주변에 적이 발견된다면 on, 아니면 flase로 됨 \\
+\hline
+{\em my\+Location은} & 플레이어의 위치를 실시간으로 업데이트함 \\
+\hline
+{\em Destination은} & 명령이동시에 해당 목적지 위치를 저장한다. \\
+\hline
+{\em distance\+Check는} & 플레이어와 A\+I의 거리가 멀면 true, 아니면 false로 세팅된다. \\
+\hline
+{\em target\+To\+Attack은} & 총든 A\+I사거리에 따라 발견하는 범위안에 적이 있다면 해당 적의 Object를 세팅 \\
+\hline
+{\em attack\+Range는} & A\+I가 들고있는 무기를 검색해서, 무기에 따라 사거리 정해주는 초기값. \\
+\hline
+{\em bullet은} & 현재 장전되어 있는 탄 수를 업데이트함. \\
+\hline
+{\em Select\+A\+I는} & 플레이어가 팀원\+AI 중 하나를 선택하면 선택된 팀원\+A\+I의 Object를 세팅함. \\
+\hline
+{\em Command는} & 명령을 내렸다면 True, 아니면 False를 세팅함. \\
+\hline
+{\em Origina\+Rotation은} & 공격 후 이상해진 Rotation을 복구하기 위해 임시로 만든 A\+I들의 처음 Rotation 초기값. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3_icgraph}
+\end{center}
+\end{figure}
+
+

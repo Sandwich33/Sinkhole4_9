@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node2" href="$class_scan_person_characters___b_t_service.html" title="적 AI 서비스 " alt="" coords="133,5,289,47"/>
-<area shape="rect" id="node3" href="$class_set_random_destination___b_t_service.html" title="적 AI 서비스 " alt="" coords="134,71,289,112"/>
+<area shape="rect" id="node3" href="$class_service___destination.html" title="팀원 AI 서비스 " alt="" coords="143,71,279,98"/>
+<area shape="rect" id="node4" href="$class_set_random_destination___b_t_service.html" title="적 AI 서비스 " alt="" coords="134,123,289,164"/>
 </map>

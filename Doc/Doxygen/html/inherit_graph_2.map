@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$class_close_enough_for_melee_attack___b_t_decorator.html" title="적 AI 데코레이터 " alt="" coords="153,5,343,47"/>
-<area shape="rect" id="node3" href="$class_close_enough_for_ranged_attack___b_t_decorator.html" title="적 AI 데코레이터 " alt="" coords="148,71,348,112"/>
-<area shape="rect" id="node4" href="$class_giant_close_enough_for_ranged_attack___b_t_decorator.html" title="적 AI 데코레이터 " alt="" coords="151,136,345,177"/>
+<area shape="rect" id="node2" href="$class_b_b___humen.html" title="팀원 AI 블랙보드 " alt="" coords="196,5,284,32"/>
+<area shape="rect" id="node3" href="$class_enemy_blackboard___blackboard.html" title="적 AI 블랙보드 " alt="" coords="140,56,340,83"/>
 </map>

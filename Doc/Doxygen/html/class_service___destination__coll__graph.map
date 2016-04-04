@@ -1,0 +1,8 @@
+<map id="Service_Destination" name="Service_Destination">
+<area shape="rect" id="node3" href="$class_a_w_p___a_i___person.html" title="AI 팀원 중 스나이퍼에 알맞게 설정. " alt="" coords="256,1249,376,1327"/>
+<area shape="rect" id="node4" href="$class_a_i___person.html" title="AI 팀원 클래스. " alt="" coords="320,1093,456,1200"/>
+<area shape="rect" id="node7" href="$class_m4_a1___a_i___person.html" title="AI 팀원 중 M4A1에 알맞게 설정. " alt="" coords="400,1249,523,1327"/>
+<area shape="rect" id="node8" href="$class_shotgun___a_i___person.html" title="AI 팀원 중 샷건에 알맞게 설정. " alt="" coords="547,1249,685,1327"/>
+<area shape="rect" id="node5" href="$class_person___character.html" title="아군 캐릭터의 기본형 클래스. " alt="" coords="290,468,486,1044"/>
+<area shape="rect" id="node6" href="$class_weapons___actor.html" title="무기(총)의 기본형 클래스. " alt="" coords="304,5,472,405"/>
+</map>

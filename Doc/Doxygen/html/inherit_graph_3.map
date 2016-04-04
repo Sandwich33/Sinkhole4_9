@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_enemy___character.html" title="적 기본 클래스. " alt="" coords="5,81,132,108"/>
-<area shape="rect" id="node2" href="$class_bear___enemy.html" title="Bear_Enemy" alt="" coords="185,5,282,32"/>
-<area shape="rect" id="node3" href="$class_giant___enemy.html" title="Giant_Enemy" alt="" coords="183,56,284,83"/>
-<area shape="rect" id="node4" href="$class_spider___enemy.html" title="Spider_Enemy" alt="" coords="180,107,287,133"/>
-<area shape="rect" id="node5" href="$class_wolf___enemy.html" title="Wolf_Enemy" alt="" coords="185,157,281,184"/>
+<area shape="rect" id="node2" href="$class_bear_behavior_tree___behavior_tree.html" title="곰의 비헤이비어 트리 " alt="" coords="151,5,355,32"/>
+<area shape="rect" id="node3" href="$class_b_t___base.html" title="팀원AI들의 기본적인 비헤이비어 트리 " alt="" coords="216,56,291,83"/>
+<area shape="rect" id="node4" href="$class_giant_behavior_tree___behavior_tree.html" title="자이언트의 비헤이비어 트리 " alt="" coords="149,107,357,133"/>
 </map>
