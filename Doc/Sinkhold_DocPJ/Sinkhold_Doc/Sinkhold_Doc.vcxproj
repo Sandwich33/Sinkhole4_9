@@ -108,6 +108,8 @@
     <ClInclude Include="Player_Person.h" />
     <ClInclude Include="ScanPersonCharacters_BTService.h" />
     <ClInclude Include="Service_Destination.h" />
+    <ClInclude Include="Service_ScanEnemyCharacter.h" />
+    <ClInclude Include="Service_updateMyLocation.h" />
     <ClInclude Include="SetRandomDestination_BTService.h" />
     <ClInclude Include="ShotGun_Weapons.h" />
     <ClInclude Include="Shotgun_AI_Person.h" />
@@ -147,6 +149,8 @@
     <ClCompile Include="Player_Person.cpp" />
     <ClCompile Include="ScanPersonCharacters_BTService.cpp" />
     <ClCompile Include="Service_Destination.cpp" />
+    <ClCompile Include="Service_ScanEnemyCharacter.cpp" />
+    <ClCompile Include="Service_updateMyLocation.cpp" />
     <ClCompile Include="SetRandomDestination_BTService.cpp" />
     <ClCompile Include="ShotGunWeapons.cpp" />
     <ClCompile Include="Shotgun_AI_Person.cpp" />

@@ -35,6 +35,7 @@ var NAVTREEINDEX0 =
 "class_b_t___base.html#a589c2fe0cc37e24c84ea3ed57157dc60":[0,0,8,6],
 "class_b_t___base.html#a68cb1b35bc3105c36e0bd4b8477a1ec9":[0,0,8,5],
 "class_b_t___base.html#a802b9e457808b511a6bc5ea63abd3b87":[0,0,8,4],
+"class_b_t___base.html#a8a095b67df2778f5155d24dad9f818ef":[0,0,8,9],
 "class_b_t___base.html#aae303238f1a4876a0dc077a91c25b57f":[0,0,8,2],
 "class_b_t___base.html#adbbf3731340b4e525a1ea549fd6409f3":[0,0,8,8],
 "class_b_t___base.html#affb0d6cdaec417994ce78c7608e5bf9e":[0,0,8,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "class_spider___enemy.html":[0,0,33],
 "class_spider___enemy.html#a020b96d3372cb6be3e2c7ea9a1404b46":[0,0,33,0],
 "class_spider___enemy.html#a891d3eb821646ef88176da9e1073e759":[0,0,33,1],
-"class_weapons___actor.html":[0,0,34],
-"class_weapons___actor.html#a03094917a8513d50bf93da99b09b6295":[0,0,34,17]
+"class_weapons___actor.html":[0,0,34]
 };

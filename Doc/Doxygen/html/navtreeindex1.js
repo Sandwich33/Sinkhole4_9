@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"class_weapons___actor.html#a03094917a8513d50bf93da99b09b6295":[0,0,34,17],
 "class_weapons___actor.html#a0c8b9ce144acf091d45cbb640409f76e":[0,0,34,13],
 "class_weapons___actor.html#a222c02127cd7ec162e747a382bc3acb9":[0,0,34,10],
 "class_weapons___actor.html#a22d3ee32aeffc1eea855101fff73d6dc":[0,0,34,28],

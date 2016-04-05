@@ -26,13 +26,13 @@ Collaboration diagram for B\+T\+\_\+\+Base\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=187pt]{class_b_t___base__coll__graph}
+\includegraphics[width=320pt]{class_b_t___base__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{class_b_t___base_a54881cf55e411fdbf6c9f98586049742}{root} (\hyperlink{class_b_b___humen}{B\+B\+\_\+\+Humen} blackboard)
+void \hyperlink{class_b_t___base_a54881cf55e411fdbf6c9f98586049742}{root} (\hyperlink{class_b_b___humen}{B\+B\+\_\+\+Humen} \hyperlink{class_b_t___base_a8a095b67df2778f5155d24dad9f818ef}{blackboard})
 \begin{DoxyCompactList}\small\item\em 루트 노드 \end{DoxyCompactList}\item 
 void \hyperlink{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3}{selector} (Object my\+Character, Vector my\+Location, Vector Destination, Bool distance\+Check, Object target\+To\+Attack, Float attack\+Range, Integer bullet, Object Select\+AI, Bool Command, Rotator Original\+Rotation)
 \begin{DoxyCompactList}\small\item\em 서비스를 가지는 분기 노드 \end{DoxyCompactList}\item 
@@ -50,6 +50,11 @@ void \hyperlink{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f}{Find\+Enemy}
 \begin{DoxyCompactList}\small\item\em 적이 범위에 있는지 확인하는 데코레이터 \end{DoxyCompactList}\item 
 void \hyperlink{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60}{Move\+Destination} (Bool Command, Vector Destination, Vector, my\+Location, Bool distance\+Check)
 \begin{DoxyCompactList}\small\item\em 명령을 받아서 목적지로 이동하는 태스크 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_enemy_blackboard___blackboard}{Enemy\+Blackboard\+\_\+\+Blackboard} \hyperlink{class_b_t___base_a8a095b67df2778f5155d24dad9f818ef}{blackboard}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -228,8 +233,7 @@ Find\+Enemy가 조건을 만족한다면 나를 따라옴.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -283,8 +287,7 @@ Service\+\_\+update\+My\+Locaion과 Service\+\_\+\+Scan\+Enemy\+Character, \hype
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -293,3 +296,9 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
+
+
+\subsection{Member Data Documentation}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!blackboard@{blackboard}}
+\index{blackboard@{blackboard}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{blackboard}{blackboard}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy\+Blackboard\+\_\+\+Blackboard} B\+T\+\_\+\+Base\+::blackboard\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_b_t___base_a8a095b67df2778f5155d24dad9f818ef}{}\label{class_b_t___base_a8a095b67df2778f5155d24dad9f818ef}

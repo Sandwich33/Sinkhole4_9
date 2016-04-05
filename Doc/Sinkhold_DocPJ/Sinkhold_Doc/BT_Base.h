@@ -1,4 +1,5 @@
 #pragma once
+#include "BB_Humen.h"
 
 /**
 @brief 팀원AI들의 기본적인 비헤이비어 트리
@@ -93,6 +94,9 @@ public:
 	@param distanceCheck는 플레이어와 AI의 거리를 체크하는 부분
 	*/
 	void MoveDestination(Bool Command, Vector Destination, Vector, myLocation, Bool distanceCheck);
+
+private:
+	EnemyBlackboard_Blackboard blackboard;
 
 };
 
