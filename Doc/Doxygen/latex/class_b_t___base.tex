@@ -11,8 +11,7 @@
 
 
 
-Inheritance diagram for B\+T\+\_\+\+Base\+:
-\nopagebreak
+Inheritance diagram for B\+T\+\_\+\+Base\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,13 +25,13 @@ Collaboration diagram for B\+T\+\_\+\+Base\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=320pt]{class_b_t___base__coll__graph}
+\includegraphics[width=266pt]{class_b_t___base__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{class_b_t___base_a54881cf55e411fdbf6c9f98586049742}{root} (\hyperlink{class_b_b___humen}{B\+B\+\_\+\+Humen} \hyperlink{class_b_t___base_a8a095b67df2778f5155d24dad9f818ef}{blackboard})
+void \hyperlink{class_b_t___base_a54881cf55e411fdbf6c9f98586049742}{root} (\hyperlink{class_b_b___humen}{B\+B\+\_\+\+Humen} \hyperlink{class_b_t___base_ad6873a8492447b0b9d0eef5b28032a9d}{blackboard})
 \begin{DoxyCompactList}\small\item\em 루트 노드 \end{DoxyCompactList}\item 
 void \hyperlink{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3}{selector} (Object my\+Character, Vector my\+Location, Vector Destination, Bool distance\+Check, Object target\+To\+Attack, Float attack\+Range, Integer bullet, Object Select\+AI, Bool Command, Rotator Original\+Rotation)
 \begin{DoxyCompactList}\small\item\em 서비스를 가지는 분기 노드 \end{DoxyCompactList}\item 
@@ -50,12 +49,12 @@ void \hyperlink{class_b_t___base_a69b8c8c1711027633033b4c7e04e973b}{Find\+Enemy2
 \begin{DoxyCompactList}\small\item\em 적 발견 상태 데코레이터 \end{DoxyCompactList}\item 
 void \hyperlink{class_b_t___base_a2467b31b837f61678c1c6a9527289205}{Find\+Enemy3} (Object target\+To\+Attack, Integer bullet)
 \begin{DoxyCompactList}\small\item\em 적 발견 상태 데코레이터 \end{DoxyCompactList}\item 
-void \hyperlink{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60}{Move\+Destination} (Bool Command, Vector Destination, Vector, my\+Location, Bool distance\+Check)
+void \hyperlink{class_b_t___base_abef18c6b5c690579ef40316937626191}{Move\+Destination} (Bool Command, Vector Destination, Vector my\+Location, Bool distance\+Check)
 \begin{DoxyCompactList}\small\item\em 명령을 받아서 목적지로 이동하는 태스크 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_enemy_blackboard___blackboard}{Enemy\+Blackboard\+\_\+\+Blackboard} \hyperlink{class_b_t___base_a8a095b67df2778f5155d24dad9f818ef}{blackboard}
+\hyperlink{class_b_b___humen}{B\+B\+\_\+\+Humen} \hyperlink{class_b_t___base_ad6873a8492447b0b9d0eef5b28032a9d}{blackboard}
 \end{DoxyCompactItemize}
 
 
@@ -86,8 +85,18 @@ Find에 의해 Attack\+And\+Reload가 실행되면 설정된 target\+To\+Attack�
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a4473d81f72741d7b1b4956feada36a28_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -120,8 +129,18 @@ Command == True, target\+To\+Attack == False가 만족하면 my\+Character에 �
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -152,6 +171,28 @@ Command == True, target\+To\+Attack == False가 만족하면 my\+Character에 �
 {\em target\+To\+Attack은} & 공격할 적 Object \\
 \hline
 \end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a69b8c8c1711027633033b4c7e04e973b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a69b8c8c1711027633033b4c7e04e973b_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find\+Enemy3@{Find\+Enemy3}}
 \index{Find\+Enemy3@{Find\+Enemy3}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
 \subsubsection[{\texorpdfstring{Find\+Enemy3(\+Object target\+To\+Attack, Integer bullet)}{FindEnemy3(Object targetToAttack, Integer bullet)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find\+Enemy3 (
@@ -175,8 +216,18 @@ Idle에 의해 Find가 실행되면 target\+To\+Attack = true, bullet $>$ 0, 플
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a2467b31b837f61678c1c6a9527289205_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -209,8 +260,18 @@ Command == False, my\+Character == True이 만족하면 Follow\+Me를 실행함.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a185c89f6b41c5946e6dac9489f251c0f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -262,8 +323,18 @@ Command가 false라면 Find로 간다.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a68cb1b35bc3105c36e0bd4b8477a1ec9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -274,15 +345,14 @@ Here is the caller graph for this function\+:
 
 \index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Move\+Destination@{Move\+Destination}}
 \index{Move\+Destination@{Move\+Destination}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
-\subsubsection[{\texorpdfstring{Move\+Destination(\+Bool Command, Vector Destination, Vector, my\+Location, Bool distance\+Check)}{MoveDestination(Bool Command, Vector Destination, Vector, myLocation, Bool distanceCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Move\+Destination (
+\subsubsection[{\texorpdfstring{Move\+Destination(\+Bool Command, Vector Destination, Vector my\+Location, Bool distance\+Check)}{MoveDestination(Bool Command, Vector Destination, Vector myLocation, Bool distanceCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Move\+Destination (
 \begin{DoxyParamCaption}
 \item[{Bool}]{Command, }
 \item[{Vector}]{Destination, }
-\item[{Vector}]{, }
-\item[{my\+Location}]{, }
+\item[{Vector}]{my\+Location, }
 \item[{Bool}]{distance\+Check}
 \end{DoxyParamCaption}
-)}\hypertarget{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60}{}\label{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60}
+)}\hypertarget{class_b_t___base_abef18c6b5c690579ef40316937626191}{}\label{class_b_t___base_abef18c6b5c690579ef40316937626191}
 
 
 명령을 받아서 목적지로 이동하는 태스크 
@@ -300,12 +370,11 @@ Find\+Enemy가 조건을 만족한다면 나를 따라옴.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60_icgraph}
+\includegraphics[width=350pt]{class_b_t___base_abef18c6b5c690579ef40316937626191_cgraph}
 \end{center}
 \end{figure}
 
@@ -328,8 +397,7 @@ Here is the caller graph for this function\+:
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -383,12 +451,11 @@ Service\+\_\+update\+My\+Locaion과 \hyperlink{class_service___scan_enemy_charac
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3_cgraph}
+\includegraphics[width=350pt]{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3_cgraph}
 \end{center}
 \end{figure}
 
@@ -409,4 +476,4 @@ Here is the caller graph for this function\+:\nopagebreak
 \subsection{Member Data Documentation}
 \index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!blackboard@{blackboard}}
 \index{blackboard@{blackboard}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
-\subsubsection[{\texorpdfstring{blackboard}{blackboard}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Enemy\+Blackboard\+\_\+\+Blackboard} B\+T\+\_\+\+Base\+::blackboard\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_b_t___base_a8a095b67df2778f5155d24dad9f818ef}{}\label{class_b_t___base_a8a095b67df2778f5155d24dad9f818ef}
+\subsubsection[{\texorpdfstring{blackboard}{blackboard}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+B\+\_\+\+Humen} B\+T\+\_\+\+Base\+::blackboard\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_b_t___base_ad6873a8492447b0b9d0eef5b28032a9d}{}\label{class_b_t___base_ad6873a8492447b0b9d0eef5b28032a9d}

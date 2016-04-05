@@ -19,35 +19,37 @@ void BT_Base::selector(Object myCharacter, Vector myLocation, Vector Destination
 	Service_ScanEnemyCharacter::ReceiveTick();
 	Idle();
 	FindPlayer();
+	FindEnemy3();
 	FindEnemy();
+	FindEnemy2();
 }
 
-void Idle(Bool Command){
-	BT_Base::FindEnemy();
+void BT_Base::Idle(Bool Command){
+	FindEnemy3();
 }
 
-void FindEnemy3(Object targetToAttack, Integer bullet){
+void BT_Base::FindEnemy3(Object targetToAttack, Integer bullet){
 	Dec_PlayerCheck::PerformConditionCheck();
-	BT_Base::AttackAndReload();
+	AttackAndReload();
 }
 
-void FindEnemy(Object myCharacyer, Bool Command, Object targetToAttack){
-	Task_Move::ReceiveTick();	
+void BT_Base::FindEnemy(Object myCharacyer, Bool Command, Object targetToAttack){
+	Task_Move::ReceiveTick();
 }
 
-void FindEnemy(Object myCharacyer, Bool Command, Object targetToAttack){
+void BT_Base::FindEnemy2(Object myCharacyer, Bool Command, Object targetToAttack){
 	Task_Attack::ReceiveTick();
 }
 
-void FindPlayer(Bool Command, Object myCharacter, Rotator OriginalRotation){
+void BT_Base::FindPlayer(Bool Command, Object myCharacter, Rotator OriginalRotation){
 	Dec_Rotationinit::PerformConditionCheck();
 	Task_Move::ReceiveTick();
 }
 
-void AttackAndReload(Object targetToAttack, Integer bullet){
+void BT_Base::AttackAndReload(Object targetToAttack, Integer bullet){
 	Task_Attack::ReceiveTick();
 }
 
-void MoveDestination(Bool Command, Vector Destination, Vector, myLocation, Bool distanceCheck){
+void BT_Base::MoveDestination(Bool Command, Vector Destination, Vector myLocation, Bool distanceCheck){
 	Task_Move::ReceiveTick();
 }

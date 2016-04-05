@@ -117,9 +117,6 @@
     <ClInclude Include="BB_Humen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BT_Base.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Dec_PlayerCheck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -139,6 +136,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Task_Move.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BT_Base.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -239,9 +239,6 @@
     <ClCompile Include="BB_Humen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BT_Base.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Dec_PlayerCheck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -261,6 +258,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Task_Move.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BT_Base.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

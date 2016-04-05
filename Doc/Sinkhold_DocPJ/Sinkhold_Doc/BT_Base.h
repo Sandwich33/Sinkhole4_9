@@ -1,6 +1,5 @@
 #pragma once
 #include "BB_Humen.h"
-
 /**
 @brief 팀원AI들의 기본적인 비헤이비어 트리
 @details 모든 팀원들의 행동 방식을 컨트롤 한다.
@@ -47,7 +46,7 @@ public:
 	@param bullet은 현재 총알이 장전된 수
 	*/
 	void AttackAndReload(Object targetToAttack, Integer bullet);
-	
+
 	/**
 	@brief 플레이어가 범위에 있는지 확인하는 데코레이터
 	@details Command == False, myCharacter == True이 만족하면 FollowMe를 실행함.
@@ -102,10 +101,8 @@ public:
 	@param myLocation은 현재 플레이어의 위치
 	@param distanceCheck는 플레이어와 AI의 거리를 체크하는 부분
 	*/
-	void MoveDestination(Bool Command, Vector Destination, Vector, myLocation, Bool distanceCheck);
-
+	void MoveDestination(Bool Command, Vector Destination, Vector myLocation, Bool distanceCheck);
 private:
-	EnemyBlackboard_Blackboard blackboard;
-
+	BB_Humen blackboard;
 };
 
