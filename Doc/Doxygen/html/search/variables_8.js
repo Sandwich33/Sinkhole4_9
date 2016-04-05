@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['jump_5fpressed',['jump_pressed',['../class_person___character.html#ac015d26f3c92ec87951b7a5e6a56a70e',1,'Person_Character']]],
-  ['jumping',['jumping',['../class_player___person.html#a1ad501a127f6f2803929aa40df0ad93f',1,'Player_Person']]]
+  ['in_5fbullet',['in_bullet',['../class_weapons___actor.html#a3ada6991a9ec6db336c9ebc5af923c3d',1,'Weapons_Actor']]],
+  ['ironsights_5fpressed',['Ironsights_pressed',['../class_person___character.html#a396ae4ccdc46544ebd28130bec8a46ea',1,'Person_Character']]],
+  ['is_5fplay_5freload',['is_play_reload',['../class_person___character.html#af129a2f5b6da8448d8ee036761b9b737',1,'Person_Character']]]
 ];

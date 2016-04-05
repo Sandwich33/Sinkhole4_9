@@ -1,0 +1,130 @@
+\hypertarget{class_service__update_my_location}{}\section{Service\+\_\+update\+My\+Location Class Reference}
+\label{class_service__update_my_location}\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+
+
+팀원 AI 서비스  
+
+
+
+
+{\ttfamily \#include $<$Service\+\_\+update\+My\+Location.\+h$>$}
+
+
+
+Inheritance diagram for Service\+\_\+update\+My\+Location\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_service__update_my_location__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Service\+\_\+update\+My\+Location\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_service__update_my_location__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Graph \hyperlink{class_service__update_my_location_a2c2f90d92234520772c3a0108f148626}{Receive\+Tick} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 서비스 틱 이벤트 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service__update_my_location_af65a492f86eb3082328f78c249981ac4}{my\+Character}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service__update_my_location_acaa12f248f236e8068516533751daae4}{my\+Location}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service__update_my_location_aeda83c71d6edf61186416547abacf575}{destination}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_service__update_my_location_a585e2ac19aed8fd8807fd9f0ef987825}{distance\+\_\+\+Check}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+All\+A\+I\+Controller \hyperlink{class_service__update_my_location_a9119fdd7362553820385271bb40d9e36}{A\+I\+\_\+\+Con\+\_\+\+Ref}
+\item 
+Pawn \hyperlink{class_service__update_my_location_a6d13896af22d8464dc24800bfd498c8a}{A\+I\+\_\+\+Char\+\_\+\+Ref}
+\item 
+Pawn \hyperlink{class_service__update_my_location_a73023cfeff259990fe879a830b3147e1}{My\+\_\+\+Char\+\_\+\+Ref}
+\item 
+E\+Object\+Type\+Query \hyperlink{class_service__update_my_location_a44cdb3affc413f6f409e39cea8704d77}{E\+Object\+\_\+\+Arr}
+\item 
+Navigation\+Event \hyperlink{class_service__update_my_location_a397ee106f8c92061b3d53a5a110c0098}{Nav\+\_\+\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+팀원 AI 서비스 
+
+매 틱마다 나를 따라오는 플레이어의 위치를 일정범위안의 랜덤위치를 Set한다. 
+
+\subsection{Member Function Documentation}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!Receive\+Tick@{Receive\+Tick}}
+\index{Receive\+Tick@{Receive\+Tick}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{Receive\+Tick(\+Actor Owner\+Actor)}{ReceiveTick(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Service\+\_\+update\+My\+Location\+::\+Receive\+Tick (
+\begin{DoxyParamCaption}
+\item[{Actor}]{Owner\+Actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_service__update_my_location_a2c2f90d92234520772c3a0108f148626}{}\label{class_service__update_my_location_a2c2f90d92234520772c3a0108f148626}
+
+
+서비스 틱 이벤트 
+
+플레이어 주변에 일정범위안의 랜덤위치를 Set함.
+
+찾은 캐릭터들 중 가장 가까운 액터를 블랙보드의 target\+To\+Attack에 저장한다.
+
+플레이어와 A\+I가 멀리 떨어지면 따라가도록 my\+Character Set. 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_service__update_my_location_a2c2f90d92234520772c3a0108f148626_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!A\+I\+\_\+\+Char\+\_\+\+Ref@{A\+I\+\_\+\+Char\+\_\+\+Ref}}
+\index{A\+I\+\_\+\+Char\+\_\+\+Ref@{A\+I\+\_\+\+Char\+\_\+\+Ref}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{A\+I\+\_\+\+Char\+\_\+\+Ref}{AI_Char_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}Pawn Service\+\_\+update\+My\+Location\+::\+A\+I\+\_\+\+Char\+\_\+\+Ref\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_service__update_my_location_a6d13896af22d8464dc24800bfd498c8a}{}\label{class_service__update_my_location_a6d13896af22d8464dc24800bfd498c8a}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!A\+I\+\_\+\+Con\+\_\+\+Ref@{A\+I\+\_\+\+Con\+\_\+\+Ref}}
+\index{A\+I\+\_\+\+Con\+\_\+\+Ref@{A\+I\+\_\+\+Con\+\_\+\+Ref}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{A\+I\+\_\+\+Con\+\_\+\+Ref}{AI_Con_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}All\+A\+I\+Controller Service\+\_\+update\+My\+Location\+::\+A\+I\+\_\+\+Con\+\_\+\+Ref\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_service__update_my_location_a9119fdd7362553820385271bb40d9e36}{}\label{class_service__update_my_location_a9119fdd7362553820385271bb40d9e36}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!destination@{destination}}
+\index{destination@{destination}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{destination}{destination}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+update\+My\+Location\+::destination}\hypertarget{class_service__update_my_location_aeda83c71d6edf61186416547abacf575}{}\label{class_service__update_my_location_aeda83c71d6edf61186416547abacf575}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!distance\+\_\+\+Check@{distance\+\_\+\+Check}}
+\index{distance\+\_\+\+Check@{distance\+\_\+\+Check}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{distance\+\_\+\+Check}{distance_Check}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+update\+My\+Location\+::distance\+\_\+\+Check}\hypertarget{class_service__update_my_location_a585e2ac19aed8fd8807fd9f0ef987825}{}\label{class_service__update_my_location_a585e2ac19aed8fd8807fd9f0ef987825}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!E\+Object\+\_\+\+Arr@{E\+Object\+\_\+\+Arr}}
+\index{E\+Object\+\_\+\+Arr@{E\+Object\+\_\+\+Arr}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{E\+Object\+\_\+\+Arr}{EObject_Arr}}]{\setlength{\rightskip}{0pt plus 5cm}E\+Object\+Type\+Query Service\+\_\+update\+My\+Location\+::\+E\+Object\+\_\+\+Arr\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_service__update_my_location_a44cdb3affc413f6f409e39cea8704d77}{}\label{class_service__update_my_location_a44cdb3affc413f6f409e39cea8704d77}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!My\+\_\+\+Char\+\_\+\+Ref@{My\+\_\+\+Char\+\_\+\+Ref}}
+\index{My\+\_\+\+Char\+\_\+\+Ref@{My\+\_\+\+Char\+\_\+\+Ref}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{My\+\_\+\+Char\+\_\+\+Ref}{My_Char_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}Pawn Service\+\_\+update\+My\+Location\+::\+My\+\_\+\+Char\+\_\+\+Ref\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_service__update_my_location_a73023cfeff259990fe879a830b3147e1}{}\label{class_service__update_my_location_a73023cfeff259990fe879a830b3147e1}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!my\+Character@{my\+Character}}
+\index{my\+Character@{my\+Character}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{my\+Character}{myCharacter}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+update\+My\+Location\+::my\+Character}\hypertarget{class_service__update_my_location_af65a492f86eb3082328f78c249981ac4}{}\label{class_service__update_my_location_af65a492f86eb3082328f78c249981ac4}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!my\+Location@{my\+Location}}
+\index{my\+Location@{my\+Location}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{my\+Location}{myLocation}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Service\+\_\+update\+My\+Location\+::my\+Location}\hypertarget{class_service__update_my_location_acaa12f248f236e8068516533751daae4}{}\label{class_service__update_my_location_acaa12f248f236e8068516533751daae4}
+\index{Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}!Nav\+\_\+\+Value@{Nav\+\_\+\+Value}}
+\index{Nav\+\_\+\+Value@{Nav\+\_\+\+Value}!Service\+\_\+update\+My\+Location@{Service\+\_\+update\+My\+Location}}
+\subsubsection[{\texorpdfstring{Nav\+\_\+\+Value}{Nav_Value}}]{\setlength{\rightskip}{0pt plus 5cm}Navigation\+Event Service\+\_\+update\+My\+Location\+::\+Nav\+\_\+\+Value\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_service__update_my_location_a397ee106f8c92061b3d53a5a110c0098}{}\label{class_service__update_my_location_a397ee106f8c92061b3d53a5a110c0098}

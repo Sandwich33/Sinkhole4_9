@@ -29,11 +29,15 @@ var annotated_dup =
     [ "Player_Person", "class_player___person.html", "class_player___person" ],
     [ "ScanPersonCharacters_BTService", "class_scan_person_characters___b_t_service.html", "class_scan_person_characters___b_t_service" ],
     [ "Service_Destination", "class_service___destination.html", "class_service___destination" ],
+    [ "Service_ScanEnemyCharacter", "class_service___scan_enemy_character.html", "class_service___scan_enemy_character" ],
+    [ "Service_updateMyLocation", "class_service__update_my_location.html", "class_service__update_my_location" ],
     [ "SetRandomDestination_BTService", "class_set_random_destination___b_t_service.html", "class_set_random_destination___b_t_service" ],
     [ "Shotgun_AI_Person", "class_shotgun___a_i___person.html", null ],
     [ "ShotGun_Weapons", "class_shot_gun___weapons.html", "class_shot_gun___weapons" ],
     [ "ShotGunWeapons", "class_shot_gun_weapons.html", "class_shot_gun_weapons" ],
     [ "Spider_Enemy", "class_spider___enemy.html", "class_spider___enemy" ],
+    [ "Task_Attack", "class_task___attack.html", "class_task___attack" ],
+    [ "Task_Move", "class_task___move.html", "class_task___move" ],
     [ "Weapons_Actor", "class_weapons___actor.html", "class_weapons___actor" ],
     [ "Wolf_Enemy", "class_wolf___enemy.html", "class_wolf___enemy" ]
 ];

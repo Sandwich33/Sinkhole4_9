@@ -1,0 +1,122 @@
+\hypertarget{class_task___move}{}\section{Task\+\_\+\+Move Class Reference}
+\label{class_task___move}\index{Task\+\_\+\+Move@{Task\+\_\+\+Move}}
+
+
+팀원 AI 태스크  
+
+
+
+
+{\ttfamily \#include $<$Task\+\_\+\+Move.\+h$>$}
+
+
+
+Inheritance diagram for Task\+\_\+\+Move\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_task___move__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Task\+\_\+\+Move\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_task___move__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Graph \hyperlink{class_task___move_a9386876fe45eba6ac363a076b4aba91d}{Receive\+Tick} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 태스크 실행 이벤트 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_task___move_a07355e899645a177afabc2ad1d8da20f}{Command}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_task___move_aa7477f909bd65b5f050b065529afeada}{Destination}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_task___move_a406ee8c2665932b9b839ea0029dea7fb}{my\+Location}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_task___move_a564764b9700c2301ac543745c958f8b2}{distance\+Check}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+All\+A\+I\+Controller \hyperlink{class_task___move_aeeb637b648ae916d43d62859918c6780}{A\+I\+\_\+\+Con\+\_\+\+Ref}
+\item 
+Pawn \hyperlink{class_task___move_aeab62db691b93699ac595009005dfc51}{A\+I\+\_\+\+Char\+\_\+\+Ref}
+\item 
+Person\+Character \hyperlink{class_task___move_ad11b1b6b00d57886816c11c5e9a05274}{Person\+\_\+\+Char\+\_\+\+Ref}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+팀원 AI 태스크 
+
+명령을 받아서 목적지로 갈지,
+
+나를 따라올건지 결정하고 이동한다. 
+
+\subsection{Member Function Documentation}
+\index{Task\+\_\+\+Move@{Task\+\_\+\+Move}!Receive\+Tick@{Receive\+Tick}}
+\index{Receive\+Tick@{Receive\+Tick}!Task\+\_\+\+Move@{Task\+\_\+\+Move}}
+\subsubsection[{\texorpdfstring{Receive\+Tick(\+Actor Owner\+Actor)}{ReceiveTick(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Task\+\_\+\+Move\+::\+Receive\+Tick (
+\begin{DoxyParamCaption}
+\item[{Actor}]{Owner\+Actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_task___move_a9386876fe45eba6ac363a076b4aba91d}{}\label{class_task___move_a9386876fe45eba6ac363a076b4aba91d}
+
+
+태스크 실행 이벤트 
+
+명령을 내렸는지를 확인하고,
+
+명령을 내렸다면 Destination으로 위치로 이동.
+
+아니라면 my\+Location 위치로 따라옴. 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_task___move_a9386876fe45eba6ac363a076b4aba91d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Task\+\_\+\+Move@{Task\+\_\+\+Move}!A\+I\+\_\+\+Char\+\_\+\+Ref@{A\+I\+\_\+\+Char\+\_\+\+Ref}}
+\index{A\+I\+\_\+\+Char\+\_\+\+Ref@{A\+I\+\_\+\+Char\+\_\+\+Ref}!Task\+\_\+\+Move@{Task\+\_\+\+Move}}
+\subsubsection[{\texorpdfstring{A\+I\+\_\+\+Char\+\_\+\+Ref}{AI_Char_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}Pawn Task\+\_\+\+Move\+::\+A\+I\+\_\+\+Char\+\_\+\+Ref\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_task___move_aeab62db691b93699ac595009005dfc51}{}\label{class_task___move_aeab62db691b93699ac595009005dfc51}
+\index{Task\+\_\+\+Move@{Task\+\_\+\+Move}!A\+I\+\_\+\+Con\+\_\+\+Ref@{A\+I\+\_\+\+Con\+\_\+\+Ref}}
+\index{A\+I\+\_\+\+Con\+\_\+\+Ref@{A\+I\+\_\+\+Con\+\_\+\+Ref}!Task\+\_\+\+Move@{Task\+\_\+\+Move}}
+\subsubsection[{\texorpdfstring{A\+I\+\_\+\+Con\+\_\+\+Ref}{AI_Con_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}All\+A\+I\+Controller Task\+\_\+\+Move\+::\+A\+I\+\_\+\+Con\+\_\+\+Ref\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_task___move_aeeb637b648ae916d43d62859918c6780}{}\label{class_task___move_aeeb637b648ae916d43d62859918c6780}
+\index{Task\+\_\+\+Move@{Task\+\_\+\+Move}!Command@{Command}}
+\index{Command@{Command}!Task\+\_\+\+Move@{Task\+\_\+\+Move}}
+\subsubsection[{\texorpdfstring{Command}{Command}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Task\+\_\+\+Move\+::\+Command}\hypertarget{class_task___move_a07355e899645a177afabc2ad1d8da20f}{}\label{class_task___move_a07355e899645a177afabc2ad1d8da20f}
+\index{Task\+\_\+\+Move@{Task\+\_\+\+Move}!Destination@{Destination}}
+\index{Destination@{Destination}!Task\+\_\+\+Move@{Task\+\_\+\+Move}}
+\subsubsection[{\texorpdfstring{Destination}{Destination}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Task\+\_\+\+Move\+::\+Destination}\hypertarget{class_task___move_aa7477f909bd65b5f050b065529afeada}{}\label{class_task___move_aa7477f909bd65b5f050b065529afeada}
+\index{Task\+\_\+\+Move@{Task\+\_\+\+Move}!distance\+Check@{distance\+Check}}
+\index{distance\+Check@{distance\+Check}!Task\+\_\+\+Move@{Task\+\_\+\+Move}}
+\subsubsection[{\texorpdfstring{distance\+Check}{distanceCheck}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Task\+\_\+\+Move\+::distance\+Check}\hypertarget{class_task___move_a564764b9700c2301ac543745c958f8b2}{}\label{class_task___move_a564764b9700c2301ac543745c958f8b2}
+\index{Task\+\_\+\+Move@{Task\+\_\+\+Move}!my\+Location@{my\+Location}}
+\index{my\+Location@{my\+Location}!Task\+\_\+\+Move@{Task\+\_\+\+Move}}
+\subsubsection[{\texorpdfstring{my\+Location}{myLocation}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Task\+\_\+\+Move\+::my\+Location}\hypertarget{class_task___move_a406ee8c2665932b9b839ea0029dea7fb}{}\label{class_task___move_a406ee8c2665932b9b839ea0029dea7fb}
+\index{Task\+\_\+\+Move@{Task\+\_\+\+Move}!Person\+\_\+\+Char\+\_\+\+Ref@{Person\+\_\+\+Char\+\_\+\+Ref}}
+\index{Person\+\_\+\+Char\+\_\+\+Ref@{Person\+\_\+\+Char\+\_\+\+Ref}!Task\+\_\+\+Move@{Task\+\_\+\+Move}}
+\subsubsection[{\texorpdfstring{Person\+\_\+\+Char\+\_\+\+Ref}{Person_Char_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}Person\+Character Task\+\_\+\+Move\+::\+Person\+\_\+\+Char\+\_\+\+Ref\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_task___move_ad11b1b6b00d57886816c11c5e9a05274}{}\label{class_task___move_ad11b1b6b00d57886816c11c5e9a05274}

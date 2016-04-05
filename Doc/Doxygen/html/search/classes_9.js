@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['weapons_5factor',['Weapons_Actor',['../class_weapons___actor.html',1,'']]],
-  ['wolf_5fenemy',['Wolf_Enemy',['../class_wolf___enemy.html',1,'']]]
+  ['task_5fattack',['Task_Attack',['../class_task___attack.html',1,'']]],
+  ['task_5fmove',['Task_Move',['../class_task___move.html',1,'']]]
 ];

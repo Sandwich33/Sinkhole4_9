@@ -1,0 +1,113 @@
+\hypertarget{class_task___attack}{}\section{Task\+\_\+\+Attack Class Reference}
+\label{class_task___attack}\index{Task\+\_\+\+Attack@{Task\+\_\+\+Attack}}
+
+
+팀원 AI 태스크  
+
+
+
+
+{\ttfamily \#include $<$Task\+\_\+\+Attack.\+h$>$}
+
+
+
+Inheritance diagram for Task\+\_\+\+Attack\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_task___attack__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Task\+\_\+\+Attack\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_task___attack__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Graph \hyperlink{class_task___attack_a9093d054c58b6776e0d22b19740e499e}{Receive\+Tick} (Actor Owner\+Actor)
+\begin{DoxyCompactList}\small\item\em 태스크 실행 이벤트 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_task___attack_a5db15eddb1295f044e175cfc5bd91112}{target\+To\+Attack}
+\item 
+Blackboard\+Key\+Selector \hyperlink{class_task___attack_aa168031a43b567fd2d207106c3c409fc}{bullet}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+All\+A\+I\+Controller \hyperlink{class_task___attack_abadbd5bcbf92ba0c69048da439a90cfa}{A\+I\+\_\+\+Con\+\_\+\+Ref}
+\item 
+A\+I\+Person \hyperlink{class_task___attack_a8114a9c0379628c81ab913d35ada8285}{A\+I\+\_\+\+Person\+\_\+\+Ref}
+\item 
+Float \hyperlink{class_task___attack_a5cd1d1666bf06427a520d6d06091d17e}{Delta\+\_\+\+Seconds}
+\item 
+Person\+Character \hyperlink{class_task___attack_a94a79dfe17324dd10cff48a241a1ea51}{Person\+\_\+\+Char\+\_\+\+Ref}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+팀원 AI 태스크 
+
+적을 발견하면 처다보며 공격을 한다. 
+
+\subsection{Member Function Documentation}
+\index{Task\+\_\+\+Attack@{Task\+\_\+\+Attack}!Receive\+Tick@{Receive\+Tick}}
+\index{Receive\+Tick@{Receive\+Tick}!Task\+\_\+\+Attack@{Task\+\_\+\+Attack}}
+\subsubsection[{\texorpdfstring{Receive\+Tick(\+Actor Owner\+Actor)}{ReceiveTick(Actor OwnerActor)}}]{\setlength{\rightskip}{0pt plus 5cm}Event\+Graph Task\+\_\+\+Attack\+::\+Receive\+Tick (
+\begin{DoxyParamCaption}
+\item[{Actor}]{Owner\+Actor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_task___attack_a9093d054c58b6776e0d22b19740e499e}{}\label{class_task___attack_a9093d054c58b6776e0d22b19740e499e}
+
+
+태스크 실행 이벤트 
+
+target\+To\+Attack에 Object가 설정되면 적을 처다보고,
+
+Action\+A\+Ion\+Fire를 호출하여 적을 공격을 한다. 
+\begin{DoxyParams}{Parameters}
+{\em Owner\+Actor} & AI 컨트롤러. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_task___attack_a9093d054c58b6776e0d22b19740e499e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Task\+\_\+\+Attack@{Task\+\_\+\+Attack}!A\+I\+\_\+\+Con\+\_\+\+Ref@{A\+I\+\_\+\+Con\+\_\+\+Ref}}
+\index{A\+I\+\_\+\+Con\+\_\+\+Ref@{A\+I\+\_\+\+Con\+\_\+\+Ref}!Task\+\_\+\+Attack@{Task\+\_\+\+Attack}}
+\subsubsection[{\texorpdfstring{A\+I\+\_\+\+Con\+\_\+\+Ref}{AI_Con_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}All\+A\+I\+Controller Task\+\_\+\+Attack\+::\+A\+I\+\_\+\+Con\+\_\+\+Ref\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_task___attack_abadbd5bcbf92ba0c69048da439a90cfa}{}\label{class_task___attack_abadbd5bcbf92ba0c69048da439a90cfa}
+\index{Task\+\_\+\+Attack@{Task\+\_\+\+Attack}!A\+I\+\_\+\+Person\+\_\+\+Ref@{A\+I\+\_\+\+Person\+\_\+\+Ref}}
+\index{A\+I\+\_\+\+Person\+\_\+\+Ref@{A\+I\+\_\+\+Person\+\_\+\+Ref}!Task\+\_\+\+Attack@{Task\+\_\+\+Attack}}
+\subsubsection[{\texorpdfstring{A\+I\+\_\+\+Person\+\_\+\+Ref}{AI_Person_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}A\+I\+Person Task\+\_\+\+Attack\+::\+A\+I\+\_\+\+Person\+\_\+\+Ref\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_task___attack_a8114a9c0379628c81ab913d35ada8285}{}\label{class_task___attack_a8114a9c0379628c81ab913d35ada8285}
+\index{Task\+\_\+\+Attack@{Task\+\_\+\+Attack}!bullet@{bullet}}
+\index{bullet@{bullet}!Task\+\_\+\+Attack@{Task\+\_\+\+Attack}}
+\subsubsection[{\texorpdfstring{bullet}{bullet}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Task\+\_\+\+Attack\+::bullet}\hypertarget{class_task___attack_aa168031a43b567fd2d207106c3c409fc}{}\label{class_task___attack_aa168031a43b567fd2d207106c3c409fc}
+\index{Task\+\_\+\+Attack@{Task\+\_\+\+Attack}!Delta\+\_\+\+Seconds@{Delta\+\_\+\+Seconds}}
+\index{Delta\+\_\+\+Seconds@{Delta\+\_\+\+Seconds}!Task\+\_\+\+Attack@{Task\+\_\+\+Attack}}
+\subsubsection[{\texorpdfstring{Delta\+\_\+\+Seconds}{Delta_Seconds}}]{\setlength{\rightskip}{0pt plus 5cm}Float Task\+\_\+\+Attack\+::\+Delta\+\_\+\+Seconds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_task___attack_a5cd1d1666bf06427a520d6d06091d17e}{}\label{class_task___attack_a5cd1d1666bf06427a520d6d06091d17e}
+\index{Task\+\_\+\+Attack@{Task\+\_\+\+Attack}!Person\+\_\+\+Char\+\_\+\+Ref@{Person\+\_\+\+Char\+\_\+\+Ref}}
+\index{Person\+\_\+\+Char\+\_\+\+Ref@{Person\+\_\+\+Char\+\_\+\+Ref}!Task\+\_\+\+Attack@{Task\+\_\+\+Attack}}
+\subsubsection[{\texorpdfstring{Person\+\_\+\+Char\+\_\+\+Ref}{Person_Char_Ref}}]{\setlength{\rightskip}{0pt plus 5cm}Person\+Character Task\+\_\+\+Attack\+::\+Person\+\_\+\+Char\+\_\+\+Ref\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_task___attack_a94a79dfe17324dd10cff48a241a1ea51}{}\label{class_task___attack_a94a79dfe17324dd10cff48a241a1ea51}
+\index{Task\+\_\+\+Attack@{Task\+\_\+\+Attack}!target\+To\+Attack@{target\+To\+Attack}}
+\index{target\+To\+Attack@{target\+To\+Attack}!Task\+\_\+\+Attack@{Task\+\_\+\+Attack}}
+\subsubsection[{\texorpdfstring{target\+To\+Attack}{targetToAttack}}]{\setlength{\rightskip}{0pt plus 5cm}Blackboard\+Key\+Selector Task\+\_\+\+Attack\+::target\+To\+Attack}\hypertarget{class_task___attack_a5db15eddb1295f044e175cfc5bd91112}{}\label{class_task___attack_a5db15eddb1295f044e175cfc5bd91112}

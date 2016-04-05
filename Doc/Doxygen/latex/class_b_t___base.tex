@@ -38,8 +38,6 @@ void \hyperlink{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3}{selector} (O
 \begin{DoxyCompactList}\small\item\em 서비스를 가지는 분기 노드 \end{DoxyCompactList}\item 
 void \hyperlink{class_b_t___base_a68cb1b35bc3105c36e0bd4b8477a1ec9}{Idle} (Bool Command)
 \begin{DoxyCompactList}\small\item\em 대기 상태 데코레이터 \end{DoxyCompactList}\item 
-void \hyperlink{class_b_t___base_affb0d6cdaec417994ce78c7608e5bf9e}{Find} (Object target\+To\+Attack, Integer bullet, Bool \hyperlink{class_dec___player_check}{Dec\+\_\+\+Player\+Check})
-\begin{DoxyCompactList}\small\item\em 적 발견 상태 데코레이터 \end{DoxyCompactList}\item 
 void \hyperlink{class_b_t___base_a4473d81f72741d7b1b4956feada36a28}{Attack\+And\+Reload} (Object target\+To\+Attack, Integer bullet)
 \begin{DoxyCompactList}\small\item\em 적을 공격하는 태스크 \end{DoxyCompactList}\item 
 void \hyperlink{class_b_t___base_a185c89f6b41c5946e6dac9489f251c0f}{Find\+Player} (Bool Command, Object my\+Character, Rotator Original\+Rotation)
@@ -47,7 +45,11 @@ void \hyperlink{class_b_t___base_a185c89f6b41c5946e6dac9489f251c0f}{Find\+Player
 void \hyperlink{class_b_t___base_a802b9e457808b511a6bc5ea63abd3b87}{Follow\+Me} (Bool Command, Vector Destination, Vector my\+Location, Bool distance\+Check)
 \begin{DoxyCompactList}\small\item\em 나를 따라오게 하는 태스크 \end{DoxyCompactList}\item 
 void \hyperlink{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f}{Find\+Enemy} (Object my\+Characyer, Bool Command, Object target\+To\+Attack)
-\begin{DoxyCompactList}\small\item\em 적이 범위에 있는지 확인하는 데코레이터 \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em 적 발견 상태 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_a69b8c8c1711027633033b4c7e04e973b}{Find\+Enemy2} (Object my\+Characyer, Bool Command, Object target\+To\+Attack)
+\begin{DoxyCompactList}\small\item\em 적 발견 상태 데코레이터 \end{DoxyCompactList}\item 
+void \hyperlink{class_b_t___base_a2467b31b837f61678c1c6a9527289205}{Find\+Enemy3} (Object target\+To\+Attack, Integer bullet)
+\begin{DoxyCompactList}\small\item\em 적 발견 상태 데코레이터 \end{DoxyCompactList}\item 
 void \hyperlink{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60}{Move\+Destination} (Bool Command, Vector Destination, Vector, my\+Location, Bool distance\+Check)
 \begin{DoxyCompactList}\small\item\em 명령을 받아서 목적지로 이동하는 태스크 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
@@ -82,15 +84,82 @@ Find에 의해 Attack\+And\+Reload가 실행되면 설정된 target\+To\+Attack�
 {\em bullet은} & 현재 총알이 장전된 수 \\
 \hline
 \end{DoxyParams}
-\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find@{Find}}
-\index{Find@{Find}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
-\subsubsection[{\texorpdfstring{Find(\+Object target\+To\+Attack, Integer bullet, Bool Dec\+\_\+\+Player\+Check)}{Find(Object targetToAttack, Integer bullet, Bool Dec_PlayerCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find (
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a4473d81f72741d7b1b4956feada36a28_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find\+Enemy@{Find\+Enemy}}
+\index{Find\+Enemy@{Find\+Enemy}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Find\+Enemy(\+Object my\+Characyer, Bool Command, Object target\+To\+Attack)}{FindEnemy(Object myCharacyer, Bool Command, Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find\+Enemy (
+\begin{DoxyParamCaption}
+\item[{Object}]{my\+Characyer, }
+\item[{Bool}]{Command, }
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f}{}\label{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f}
+
+
+적 발견 상태 데코레이터 
+
+Command == True, target\+To\+Attack == False가 만족하면 my\+Character에 따라 Move\+Destination과 Attack\+And\+Reload를 실행함. 
+\begin{DoxyParams}{Parameters}
+{\em commnad는} & 명령을 내렸는지 확인하는 변수 \\
+\hline
+{\em my\+Character는} & 플레이어 Object \\
+\hline
+{\em target\+To\+Attack은} & 공격할 적 Object \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find\+Enemy2@{Find\+Enemy2}}
+\index{Find\+Enemy2@{Find\+Enemy2}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Find\+Enemy2(\+Object my\+Characyer, Bool Command, Object target\+To\+Attack)}{FindEnemy2(Object myCharacyer, Bool Command, Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find\+Enemy2 (
+\begin{DoxyParamCaption}
+\item[{Object}]{my\+Characyer, }
+\item[{Bool}]{Command, }
+\item[{Object}]{target\+To\+Attack}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_t___base_a69b8c8c1711027633033b4c7e04e973b}{}\label{class_b_t___base_a69b8c8c1711027633033b4c7e04e973b}
+
+
+적 발견 상태 데코레이터 
+
+Command == True, target\+To\+Attack == False가 만족하면 my\+Character에 따라 Move\+Destination과 Attack\+And\+Reload를 실행함. 
+\begin{DoxyParams}{Parameters}
+{\em commnad는} & 명령을 내렸는지 확인하는 변수 \\
+\hline
+{\em my\+Character는} & 플레이어 Object \\
+\hline
+{\em target\+To\+Attack은} & 공격할 적 Object \\
+\hline
+\end{DoxyParams}
+\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find\+Enemy3@{Find\+Enemy3}}
+\index{Find\+Enemy3@{Find\+Enemy3}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
+\subsubsection[{\texorpdfstring{Find\+Enemy3(\+Object target\+To\+Attack, Integer bullet)}{FindEnemy3(Object targetToAttack, Integer bullet)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find\+Enemy3 (
 \begin{DoxyParamCaption}
 \item[{Object}]{target\+To\+Attack, }
-\item[{Integer}]{bullet, }
-\item[{Bool}]{Dec\+\_\+\+Player\+Check}
+\item[{Integer}]{bullet}
 \end{DoxyParamCaption}
-)}\hypertarget{class_b_t___base_affb0d6cdaec417994ce78c7608e5bf9e}{}\label{class_b_t___base_affb0d6cdaec417994ce78c7608e5bf9e}
+)}\hypertarget{class_b_t___base_a2467b31b837f61678c1c6a9527289205}{}\label{class_b_t___base_a2467b31b837f61678c1c6a9527289205}
 
 
 적 발견 상태 데코레이터 
@@ -104,28 +173,18 @@ Idle에 의해 Find가 실행되면 target\+To\+Attack = true, bullet $>$ 0, 플
 {\em Dec\+\_\+\+Player\+Check는} & 설정된 범위안에 플레이어가 있는지 체크. 해당 변수는 따로 만들어진 데코레이터 파일로 인해 반환된다. \\
 \hline
 \end{DoxyParams}
-\index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find\+Enemy@{Find\+Enemy}}
-\index{Find\+Enemy@{Find\+Enemy}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
-\subsubsection[{\texorpdfstring{Find\+Enemy(\+Object my\+Characyer, Bool Command, Object target\+To\+Attack)}{FindEnemy(Object myCharacyer, Bool Command, Object targetToAttack)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find\+Enemy (
-\begin{DoxyParamCaption}
-\item[{Object}]{my\+Characyer, }
-\item[{Bool}]{Command, }
-\item[{Object}]{target\+To\+Attack}
-\end{DoxyParamCaption}
-)}\hypertarget{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f}{}\label{class_b_t___base_aae303238f1a4876a0dc077a91c25b57f}
 
 
-적이 범위에 있는지 확인하는 데코레이터 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a2467b31b837f61678c1c6a9527289205_icgraph}
+\end{center}
+\end{figure}
 
-Command == True, target\+To\+Attack == False가 만족하면 my\+Character에 따라 Move\+Destination과 Attack\+And\+Reload를 실행함. 
-\begin{DoxyParams}{Parameters}
-{\em commnad는} & 명령을 내렸는지 확인하는 변수 \\
-\hline
-{\em my\+Character는} & 플레이어 Object \\
-\hline
-{\em target\+To\+Attack은} & 공격할 적 Object \\
-\hline
-\end{DoxyParams}
+
 \index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Find\+Player@{Find\+Player}}
 \index{Find\+Player@{Find\+Player}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
 \subsubsection[{\texorpdfstring{Find\+Player(\+Bool Command, Object my\+Character, Rotator Original\+Rotation)}{FindPlayer(Bool Command, Object myCharacter, Rotator OriginalRotation)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Find\+Player (
@@ -148,6 +207,18 @@ Command == False, my\+Character == True이 만족하면 Follow\+Me를 실행함.
 {\em Dec\+\_\+\+Rotaioninit가} & 추가되어 있는데, 초기 Rotation 저장을 위한 데코레이터임. (Find\+Player의 분기과정에서 아무런 영향을 주지않음.) \\
 \hline
 \end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a185c89f6b41c5946e6dac9489f251c0f_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Follow\+Me@{Follow\+Me}}
 \index{Follow\+Me@{Follow\+Me}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
 \subsubsection[{\texorpdfstring{Follow\+Me(\+Bool Command, Vector Destination, Vector my\+Location, Bool distance\+Check)}{FollowMe(Bool Command, Vector Destination, Vector myLocation, Bool distanceCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Follow\+Me (
@@ -189,6 +260,18 @@ Command가 false라면 Find로 간다.
 {\em Command는} & 명령이 내려지지 않음을 체크하기 위함. \\
 \hline
 \end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a68cb1b35bc3105c36e0bd4b8477a1ec9_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!Move\+Destination@{Move\+Destination}}
 \index{Move\+Destination@{Move\+Destination}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
 \subsubsection[{\texorpdfstring{Move\+Destination(\+Bool Command, Vector Destination, Vector, my\+Location, Bool distance\+Check)}{MoveDestination(Bool Command, Vector Destination, Vector, myLocation, Bool distanceCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::\+Move\+Destination (
@@ -215,6 +298,18 @@ Find\+Enemy가 조건을 만족한다면 나를 따라옴.
 {\em distance\+Check는} & 플레이어와 A\+I의 거리를 체크하는 부분 \\
 \hline
 \end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_t___base_a589c2fe0cc37e24c84ea3ed57157dc60_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}!root@{root}}
 \index{root@{root}!B\+T\+\_\+\+Base@{B\+T\+\_\+\+Base}}
 \subsubsection[{\texorpdfstring{root(\+B\+B\+\_\+\+Humen blackboard)}{root(BB_Humen blackboard)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+T\+\_\+\+Base\+::root (
@@ -233,11 +328,12 @@ Find\+Enemy가 조건을 만족한다면 나를 따라옴.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=292pt]{class_b_t___base_a54881cf55e411fdbf6c9f98586049742_cgraph}
+\includegraphics[width=350pt]{class_b_t___base_a54881cf55e411fdbf6c9f98586049742_cgraph}
 \end{center}
 \end{figure}
 
@@ -262,7 +358,7 @@ Here is the call graph for this function\+:\nopagebreak
 
 서비스를 가지는 분기 노드 
 
-Service\+\_\+update\+My\+Locaion과 Service\+\_\+\+Scan\+Enemy\+Character, \hyperlink{class_service___destination}{Service\+\_\+\+Destination} 서비스를 가지고 있다. 
+Service\+\_\+update\+My\+Locaion과 \hyperlink{class_service___scan_enemy_character}{Service\+\_\+\+Scan\+Enemy\+Character}, \hyperlink{class_service___destination}{Service\+\_\+\+Destination} 서비스를 가지고 있다. 
 \begin{DoxyParams}{Parameters}
 {\em my\+Character는} & 주변에 적이 발견된다면 on, 아니면 flase로 됨 \\
 \hline
@@ -285,6 +381,18 @@ Service\+\_\+update\+My\+Locaion과 Service\+\_\+\+Scan\+Enemy\+Character, \hype
 {\em Origina\+Rotation은} & 공격 후 이상해진 Rotation을 복구하기 위해 임시로 만든 A\+I들의 처음 Rotation 초기값. \\
 \hline
 \end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_b_t___base_adbbf3731340b4e525a1ea549fd6409f3_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Here is the caller graph for this function\+:\nopagebreak

@@ -135,6 +135,12 @@
     <ClInclude Include="Service_updateMyLocation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Task_Attack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task_Move.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sinkhold_Doc.cpp">
@@ -249,6 +255,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Service_updateMyLocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task_Attack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task_Move.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

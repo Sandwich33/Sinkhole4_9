@@ -87,12 +87,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_j"><span>j</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
@@ -133,8 +135,25 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 &#160;
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>AI_Char_Ref
+: <a class="el" href="class_service___scan_enemy_character.html#a74d7b226cb90283b97be427527df818c">Service_ScanEnemyCharacter</a>
+, <a class="el" href="class_service__update_my_location.html#a6d13896af22d8464dc24800bfd498c8a">Service_updateMyLocation</a>
+, <a class="el" href="class_task___move.html#aeab62db691b93699ac595009005dfc51">Task_Move</a>
+</li>
+<li>AI_Con_Ref
+: <a class="el" href="class_service__update_my_location.html#a9119fdd7362553820385271bb40d9e36">Service_updateMyLocation</a>
+, <a class="el" href="class_task___attack.html#abadbd5bcbf92ba0c69048da439a90cfa">Task_Attack</a>
+, <a class="el" href="class_task___move.html#aeeb637b648ae916d43d62859918c6780">Task_Move</a>
+</li>
+<li>AI_Location
+: <a class="el" href="class_service___scan_enemy_character.html#ab368af41798404596b9c9e87ae5b8eff">Service_ScanEnemyCharacter</a>
+</li>
 <li>AI_Person_Ref
 : <a class="el" href="class_service___destination.html#a5467a698caf1e5021d6d2cc5aa2f7742">Service_Destination</a>
+, <a class="el" href="class_task___attack.html#a8114a9c0379628c81ab913d35ada8285">Task_Attack</a>
+</li>
+<li>All_AI_Ref
+: <a class="el" href="class_service___scan_enemy_character.html#a575af50002eac4f22796bb5ad7db78ff">Service_ScanEnemyCharacter</a>
 </li>
 <li>allTheSameActors
 : <a class="el" href="class_scan_person_characters___b_t_service.html#ab4cebfb967515e3be3752350e270254f">ScanPersonCharacters_BTService</a>
@@ -157,6 +176,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>attackRange
 : <a class="el" href="class_b_b___humen.html#a9fb506718878e67dd7ce4889188fd9c3">BB_Humen</a>
+, <a class="el" href="class_service___scan_enemy_character.html#a979c3edbb893577752b48933d3a92271">Service_ScanEnemyCharacter</a>
 </li>
 <li>AWP_Ref
 : <a class="el" href="class_service___destination.html#aafe01afb61466c81ccb80e7c5c5d43ee">Service_Destination</a>
@@ -173,6 +193,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>bullet
 : <a class="el" href="class_b_b___humen.html#a87f003bcd85b60d96e6ef1ebab51976e">BB_Humen</a>
 , <a class="el" href="class_service___destination.html#a29222990051632bee7d566e6ea357749">Service_Destination</a>
+, <a class="el" href="class_task___attack.html#aa168031a43b567fd2d207106c3c409fc">Task_Attack</a>
 </li>
 <li>bulletCount
 : <a class="el" href="class_person___character.html#a656ddaa791d3bbd4a7e0e8a4acfd01a4">Person_Character</a>
@@ -196,6 +217,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>Command
 : <a class="el" href="class_b_b___humen.html#a5f3cc37acdcbf06281e92a1792354864">BB_Humen</a>
 , <a class="el" href="class_service___destination.html#a9d8b0d0d538b168a18c01c411a86afe3">Service_Destination</a>
+, <a class="el" href="class_task___move.html#a07355e899645a177afabc2ad1d8da20f">Task_Move</a>
 </li>
 <li>crouch_pressed
 : <a class="el" href="class_person___character.html#a06dac4071ddab3cffc34fd3f9f45f82c">Person_Character</a>
@@ -204,6 +226,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>Delta_Seconds
+: <a class="el" href="class_task___attack.html#a5cd1d1666bf06427a520d6d06091d17e">Task_Attack</a>
+</li>
 <li>delta_time
 : <a class="el" href="class_weapons___actor.html#a301ddf96a3148e09e550e355d36fbd02">Weapons_Actor</a>
 </li>
@@ -221,18 +246,37 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="class_service___destination.html#aab020987fc86e7bc721b2b9ecdd6d9f8">Service_Destination</a>
 </li>
 <li>destination
-: <a class="el" href="class_set_random_destination___b_t_service.html#ab259c7024b387a7320ea85e5df8d7016">SetRandomDestination_BTService</a>
+: <a class="el" href="class_service__update_my_location.html#aeda83c71d6edf61186416547abacf575">Service_updateMyLocation</a>
+, <a class="el" href="class_set_random_destination___b_t_service.html#ab259c7024b387a7320ea85e5df8d7016">SetRandomDestination_BTService</a>
+</li>
+<li>Destination
+: <a class="el" href="class_task___move.html#aa7477f909bd65b5f050b065529afeada">Task_Move</a>
 </li>
 <li>disable_Movement
 : <a class="el" href="class_person___character.html#a1ed8a1911232a5d7f47773978654d8ea">Person_Character</a>
 </li>
+<li>distance_Check
+: <a class="el" href="class_service__update_my_location.html#a585e2ac19aed8fd8807fd9f0ef987825">Service_updateMyLocation</a>
+</li>
 <li>distanceCheck
 : <a class="el" href="class_b_b___humen.html#a4f067f9c00145461036a0419a631dd06">BB_Humen</a>
+, <a class="el" href="class_task___move.html#a564764b9700c2301ac543745c958f8b2">Task_Move</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>EObject_Arr
+: <a class="el" href="class_service___scan_enemy_character.html#a4288168c5fdee8647c05417b455d630a">Service_ScanEnemyCharacter</a>
+, <a class="el" href="class_service__update_my_location.html#a44cdb3affc413f6f409e39cea8704d77">Service_updateMyLocation</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>F_AttackRange
+: <a class="el" href="class_service___scan_enemy_character.html#a28eab54589ca8365f18b9e87d2bd84c4">Service_ScanEnemyCharacter</a>
+</li>
 <li>fire_input_tag
 : <a class="el" href="class_player___person.html#abd97b17132011c46ee81603f813a43d5">Player_Person</a>
 </li>
@@ -309,10 +353,14 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>MAX_STAND_SPEED
 : <a class="el" href="class_person___character.html#ae900d1c986f15b8782b966aadb4f6438">Person_Character</a>
 </li>
+<li>My_Char_Ref
+: <a class="el" href="class_service__update_my_location.html#a73023cfeff259990fe879a830b3147e1">Service_updateMyLocation</a>
+</li>
 <li>myCharacter
 : <a class="el" href="class_b_b___humen.html#a7f9491363e6d98dd20be54751e78c76b">BB_Humen</a>
 , <a class="el" href="class_dec___player_check.html#a3251552a2d0c5c80aa8dea038622f0cb">Dec_PlayerCheck</a>
 , <a class="el" href="class_service___destination.html#aa01c366172f8b80aade716cba21820b1">Service_Destination</a>
+, <a class="el" href="class_service__update_my_location.html#af65a492f86eb3082328f78c249981ac4">Service_updateMyLocation</a>
 </li>
 <li>myLocation
 : <a class="el" href="class_b_b___humen.html#a135f2ee9b81ee3285d27e52ecf2c147c">BB_Humen</a>
@@ -320,11 +368,20 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="class_giant_melee_attack___b_t_task.html#a6d7cb8d701fc5a62d10180592a1727bf">GiantMeleeAttack_BTTask</a>
 , <a class="el" href="class_giant_ranged_attack___b_t_task.html#ad94fd43a278b675d241d6bfbea59efbf">GiantRangedAttack_BTTask</a>
 , <a class="el" href="class_scan_person_characters___b_t_service.html#a10ae41992fbbf06fe2c12af19d65fbd9">ScanPersonCharacters_BTService</a>
+, <a class="el" href="class_service__update_my_location.html#acaa12f248f236e8068516533751daae4">Service_updateMyLocation</a>
+, <a class="el" href="class_task___move.html#a406ee8c2665932b9b839ea0029dea7fb">Task_Move</a>
 </li>
 <li>myself
 : <a class="el" href="class_enemy_attack___b_t_task.html#a547169bbc795a0fc6e6e12601c40cc47">EnemyAttack_BTTask</a>
 , <a class="el" href="class_giant_melee_attack___b_t_task.html#a30dd53d02e844eab55652c2fc628b53c">GiantMeleeAttack_BTTask</a>
 , <a class="el" href="class_giant_ranged_attack___b_t_task.html#a897ee13f9ddeaa6e59a58ac85b7da3db">GiantRangedAttack_BTTask</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>Nav_Value
+: <a class="el" href="class_service__update_my_location.html#a397ee106f8c92061b3d53a5a110c0098">Service_updateMyLocation</a>
 </li>
 </ul>
 
@@ -339,6 +396,10 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>Person_Char_Ref
+: <a class="el" href="class_task___attack.html#a94a79dfe17324dd10cff48a241a1ea51">Task_Attack</a>
+, <a class="el" href="class_task___move.html#ad11b1b6b00d57886816c11c5e9a05274">Task_Move</a>
+</li>
 <li>player_controller
 : <a class="el" href="class_weapons___actor.html#aad6b8ee12d9a949b589c7b70721fd28a">Weapons_Actor</a>
 </li>
@@ -404,7 +465,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="class_giant_melee_attack___b_t_task.html#ace477d8d2d2c02e1ae5220e36e60b6ac">GiantMeleeAttack_BTTask</a>
 , <a class="el" href="class_giant_ranged_attack___b_t_task.html#ad33350d20d5e08acc84fd65329562c63">GiantRangedAttack_BTTask</a>
 , <a class="el" href="class_scan_person_characters___b_t_service.html#a9c34e715ea6da29e92ca7001672c9115">ScanPersonCharacters_BTService</a>
+, <a class="el" href="class_service___scan_enemy_character.html#a5bfdf42c8b2b4cf0626be2e66d0872c9">Service_ScanEnemyCharacter</a>
 , <a class="el" href="class_set_random_destination___b_t_service.html#a6c67414130286ac84e546e73af226b2c">SetRandomDestination_BTService</a>
+, <a class="el" href="class_task___attack.html#a5db15eddb1295f044e175cfc5bd91112">Task_Attack</a>
 </li>
 <li>toggle_crouch
 : <a class="el" href="class_person___character.html#a0da4e0f8f35632e924380dc9f129c072">Person_Character</a>

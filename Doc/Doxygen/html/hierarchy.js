@@ -23,6 +23,8 @@ var hierarchy =
     [ "BTService", null, [
       [ "ScanPersonCharacters_BTService", "class_scan_person_characters___b_t_service.html", null ],
       [ "Service_Destination", "class_service___destination.html", null ],
+      [ "Service_ScanEnemyCharacter", "class_service___scan_enemy_character.html", null ],
+      [ "Service_updateMyLocation", "class_service__update_my_location.html", null ],
       [ "SetRandomDestination_BTService", "class_set_random_destination___b_t_service.html", null ]
     ] ],
     [ "BTTask", null, [
@@ -30,7 +32,9 @@ var hierarchy =
       [ "EnemyAttack_BTTask", "class_enemy_attack___b_t_task.html", null ],
       [ "GiantApproach_BTTask", "class_giant_approach___b_t_task.html", null ],
       [ "GiantMeleeAttack_BTTask", "class_giant_melee_attack___b_t_task.html", null ],
-      [ "GiantRangedAttack_BTTask", "class_giant_ranged_attack___b_t_task.html", null ]
+      [ "GiantRangedAttack_BTTask", "class_giant_ranged_attack___b_t_task.html", null ],
+      [ "Task_Attack", "class_task___attack.html", null ],
+      [ "Task_Move", "class_task___move.html", null ]
     ] ],
     [ "Enemy_Character", "class_enemy___character.html", [
       [ "Bear_Enemy", "class_bear___enemy.html", null ],

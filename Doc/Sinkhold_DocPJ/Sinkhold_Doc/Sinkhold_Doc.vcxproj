@@ -116,6 +116,8 @@
     <ClInclude Include="Spider_Enemy.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Task_Attack.h" />
+    <ClInclude Include="Task_Move.h" />
     <ClInclude Include="Weapons_Actor.h" />
     <ClInclude Include="Wolf_Enemy.h" />
   </ItemGroup>
@@ -156,6 +158,8 @@
     <ClCompile Include="Shotgun_AI_Person.cpp" />
     <ClCompile Include="Sinkhold_Doc.cpp" />
     <ClCompile Include="Spider_Enemy.cpp" />
+    <ClCompile Include="Task_Attack.cpp" />
+    <ClCompile Include="Task_Move.cpp" />
     <ClCompile Include="Weapons_Actor.cpp" />
     <ClCompile Include="Wolf_Enemy.cpp" />
   </ItemGroup>

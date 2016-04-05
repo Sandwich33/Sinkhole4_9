@@ -7,6 +7,8 @@ var searchData=
   ['selectai',['SelectAI',['../class_b_b___humen.html#a6a1bca9746fc00983e69bc821ccdeda7',1,'BB_Humen::SelectAI()'],['../class_service___destination.html#a3bf42785905cc363414a52b61274b793',1,'Service_Destination::SelectAI()']]],
   ['selector',['selector',['../class_bear_behavior_tree___behavior_tree.html#a1d4c26a6c9f2c056a5d07f956129ba19',1,'BearBehaviorTree_BehaviorTree::selector()'],['../class_b_t___base.html#adbbf3731340b4e525a1ea549fd6409f3',1,'BT_Base::selector()'],['../class_giant_behavior_tree___behavior_tree.html#a3eba6d53ad774ed86427759a7437ae2c',1,'GiantBehaviorTree_BehaviorTree::selector()']]],
   ['service_5fdestination',['Service_Destination',['../class_service___destination.html',1,'']]],
+  ['service_5fscanenemycharacter',['Service_ScanEnemyCharacter',['../class_service___scan_enemy_character.html',1,'']]],
+  ['service_5fupdatemylocation',['Service_updateMyLocation',['../class_service__update_my_location.html',1,'']]],
   ['setcanattack',['setCanAttack',['../class_enemy___character.html#abf821a2be938d0686caf45fa6c738af7',1,'Enemy_Character']]],
   ['setrandomdestination_5fbtservice',['SetRandomDestination_BTService',['../class_set_random_destination___b_t_service.html',1,'']]],
   ['setviewtarget',['setViewTarget',['../class_player___person.html#a2719b6d6bb77d38be7cf5e5f677ade24',1,'Player_Person']]],

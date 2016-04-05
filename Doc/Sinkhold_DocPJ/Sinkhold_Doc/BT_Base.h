@@ -41,15 +41,6 @@ public:
 	void Idle(Bool Command);
 
 	/**
-	@brief 적 발견 상태 데코레이터
-	@details Idle에 의해 Find가 실행되면 targetToAttack = true, bullet > 0, 플레이어가 근처에 있다면 AttackAndReload가 실행된다.
-	@param targetToAttack은 공격할 대상.
-	@param bullet은 현재 총알이 장전된 수
-	@param Dec_PlayerCheck는 설정된 범위안에 플레이어가 있는지 체크. 해당 변수는 따로 만들어진 데코레이터 파일로 인해 반환된다.
-	*/
-	void Find(Object targetToAttack, Integer bullet, Bool Dec_PlayerCheck);
-
-	/**
 	@brief 적을 공격하는 태스크
 	@details Find에 의해 AttackAndReload가 실행되면 설정된 targetToAttack의 위치로 공격을 시작함.
 	@param targetToAttack은 공격할 대상.
@@ -77,13 +68,31 @@ public:
 	void FollowMe(Bool Command, Vector Destination, Vector myLocation, Bool distanceCheck);
 
 	/**
-	@brief 적이 범위에 있는지 확인하는 데코레이터
+	@brief 적 발견 상태 데코레이터
 	@details Command == True, targetToAttack == False가 만족하면 myCharacter에 따라 MoveDestination과 AttackAndReload를 실행함.
 	@param commnad는 명령을 내렸는지 확인하는 변수
 	@param myCharacter는 플레이어 Object
 	@param targetToAttack은 공격할 적 Object
 	*/
 	void FindEnemy(Object myCharacyer, Bool Command, Object targetToAttack);
+
+	/**
+	@brief 적 발견 상태 데코레이터
+	@details Command == True, targetToAttack == False가 만족하면 myCharacter에 따라 MoveDestination과 AttackAndReload를 실행함.
+	@param commnad는 명령을 내렸는지 확인하는 변수
+	@param myCharacter는 플레이어 Object
+	@param targetToAttack은 공격할 적 Object
+	*/
+	void FindEnemy2(Object myCharacyer, Bool Command, Object targetToAttack);
+
+	/**
+	@brief 적 발견 상태 데코레이터
+	@details Idle에 의해 Find가 실행되면 targetToAttack = true, bullet > 0, 플레이어가 근처에 있다면 AttackAndReload가 실행된다.
+	@param targetToAttack은 공격할 대상.
+	@param bullet은 현재 총알이 장전된 수
+	@param Dec_PlayerCheck는 설정된 범위안에 플레이어가 있는지 체크. 해당 변수는 따로 만들어진 데코레이터 파일로 인해 반환된다.
+	*/
+	void FindEnemy3(Object targetToAttack, Integer bullet);
 
 	/**
 	@brief 명령을 받아서 목적지로 이동하는 태스크
