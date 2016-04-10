@@ -105,6 +105,7 @@
     <ClInclude Include="M4A1_AI_Person.h" />
     <ClInclude Include="M4A1_Weapons.h" />
     <ClInclude Include="Person_Character.h" />
+    <ClInclude Include="PickupAmmo_Actor.h" />
     <ClInclude Include="Player_Person.h" />
     <ClInclude Include="ScanPersonCharacters_BTService.h" />
     <ClInclude Include="Service_Destination.h" />
@@ -113,6 +114,8 @@
     <ClInclude Include="SetRandomDestination_BTService.h" />
     <ClInclude Include="ShotGun_Weapons.h" />
     <ClInclude Include="Shotgun_AI_Person.h" />
+    <ClInclude Include="SpawningPoint_Actor.h" />
+    <ClInclude Include="SpawningVloume_Actor.h" />
     <ClInclude Include="Spider_Enemy.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -148,6 +151,7 @@
     <ClCompile Include="M4A1_AI_Person.cpp" />
     <ClCompile Include="M4A1_Weapons.cpp" />
     <ClCompile Include="Person_Character.cpp" />
+    <ClCompile Include="PickupAmmo_Actor.cpp" />
     <ClCompile Include="Player_Person.cpp" />
     <ClCompile Include="ScanPersonCharacters_BTService.cpp" />
     <ClCompile Include="Service_Destination.cpp" />
@@ -157,6 +161,8 @@
     <ClCompile Include="ShotGunWeapons.cpp" />
     <ClCompile Include="Shotgun_AI_Person.cpp" />
     <ClCompile Include="Sinkhold_Doc.cpp" />
+    <ClCompile Include="SpawningPoint_Actor.cpp" />
+    <ClCompile Include="SpawningVloume_Actor.cpp" />
     <ClCompile Include="Spider_Enemy.cpp" />
     <ClCompile Include="Task_Attack.cpp" />
     <ClCompile Include="Task_Move.cpp" />

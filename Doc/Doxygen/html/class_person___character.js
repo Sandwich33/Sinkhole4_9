@@ -6,6 +6,7 @@ var class_person___character =
     [ "actionJump", "class_person___character.html#a9207e4718d388fe8af9b5506d1d2e66d", null ],
     [ "actionReload", "class_person___character.html#a593f0cb97f1f20e42c4ac6642f7dcefe", null ],
     [ "actionSprint", "class_person___character.html#af2570b18cab60a6967ea9572afd34392", null ],
+    [ "addAmmunition", "class_person___character.html#ae88a7115ed58c1c240cc463411575351", null ],
     [ "AnyDamage", "class_person___character.html#a7e5f3df07b9a156ad0eceb1f6c8e615c", null ],
     [ "applyDemage", "class_person___character.html#af2ac7f312634c0f8c2c889cd7dd55c01", null ],
     [ "BeginPlay", "class_person___character.html#a1819d7afedae25bd00de25ee22791bb3", null ],

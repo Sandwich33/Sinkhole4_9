@@ -8,6 +8,7 @@ var searchData=
   ['actionjump',['actionJump',['../class_person___character.html#a9207e4718d388fe8af9b5506d1d2e66d',1,'Person_Character']]],
   ['actionreload',['actionReload',['../class_person___character.html#a593f0cb97f1f20e42c4ac6642f7dcefe',1,'Person_Character::actionReload()'],['../class_weapons___actor.html#ab1b1e922088fe0747842df3599dbb7b3',1,'Weapons_Actor::actionReload()']]],
   ['actionsprint',['actionSprint',['../class_person___character.html#af2570b18cab60a6967ea9572afd34392',1,'Person_Character']]],
+  ['addammunition',['addAmmunition',['../class_person___character.html#ae88a7115ed58c1c240cc463411575351',1,'Person_Character']]],
   ['adjacent',['adjacent',['../class_giant_behavior_tree___behavior_tree.html#af346a6b3b986b6f9092255672e3ce833',1,'GiantBehaviorTree_BehaviorTree']]],
   ['ai_5fchar_5fref',['AI_Char_Ref',['../class_service___scan_enemy_character.html#a74d7b226cb90283b97be427527df818c',1,'Service_ScanEnemyCharacter::AI_Char_Ref()'],['../class_service__update_my_location.html#a6d13896af22d8464dc24800bfd498c8a',1,'Service_updateMyLocation::AI_Char_Ref()'],['../class_task___move.html#aeab62db691b93699ac595009005dfc51',1,'Task_Move::AI_Char_Ref()']]],
   ['ai_5fcon_5fref',['AI_Con_Ref',['../class_service__update_my_location.html#a9119fdd7362553820385271bb40d9e36',1,'Service_updateMyLocation::AI_Con_Ref()'],['../class_task___attack.html#abadbd5bcbf92ba0c69048da439a90cfa',1,'Task_Attack::AI_Con_Ref()'],['../class_task___move.html#aeeb637b648ae916d43d62859918c6780',1,'Task_Move::AI_Con_Ref()']]],

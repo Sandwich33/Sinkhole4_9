@@ -141,6 +141,15 @@
     <ClInclude Include="BT_Base.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PickupAmmo_Actor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawningPoint_Actor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawningVloume_Actor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sinkhold_Doc.cpp">
@@ -261,6 +270,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BT_Base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PickupAmmo_Actor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawningPoint_Actor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawningVloume_Actor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

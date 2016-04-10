@@ -160,6 +160,12 @@ public:
 	*/
 	void initWeapon();
 
+	/**
+	@brief 탄창 공급
+	@details 탄창의 총알 수를 올려준다.
+	*/
+	void addAmmunition(int _amount);
+
 
 	float MAX_STAND_SPEED;
 	float MAX_SPRINT_SPEED;

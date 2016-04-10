@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$class_scan_person_characters___b_t_service.html" title="적 AI 서비스 " alt="" coords="155,5,311,47"/>
-<area shape="rect" id="node3" href="$class_service___destination.html" title="팀원 AI 서비스 " alt="" coords="165,71,301,98"/>
-<area shape="rect" id="node4" href="$class_service___scan_enemy_character.html" title="팀원 AI 서비스 " alt="" coords="133,122,332,149"/>
-<area shape="rect" id="node5" href="$class_service__update_my_location.html" title="팀원 AI 서비스 " alt="" coords="144,173,321,199"/>
-<area shape="rect" id="node6" href="$class_set_random_destination___b_t_service.html" title="적 AI 서비스 " alt="" coords="155,224,310,265"/>
+<area shape="rect" id="node2" href="$class_pickup_ammo___actor.html" title="탄창 픽업 아이템 " alt="" coords="117,5,256,32"/>
+<area shape="rect" id="node3" href="$class_spawning_point___actor.html" title="몬스터 스폰 지점 " alt="" coords="113,56,260,83"/>
+<area shape="rect" id="node4" href="$class_spawning_vloume___actor.html" title="몬스터 스폰 지역 " alt="" coords="107,107,267,133"/>
 </map>

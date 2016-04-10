@@ -1,5 +1,10 @@
 var hierarchy =
 [
+    [ "Actor", null, [
+      [ "PickupAmmo_Actor", "class_pickup_ammo___actor.html", null ],
+      [ "SpawningPoint_Actor", "class_spawning_point___actor.html", null ],
+      [ "SpawningVloume_Actor", "class_spawning_vloume___actor.html", null ]
+    ] ],
     [ "AIController", null, [
       [ "All_AIController", "class_all___a_i_controller.html", null ],
       [ "EnemyAIController_AIController", "class_enemy_a_i_controller___a_i_controller.html", null ]

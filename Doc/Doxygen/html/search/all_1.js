@@ -3,7 +3,7 @@ var searchData=
   ['bb_5fhumen',['BB_Humen',['../class_b_b___humen.html',1,'']]],
   ['bear_5fenemy',['Bear_Enemy',['../class_bear___enemy.html',1,'Bear_Enemy'],['../class_bear___enemy.html#abac75b6766ef69ebd9fb6a661a67b307',1,'Bear_Enemy::Bear_Enemy()']]],
   ['bearbehaviortree_5fbehaviortree',['BearBehaviorTree_BehaviorTree',['../class_bear_behavior_tree___behavior_tree.html',1,'']]],
-  ['beginplay',['BeginPlay',['../class_person___character.html#a1819d7afedae25bd00de25ee22791bb3',1,'Person_Character']]],
+  ['beginplay',['BeginPlay',['../class_person___character.html#a1819d7afedae25bd00de25ee22791bb3',1,'Person_Character::BeginPlay()'],['../class_spawning_point___actor.html#aed30a555c403de1d7c10290730a1def6',1,'SpawningPoint_Actor::BeginPlay()']]],
   ['blackboard',['blackboard',['../class_bear_behavior_tree___behavior_tree.html#af65805184758188534eb2100723629d7',1,'BearBehaviorTree_BehaviorTree::blackboard()'],['../class_b_t___base.html#ad6873a8492447b0b9d0eef5b28032a9d',1,'BT_Base::blackboard()'],['../class_giant_behavior_tree___behavior_tree.html#a2e26ad9e0c272be24d87a8c1a283895a',1,'GiantBehaviorTree_BehaviorTree::blackboard()']]],
   ['bt_5fbase',['BT_Base',['../class_b_t___base.html',1,'']]],
   ['bullet',['bullet',['../class_b_b___humen.html#a87f003bcd85b60d96e6ef1ebab51976e',1,'BB_Humen::bullet()'],['../class_service___destination.html#a29222990051632bee7d566e6ea357749',1,'Service_Destination::bullet()'],['../class_task___attack.html#aa168031a43b567fd2d207106c3c409fc',1,'Task_Attack::bullet()']]],

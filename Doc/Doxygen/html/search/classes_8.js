@@ -8,5 +8,7 @@ var searchData=
   ['shotgun_5fai_5fperson',['Shotgun_AI_Person',['../class_shotgun___a_i___person.html',1,'']]],
   ['shotgun_5fweapons',['ShotGun_Weapons',['../class_shot_gun___weapons.html',1,'']]],
   ['shotgunweapons',['ShotGunWeapons',['../class_shot_gun_weapons.html',1,'']]],
+  ['spawningpoint_5factor',['SpawningPoint_Actor',['../class_spawning_point___actor.html',1,'']]],
+  ['spawningvloume_5factor',['SpawningVloume_Actor',['../class_spawning_vloume___actor.html',1,'']]],
   ['spider_5fenemy',['Spider_Enemy',['../class_spider___enemy.html',1,'']]]
 ];
