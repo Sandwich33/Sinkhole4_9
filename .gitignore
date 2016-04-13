@@ -4,3 +4,12 @@
 **/unreal/Content/MAPLV/FloorAndActMap.umap
 **/unreal/Content/MAPLV/VolumeAndRefMap.umap
 **/unreal/sinkhole.sdf
+
+**/android/sinkhole/*.iml
+**/android/sinkhole/.gradle
+**/android/sinkhole/local.properties
+**/android/sinkhole/.idea/workspace.xml
+**/android/sinkhole/.idea/libraries
+**/android/sinkhole/.DS_Store
+**/android/sinkhole/build
+**/android/sinkhole/captures
