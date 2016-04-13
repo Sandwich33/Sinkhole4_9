@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">sinkhole</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_team">TeamActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>

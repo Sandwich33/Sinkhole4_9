@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"/>
+
+    <FrameLayout
+        android:id="@+id/cam"
+        android:layout_width="1000dp"
+        android:layout_height="200dp"
+        android:background="#000000"/>
+
+    <FrameLayout
+        android:padding="15dp"
+        android:id="@+id/fl_leftJoy"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="left|bottom"/>
+
+    <FrameLayout
+        android:padding="15dp"
+        android:id="@+id/fl_rightJoy"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="right|bottom"/>
+
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item android:drawable="@drawable/m4_f01" android:duration="50" />
+    <item android:drawable="@drawable/m4_f02" android:duration="50" />
+    <item android:drawable="@drawable/m4_f03" android:duration="50" />
+    <item android:drawable="@drawable/m4_f04" android:duration="50" />
+    <item android:drawable="@drawable/m4_f05" android:duration="50" />
+    <item android:drawable="@drawable/m4_f06" android:duration="50" />
+    <item android:drawable="@drawable/m4_f07" android:duration="50" />
+    <item android:drawable="@drawable/m4_f08" android:duration="50" />
+    <item android:drawable="@drawable/m4_f09" android:duration="50" />
+    <item android:drawable="@drawable/m4_f10" android:duration="50" />
+    <item android:drawable="@drawable/m4_f11" android:duration="50" />
+    <item android:drawable="@drawable/m4_f12" android:duration="50" />
+    <item android:drawable="@drawable/m4_f13" android:duration="50" />
+    <item android:drawable="@drawable/m4_f14" android:duration="50" />
+    <item android:drawable="@drawable/m4_f15" android:duration="50" />
+    <item android:drawable="@drawable/m4_f16" android:duration="50" />
+    <item android:drawable="@drawable/m4_f17" android:duration="50" />
+
+</animation-list>

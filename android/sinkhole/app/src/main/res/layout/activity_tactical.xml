@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:layout_gravity="center"/>
+
+    <FrameLayout
+        android:id="@+id/fl_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:background="#88CCCCCC"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+    </LinearLayout>
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="#55CCCCCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gps"
+        android:id="@+id/imageView"
+        android:layout_gravity="right"
+        android:onClick="onSetAll"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="#55CCCCCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/technology"
+        android:onClick="onStartDrone"
+        android:layout_above="@+id/imageView"
+        android:layout_alignRight="@+id/imageView" />
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="#55CCCCCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onFindMe"
+        android:src="@drawable/people"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item android:drawable="@drawable/shotgun_11" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_13" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_15" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_17" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_19" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_21" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_23" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_25" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_27" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_29" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_31" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_33" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_35" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_37" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_39" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_41" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_43" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_45" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_47" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_49" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_51" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_83" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_85" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_87" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_89" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_91" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_93" android:duration="80" />
+    <item android:drawable="@drawable/shotgun_95" android:duration="80" />
+
+</animation-list>

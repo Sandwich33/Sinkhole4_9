@@ -48,6 +48,7 @@ UOneNetworking* UOneNetworking::createTCPClient(const FString& _socket_descripti
 			else{
 				if (wrapper->sendMessage(FString::Printf(TEXT("checkConnect")))){
 					wrapper->is_connect = true;
+					//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, wrapper->socket_description);
 				}
 				else{
 
