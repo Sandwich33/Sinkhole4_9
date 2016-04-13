@@ -1,6 +1,8 @@
 ## Unreal
 **/unreal/Saved
 **/unreal/Intermediate
+**/unreal/Binaries
+**/unreal/Build
 **/unreal/Content/MAPLV/FloorAndActMap.umap
 **/unreal/Content/MAPLV/VolumeAndRefMap.umap
 **/unreal/sinkhole.sdf
