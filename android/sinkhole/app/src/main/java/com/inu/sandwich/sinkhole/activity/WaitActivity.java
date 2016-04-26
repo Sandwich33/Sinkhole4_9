@@ -36,6 +36,10 @@ public class WaitActivity extends FullscreenActivity{
                     Intent intent = new Intent(WaitActivity.this, MainActivity.class);
                     startActivity(intent);
                     WaitActivity.this.finish();
+                }else if (msg.obj.toString().equals("act;TacticalActivity")) {
+                    Intent intent = new Intent(WaitActivity.this, TacticalActivity.class);
+                    startActivity(intent);
+                    WaitActivity.this.finish();
                 }
             }
         }

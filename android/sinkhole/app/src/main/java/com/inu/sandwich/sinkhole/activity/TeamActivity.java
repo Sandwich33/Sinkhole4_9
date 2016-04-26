@@ -148,6 +148,10 @@ public class TeamActivity extends FullscreenActivity {
                     Intent intent = new Intent(TeamActivity.this, MainActivity.class);
                     startActivity(intent);
                     TeamActivity.this.finish();
+                }else if (msg.obj.toString().equals("act;WaitActivity")) {
+                    Intent intent = new Intent(TeamActivity.this, WaitActivity.class);
+                    startActivity(intent);
+                    TeamActivity.this.finish();
                 }
             }
         }
