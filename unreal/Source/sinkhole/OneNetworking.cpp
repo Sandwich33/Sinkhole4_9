@@ -3,6 +3,7 @@
 #include "sinkhole.h"
 #include "OneNetworking.h"
 #include <string>
+#include <stdlib.h>
 
 
 DEFINE_LOG_CATEGORY(OneNetworking);
@@ -15,6 +16,8 @@ UOneNetworking* UOneNetworking::createNetworking()
 
 
 UOneNetworking* UOneNetworking::createTCPClient(const FString& _socket_description, const FString& _ip_address, const int32 _port){
+
+	system("adb forward tcp:27015 tcp:27015");
 
 	UOneNetworking* wrapper = createNetworking();
 
