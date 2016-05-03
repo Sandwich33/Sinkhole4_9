@@ -7,6 +7,9 @@
 **/unreal/Content/MAPLV/VolumeAndRefMap.umap
 **/unreal/sinkhole.sdf
 
+**/unreal/Plugins/VictoryPlugin/Intermediate
+**/unreal/Plugins/VictoryPlugin/Binaries
+
 **/android/sinkhole/*.iml
 **/android/sinkhole/.gradle
 **/android/sinkhole/local.properties
