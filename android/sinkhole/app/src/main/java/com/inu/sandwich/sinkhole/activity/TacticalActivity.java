@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Vibrator;
 import android.util.Log;
+import android.view.DragEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -28,7 +29,7 @@ import java.util.HashMap;
 /**
  * Created by 0xFF00FF00 on 2016-04-02.
  */
-public class TacticalActivity extends FullscreenActivity{
+public class TacticalActivity extends FullscreenActivity implements View.OnDragListener {
     private Context mContext;
     private MinimapView mapView;
     private LinearLayout ll_info;
@@ -48,6 +49,9 @@ public class TacticalActivity extends FullscreenActivity{
         fl_map.addView(mapView);
         tcp.setHandler(handler);
         tcp.sendMessage("get;startInfo");
+
+        findViewById(R.id.iv_allfollow).setOnDragListener(this);
+        findViewById(R.id.iv_cam).setOnDragListener(this);
     }
 
     public void onStartDrone(View v){
@@ -112,6 +116,14 @@ public class TacticalActivity extends FullscreenActivity{
                     Intent intent = new Intent(TacticalActivity.this, MainActivity.class);
                     startActivity(intent);
                     TacticalActivity.this.finish();
+                }else if (msg.obj.toString().equals("act;WaitActivity")) {
+                    Intent intent = new Intent(TacticalActivity.this, WaitActivity.class);
+                    startActivity(intent);
+                    TacticalActivity.this.finish();
+                }else if (msg.obj.toString().equals("gme;Paused")) {
+                    //;;
+                }else if (msg.obj.toString().equals("gme;UnPaused")) {
+                    //;;
                 }else if(msg.obj.toString().substring(0,4).equals("per;")) {
                     String posMessage = msg.obj.toString().substring(4);
                     mapView.setPos(posMessage);
@@ -157,4 +169,21 @@ public class TacticalActivity extends FullscreenActivity{
             }
         }
     };
+
+
+    @Override
+    public boolean onDrag(View v, DragEvent event) {
+        // 이벤트 시작
+        switch (event.getAction()) {
+            case DragEvent.ACTION_DROP:
+                if (v_handler != null){
+                    v_handler.sendMessage(v_handler.obtainMessage(2,event.getClipDescription().getLabel().toString()));
+                    return true;
+                }
+                break;
+            default:
+                break;
+        }
+        return true;
+    }
 }

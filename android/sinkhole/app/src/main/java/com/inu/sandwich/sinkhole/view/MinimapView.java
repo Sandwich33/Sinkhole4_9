@@ -279,13 +279,15 @@ public class MinimapView extends SurfaceView implements SurfaceHolder.Callback, 
         // 이벤트 시작
         switch (event.getAction()) {
             case DragEvent.ACTION_DROP:
-                Log.d("DragClickListener", "ACTION_DROP");
                 //ClipData clipData = event.getClipData();
                 float x = event.getX();
                 float y = event.getY();
                 x = (((x +startX)-(440+sizeW))*(-12.5f));
                 y = (((y+startY)-1899)*12.5f);
                 handler.sendMessage(handler.obtainMessage(3, (int) (x * 1000), (int) (y * 1000), event.getClipDescription().getLabel().toString()));
+                break;
+            case DragEvent.ACTION_DRAG_STARTED:
+                break;
             default:
                 break;
         }
