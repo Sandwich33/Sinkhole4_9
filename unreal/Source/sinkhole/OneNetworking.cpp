@@ -14,11 +14,7 @@ UOneNetworking* UOneNetworking::createNetworking()
 	return (UOneNetworking*)StaticConstructObject(UOneNetworking::StaticClass());
 }
 
-
 UOneNetworking* UOneNetworking::createTCPClient(const FString& _socket_description, const FString& _ip_address, const int32 _port){
-
-	system("adb forward tcp:27015 tcp:27015");
-
 	UOneNetworking* wrapper = createNetworking();
 
 	wrapper->SocketSubsystem = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM);
@@ -64,6 +60,12 @@ UOneNetworking* UOneNetworking::createTCPClient(const FString& _socket_descripti
 	}
 
 	return wrapper;
+}
+
+
+bool UOneNetworking::cmdSystem_adbTcp(){
+	system("adb forward tcp:27015 tcp:27015");
+	return true;
 }
 
 

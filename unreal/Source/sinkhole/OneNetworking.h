@@ -23,6 +23,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "OneNetworking")
 		static UOneNetworking* createTCPClient(const FString& _socket_description, const FString& _ip_address, const int32 _port);
 
+	UFUNCTION(BlueprintPure, Category = "OneNetworking_temp")
+		static bool cmdSystem_adbTcp();
+
 	// Destroys all data
 	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
 		void Destructor();
