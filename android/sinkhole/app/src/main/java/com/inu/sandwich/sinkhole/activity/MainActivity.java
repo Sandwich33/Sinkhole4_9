@@ -34,7 +34,7 @@ public class MainActivity extends FullscreenActivity{
 
         if(tcp == null ) {
             tcp = new TCP();
-            tcp.startTCPServer();
+            tcp.startTCPServer( this.getFilesDir());
             tcp.setHandler(handler);
         }else{
             tcp.setHandler(handler);

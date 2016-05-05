@@ -1,5 +1,10 @@
 package com.inu.sandwich.sinkhole.TCP;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.text.format.Formatter;
@@ -7,7 +12,11 @@ import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -16,6 +25,8 @@ import java.net.NetworkInterface;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
 import java.util.Enumeration;
 
 /**
@@ -87,18 +98,28 @@ public class TCP {
         return null;
     }
 
-    public boolean startTCPServer(){
+    public File getTempFile( File cachdir, String fileName){
+        File file=null;
+        try{
+            file = File.createTempFile( fileName, ".bmp", cachdir);
+        }catch( IOException e){
+
+        }
+        return file;
+    }
+
+    public boolean startTCPServer(final File cachdir){
         if(ServerThread != null ){
             ServerThread.interrupt();
             ServerThread = null;
         }
 
-        try {
-            Runtime.getRuntime().exec("adb forward tcp:"+PORT+" tcp:"+PORT);
-        }catch (Exception e){
-            Log.e("TCP","ee : "+e);
-            return false;
-        }
+//        try {
+//            Runtime.getRuntime().exec("adb forward tcp:"+PORT+" tcp:"+PORT);
+//        }catch (Exception e){
+//            Log.e("TCP","ee : "+e);
+//            return false;
+//        }
 
         ServerThread = new Thread(new Runnable() {
             @Override
@@ -127,15 +148,34 @@ public class TCP {
                                         if(str.equals("startDroneImage")){
                                             handler.sendMessage(handler.obtainMessage(0, "startDroneImage"));
                                             Log.d(TAG, "startDroneImage");
-                                            while(true){
-                                                char[] buf = new char[514];
-                                                int size = clientInfo.readBuf.read(buf, 0, 100*100);
-                                                Log.d(TAG,"size : "+size);
-                                                if(size < 400){
-                                                    Log.d(TAG, "f(buf.length < 500)");
-                                                    return ;
-                                                }
-                                                handler.sendMessage(handler.obtainMessage(-1, buf));
+                                            int count=0;
+                                            while(true)
+                                            {
+                                              //  ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                                                //Bitmap bmp = BitmapFactory.decodeStream(clientInfo.readBuf);
+                                                //File file = getTempFile(cachdir,"temp");
+                                                char[] buf = new char[1048630];
+                                                int len;
+                                                int offset = 0;
+                                                int max = 1048630;
+
+                                                do{
+                                                    int size = clientInfo.readBuf.read(buf,offset,1024);
+                                                    if( size < 0)
+                                                        break;
+                                                    if( offset == 0 ){
+                                                        Log.d(TAG,"["+buf[0]+""+buf[1]+""+buf[2]+"]");
+                                                    }
+                                                    offset += size;
+                                                    max -= size;
+                                                    Log.d(TAG,"size "+size+"; offset "+offset+"; max "+max+"; 1048630");
+                                                }while(offset < 1048630);
+                                                FileWriter fileWriter = new FileWriter( new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "temp_"+count+".bmp"));
+                                                Log.d(TAG, (new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "temp_"+count+".bmp")).getAbsolutePath());
+                                                fileWriter.write(buf,0,offset);
+                                                fileWriter.close();
+                                                handler.sendMessage(handler.obtainMessage(-1, count,0));
+                                                count = (count+1)%10;
                                             }
                                         }else {
                                             Log.d(TAG, "S: sendMessage ..." + str + ";" + str.length() + "," + str.getBytes().toString());

@@ -83,13 +83,14 @@ public class DroneActivity extends FullscreenActivity{
     public Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg){
-            if( msg != null && msg.obj != null){
 
-                if( msg.what < 0 ){
-                    Log.d("drone","---------------------------------");
-                    CameraView.sendData((char[])msg.obj);
-                    return ;
-                }
+            if( msg.what < 0 ){
+                Log.d("TCP","---------------------------------");
+                //CameraView.sendData((char[])msg.obj);
+                CameraView.drawImage(msg.arg1);
+                return ;
+            }
+            if( msg != null && msg.obj != null){
 
                 if (msg.obj.toString().equals("act;MainActivity")) {
                     Intent intent = new Intent(DroneActivity.this, MainActivity.class);

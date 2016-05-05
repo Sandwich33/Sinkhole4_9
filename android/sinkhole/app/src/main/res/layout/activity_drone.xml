@@ -10,12 +10,6 @@
         android:background="#000000"/>
 
     <FrameLayout
-        android:id="@+id/cam"
-        android:layout_width="1000dp"
-        android:layout_height="200dp"
-        android:background="#000000"/>
-
-    <FrameLayout
         android:padding="15dp"
         android:id="@+id/fl_leftJoy"
         android:layout_width="200dp"
@@ -28,6 +22,12 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="right|bottom"/>
+
+    <FrameLayout
+        android:id="@+id/cam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"/>
 
 
 </FrameLayout>

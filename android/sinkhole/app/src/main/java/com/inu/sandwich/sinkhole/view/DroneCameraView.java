@@ -7,9 +7,13 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
+import android.os.Environment;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by 0xFF00FF00 on 2016-04-08.
@@ -20,6 +24,9 @@ public class DroneCameraView extends SurfaceView implements SurfaceHolder.Callba
     boolean up = false;
     private float sizeW;
     private float sizeH;
+    private boolean dimg = false;
+    private Bitmap bmp;
+    private int tc;
 
     public DroneCameraView(Context context) {
         super(context);
@@ -34,36 +41,40 @@ public class DroneCameraView extends SurfaceView implements SurfaceHolder.Callba
         super.onSizeChanged(w, h, oldw, oldh);
     }
 
-    public void onDraw(Canvas canvas) {
-        if( byteArray != null && byteArray.length > 500 ) {
-            try {
-                //tcanvas.drawColor(Color.GREEN);
-            }catch (Exception e){}
+    public File getTempFile(String fileName){
+        File file=null;
+        try{
+            file = File.createTempFile( fileName, ".bmp", getContext().getFilesDir());
+        }catch( IOException e){
 
-            int k=0;
-            int y = byteArray[0];
-            y =  y + (byteArray[1] << 8);
-            k=2;
-            while(k < byteArray.length){
-                Paint mPaint = new Paint();
-                mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-                //mPaint.setStrokeWidth(4);
-                mPaint.setARGB(255, byteArray[k], byteArray[k], byteArray[k]);
-                k++;
-                canvas.drawPoint(k-2,y,mPaint);
-            }
-            up = false;
-        }else{
         }
+        return file;
     }
 
-//    public void sendData(byte[] _byteArray){
-////        synchronized (byteArray) {
-//            byteArray = _byteArray;
-//        Log.d("TCP","byteArray len : "+byteArray.length);
-//            up = true;
-// //       }
-//    }
+    public void drawImage(int tCnt){
+        Log.d("TCP","draw "+tCnt);
+        tc = tCnt;
+        dimg = true;
+    }
+
+    public void onDraw(Canvas canvas) {
+        //if(dimg) {
+            try {
+                String fname = (new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "temp_"+tc+".bmp")).getAbsolutePath();
+                Bitmap loadBmp = BitmapFactory.decodeFile(fname);//(getTempFile("temp"));
+                if (loadBmp != null) {
+                    //bmp = loadBmp;
+                    canvas.drawBitmap(loadBmp, 0, 0, new Paint());
+                } else {
+                }
+            } catch (Exception e) {
+            }
+            dimg = false;
+        //}
+
+       // if (bmp != null) {
+       // }
+    }
 
     public void sendData(char[] _byteArray){
 //        synchronized (byteArray) {

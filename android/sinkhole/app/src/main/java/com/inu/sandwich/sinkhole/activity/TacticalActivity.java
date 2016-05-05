@@ -55,7 +55,7 @@ public class TacticalActivity extends FullscreenActivity implements View.OnDragL
     }
 
     public void onStartDrone(View v){
-        //tcp.sendMessage("set;Drone");
+        tcp.sendMessage("set;Drone");
     }
 
     public void onFindMe(View v){
