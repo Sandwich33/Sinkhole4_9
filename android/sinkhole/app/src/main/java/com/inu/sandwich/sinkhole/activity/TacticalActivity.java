@@ -20,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.inu.sandwich.sinkhole.R;
+import com.inu.sandwich.sinkhole.Utils.PersonData;
 import com.inu.sandwich.sinkhole.view.HpInfoView;
 import com.inu.sandwich.sinkhole.view.MinimapView;
 
@@ -108,6 +109,52 @@ public class TacticalActivity extends FullscreenActivity implements View.OnDragL
         @Override
         public void handleMessage(Message msg){
             if( msg != null && msg.obj != null){
+                switch (msg.what){
+                    case 0x06:
+                        mapView.setEnemyPos((ArrayList<Point>)msg.obj);
+                        return;
+                    case 0x07:      // per
+                    {
+                        ArrayList<PersonData> data = (ArrayList<PersonData>) msg.obj;
+                        mapView.setPos(data);
+                        String[] persons = msg.obj.toString().substring(4).split(";");
+                        for(int i=0;i<persons.length;i++) {
+                            String key = data.get(i).Name;
+                            try{
+                                HpInfoView hpInfoView = infoViews.get(key);
+                                hpInfoView.setHp( data.get(i).hp);
+                                hpInfoView.setOrder(data.get(i).order);
+                            }catch (Exception e){}
+                        }
+                        return ;
+                    }
+                    case 0x05:      // set
+                    {
+                        ArrayList<PersonData> data = (ArrayList<PersonData>) msg.obj;
+                        if(infoViews != null){
+                            infoViews.clear();
+                            infoViews = null;
+                        }
+                        infoViews = new HashMap<>();
+
+                        mapView.initPersonInfo(data);
+
+                        for(int i=0;i<data.size();i++) {
+                            String key = data.get(i).Name;
+                            int idx = key.indexOf("Player");
+                            if(idx < 0 || idx > 7){
+                                HpInfoView hpInfoView = new HpInfoView(mContext,v_handler,data.get(i),i);
+                                infoViews.put(key, hpInfoView);
+                                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,90);
+                                layoutParams.setMargins(5, 5, 5, 5);
+                                hpInfoView.setLayoutParams(layoutParams);
+                                ll_info.addView(hpInfoView);
+                            }
+                        }
+                    }
+                        return;
+                }
+
                 if( msg.obj.toString().equals("act;DroneActivity") ) {
                     Intent intent = new Intent(TacticalActivity.this, DroneActivity.class);
                     startActivity(intent);
@@ -124,47 +171,6 @@ public class TacticalActivity extends FullscreenActivity implements View.OnDragL
                     //;;
                 }else if (msg.obj.toString().equals("gme;UnPaused")) {
                     //;;
-                }else if(msg.obj.toString().substring(0,4).equals("per;")) {
-                    String posMessage = msg.obj.toString().substring(4);
-                    mapView.setPos(posMessage);
-                    String[] persons = msg.obj.toString().substring(4).split(";");
-                    for(int i=0;i<persons.length;i++) {
-                        String[] info = persons[i].split(":");
-                        String key = info[0];
-                        try{
-                            HpInfoView hpInfoView = infoViews.get(key);
-                            float hp = Float.valueOf(info[3]);
-                            hpInfoView.setHp((int)hp);
-                            if( info.length > 5 )
-                                hpInfoView.setOrder(info[4]);
-                            else
-                                hpInfoView.setOrder("F");
-                        }catch (Exception e){}
-                    }
-                }else if(msg.obj.toString().substring(0,4).equals("set;")) {
-                    if(infoViews != null){
-                        infoViews.clear();
-                        infoViews = null;
-                    }
-                    infoViews = new HashMap<>();
-                    mapView.initPersonInfo(msg.obj.toString().substring(4));
-                    String[] persons = msg.obj.toString().substring(4).split(";");
-                    for(int i=0;i<persons.length;i++) {
-                        String[] info = persons[i].split(":");
-                        String key = info[0];
-                        int idx = key.indexOf("Player");
-                        if(idx < 0 || idx > 7){
-                            HpInfoView hpInfoView = new HpInfoView(mContext,v_handler,persons[i],i);
-                            infoViews.put(key, hpInfoView);
-                            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,90);
-                            layoutParams.setMargins(5, 5, 5, 5);
-                            hpInfoView.setLayoutParams(layoutParams);
-                            ll_info.addView(hpInfoView);
-                        }
-                    }
-                }else if(msg.obj.toString().substring(0,4).equals("ene;")) {
-                    String posMessage = msg.obj.toString().substring(4);
-                    mapView.setEnemyPos(posMessage);
                 }
             }
         }

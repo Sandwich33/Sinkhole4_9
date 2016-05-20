@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import com.inu.sandwich.sinkhole.R;
@@ -49,12 +50,17 @@ public class DroneActivity extends FullscreenActivity{
                 String msg = "";
                 while(true){
                     msg = "key;";
-                    msg += MoveFR.getMoveY()+":"; // Move Forward
+                    msg += -MoveFR.getMoveY()+":"; // Move Forward
                     msg += MoveFR.getMoveX()+":"; // Move Right
-                    msg += MoveTurnUp.getMoveY()+":"; // LookUp
+                    msg += -MoveTurnUp.getMoveY()+":"; // LookUp
                     msg += MoveTurnUp.getMoveX()+":"; // Turn
                     msg += "0.0"; // Move Up
                     tcp.sendMessage(msg);
+                    try {
+                        Thread.sleep(30);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });
@@ -66,6 +72,11 @@ public class DroneActivity extends FullscreenActivity{
         super.onDestroy();
         thread.interrupt();
         thread = null;
+    }
+
+    public void onStopDrone(View view){
+        tcp.stopDrone();
+        return ;
     }
 
     private byte[] toBytes(char[] chars) {
@@ -85,7 +96,6 @@ public class DroneActivity extends FullscreenActivity{
         public void handleMessage(Message msg){
 
             if( msg.what < 0 ){
-                Log.d("TCP","---------------------------------");
                 //CameraView.sendData((char[])msg.obj);
                 CameraView.drawImage(msg.arg1);
                 return ;
@@ -100,6 +110,10 @@ public class DroneActivity extends FullscreenActivity{
                     tcp.sendMessage("ini;Drone");
                 }else if (msg.obj.toString().equals("startDroneImage")) {
                     thread.start();
+                }if (msg.obj.toString().equals("act;TacticalActivity")) {
+                    Intent intent = new Intent(DroneActivity.this, TacticalActivity.class);
+                    startActivity(intent);
+                    DroneActivity.this.finish();
                 }
             }
         }

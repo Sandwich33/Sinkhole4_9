@@ -21,6 +21,7 @@ import android.view.SurfaceView;
 import android.view.View;
 
 import com.inu.sandwich.sinkhole.R;
+import com.inu.sandwich.sinkhole.Utils.PersonData;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -105,64 +106,57 @@ public class MinimapView extends SurfaceView implements SurfaceHolder.Callback, 
         return true;
     }
 
-    public void initPersonInfo(String msg){
+    public void initPersonInfo(ArrayList<PersonData> data){
         if( persons != null ){
             persons.clear();
             persons = null;
         }
         persons = new HashMap<>();
 
-        String[] pps = msg.split(";");
-        for(int i=0;i<pps.length;i++) {
-            String[] info = pps[i].split(":");
-            String key = info[0];
-            float x = -Float.valueOf(info[1])/12.5f;
-            float y = Float.valueOf(info[2])/12.5f;
+        for(int i=0;i<data.size();i++) {
+            PersonData personData = data.get(i);
+            String key = personData.Name;
+            int x = personData.pos.x;
+            int y = personData.pos.y;
             int[] Color = {0xFF3E5EE8,0xFFE5DE47,0xFFC832DC,0xFF26C823,0xFF111111};
             PersonInfo personInfo = new PersonInfo();
-            personInfo.pos = new Point((int)x+(440+sizeW),(int)y+1899);
+            personInfo.pos = new Point(x+(440+sizeW),y+1899);
             personInfo.flage = new Point(0,0);
             personInfo.color = Color[i%5];
             personInfo.showF = false;
             persons.put(key,personInfo);
 
-            if(i == pps.length-1){
+            if(i == data.size()-1){
                 CameraKey = key;
             }
         }
     }
 
-    public void setEnemyPos(String msg){
+    public void setEnemyPos(ArrayList<Point> msg){
         enemys.removeAll(enemys);
-        String[] pps = msg.split(";");
-        for(int i=0;i<pps.length;i++) {
-            String[] info = pps[i].split(":");
-            if (info.length < 2)
-                continue;
-            float x = -Float.valueOf(info[0])/12.5f;
-            float y = Float.valueOf(info[1])/12.5f;
-            enemys.add(new Point((int)x+(440+sizeW),(int)y+1899));
+        for(int i=0;i<msg.size();i++) {
+            int x = msg.get(i).x;
+            int y = msg.get(i).y;
+            enemys.add(new Point(x+(440+sizeW),y+1899));
         }
     }
 
-    public void setPos(String msg){
-        String[] pps = msg.split(";");
-        for(int i=0;i<pps.length;i++){
-            String[] info = pps[i].split(":");
-            String key = info[0];
-            float x = -Float.valueOf(info[1])/12.5f;
-            float y = Float.valueOf(info[2])/12.5f;
+    public void setPos(ArrayList<PersonData> data){
+
+        for(int i=0;i<data.size();i++) {
+            PersonData personData = data.get(i);
+            String key = personData.Name;
+            int x = personData.pos.x;
+            int y = personData.pos.y;
             PersonInfo personInfo = persons.get(key);
-            personInfo.pos.x = (int)x+(440+sizeW);
-            personInfo.pos.y = (int)y+1899;
-            if(info.length > 5){
-                if(info[4].equals("T")){
-                    personInfo.showF = true;
-                    personInfo.flage.x = (int)(-Float.valueOf(info[5])/12.5f)+(440+sizeW);
-                    personInfo.flage.y = (int)(Float.valueOf(info[6])/12.5f)+1899;
-                }else{
-                    personInfo.showF = false;
-                }
+            personInfo.pos.x = x+(440+sizeW);
+            personInfo.pos.y = y+1899;
+            if(personData.order){
+                personInfo.showF = true;
+                personInfo.flage.x = personData.order_pos.x+(440+sizeW);
+                personInfo.flage.y = personData.order_pos.y+1899;
+
+                Log.d("TAG","("+personInfo.pos.toString()+") ; ("+personInfo.flage.toString()+") ("+personData.pos.toString()+") ; ("+personData.order_pos.toString()+")");
             }else{
                 personInfo.showF = false;
             }
@@ -204,9 +198,10 @@ public class MinimapView extends SurfaceView implements SurfaceHolder.Callback, 
         // Draw BG
         Paint paint = new Paint();
         try {
-            Bitmap vbit = Bitmap.createBitmap(mapbitmap, startX, startY, sizeW, sizeH);
-            canvas.drawBitmap(vbit, 0, 0, paint);
-            vbit.recycle();
+            //Bitmap vbit = Bitmap.createBitmap(mapbitmap, startX, startY, sizeW, sizeH);
+            //canvas.drawBitmap(vbit, 0, 0, paint);
+            //vbit.recycle();
+            canvas.drawBitmap(mapbitmap, -startX, -startY, paint);
         }catch (Exception e){};
 
         // Draw Cahr

@@ -29,6 +29,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.inu.sandwich.sinkhole.R;
+import com.inu.sandwich.sinkhole.Utils.PersonData;
 
 /**
  * Created by 0xFF00FF00 on 2016-04-02.
@@ -46,7 +47,7 @@ public class HpInfoView extends FrameLayout  implements View.OnDragListener {
         initView(context);
     }
 
-    public HpInfoView(Context context,Handler _handler,String initMessage,int index) {
+    public HpInfoView(Context context,Handler _handler,PersonData initData,int index) {
         super(context);
         initView(context);
 
@@ -54,12 +55,10 @@ public class HpInfoView extends FrameLayout  implements View.OnDragListener {
 
         int[] Color = {0xFF3E5EE8,0xFFE5DE47,0xFFC832DC,0xFF26C823};
         color = Color[index%4];
-        String[] info = initMessage.split(":");
-        key = info[0];
+        key = initData.Name;
         imageView.setBackgroundColor(color);
-        textView.setText(info[0].substring(0, info[0].indexOf("_")));
-        float hp = Float.valueOf(info[3]);
-        progressBar.setProgress((int) hp);
+        textView.setText(key.substring(0, key.indexOf("_")));
+        progressBar.setProgress(initData.hp);
         this.setOnDragListener(this);
     }
 
@@ -89,8 +88,8 @@ public class HpInfoView extends FrameLayout  implements View.OnDragListener {
         progressBar.setProgress(hp);
     }
 
-    public void setOrder(String _order){
-        if(_order.equals("T")){
+    public void setOrder(boolean _order){
+        if(_order){
             imageView.setImageResource(R.drawable.icon_run);
         }else{
             imageView.setImageResource(R.drawable.two);

@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.BitmapDrawable;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -45,6 +47,12 @@ public class TeamActivity extends FullscreenActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+    private SoundPool soundPool;
+    private int sound_ryong;
+    private int sound_gyun;
+    private int sound_ho;
+    private int sound_yun;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +69,13 @@ public class TeamActivity extends FullscreenActivity {
         adt = new Adt(this);
         lv.setAdapter(adt);
 
-        String str = "- E.Dragon\n   M4A1\n   Lv.1";
+        soundPool = new SoundPool(1, AudioManager.STREAM_ALARM,0);
+        sound_ryong = soundPool.load(TeamActivity.this,R.raw.sel_ryong,1);
+        sound_gyun = soundPool.load(TeamActivity.this,R.raw.sel_gyun,1);
+        sound_ho = soundPool.load(TeamActivity.this,R.raw.sel_ho,1);
+        sound_yun = soundPool.load(TeamActivity.this,R.raw.sel_yun,1);
+
+        String str = "- E.Dragon\n   M4A1\n   Lv.1\n   빠른 움직임";
         info.setText(str);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -71,20 +85,28 @@ public class TeamActivity extends FullscreenActivity {
                 String str = "- " + adt.getItem(position) + "\n   " + adt.m_Listsub.get(position);
                 switch (position) {
                     case 0:
+                        gifres = R.anim.gif_m4;
+                        chAnim();
+                        str = str+ "\n   Lv.1\n   빠른 움직임";
+                        soundPool.play(sound_ryong,1,1,0,0,1);
+                        break;
                     case 1:
                         gifres = R.anim.gif_m4;
                         chAnim();
-                        str = str+ "\n   Lv.1";
+                        str = str+ "\n   Lv.1\n   빠른 움직임";
+                        soundPool.play(sound_gyun,1,1,0,0,1);
                         break;
                     case 2:
                         gifres = R.anim.gif_shotgun;
                         chAnim();
-                        str = str+ "\n   Lv.1";
+                        str = str+ "\n   Lv.1\n   강인한 체력";
+                        soundPool.play(sound_ho,1,1,0,0,1);
                         break;
                     case 3:
                         gifres = R.anim.gif_awp;
                         chAnim();
-                        str = str+ "\n   Lv.1";
+                        str = str+ "\n   Lv.1\n   강한 공격력";
+                        soundPool.play(sound_yun,1,1,0,0,1);
                         break;
                     default:
                         chImg();

@@ -58,22 +58,17 @@ public class DroneCameraView extends SurfaceView implements SurfaceHolder.Callba
     }
 
     public void onDraw(Canvas canvas) {
-        //if(dimg) {
-            try {
-                String fname = (new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "temp_"+tc+".bmp")).getAbsolutePath();
-                Bitmap loadBmp = BitmapFactory.decodeFile(fname);//(getTempFile("temp"));
-                if (loadBmp != null) {
-                    //bmp = loadBmp;
-                    canvas.drawBitmap(loadBmp, 0, 0, new Paint());
-                } else {
-                }
-            } catch (Exception e) {
+        try {
+            String fname = (new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "temp_"+tc+".bmp")).getAbsolutePath();
+            Bitmap loadBmp = BitmapFactory.decodeFile(fname);//(getTempFile("temp"));
+            if (loadBmp != null) {
+                //bmp = loadBmp;
+                canvas.drawBitmap(loadBmp, (sizeW-512)/2, (sizeH-512)/2, new Paint());
+            } else {
             }
-            dimg = false;
-        //}
-
-       // if (bmp != null) {
-       // }
+        } catch (Exception e) {
+        }
+        dimg = false;
     }
 
     public void sendData(char[] _byteArray){
