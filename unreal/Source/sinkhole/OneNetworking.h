@@ -8,6 +8,54 @@
 
 DECLARE_LOG_CATEGORY_EXTERN(OneNetworking, Log, All);
 
+UENUM(BlueprintType)
+enum class EAndroidActivity : uint8
+{
+	E_WaitACT		UMETA(DisplayName = "WaitACT"),
+	E_MainACT		UMETA(DisplayName = "MainACT"),
+	E_TeamACT		UMETA(DisplayName = "TeamACT"),
+	E_TacticalACT	UMETA(DisplayName = "TacticalACT"),
+	E_DroneACT		UMETA(DisplayName = "DroneACT"),
+};
+
+USTRUCT(BlueprintType)//, Blueprintable)
+struct FEnemyData{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FEnemyData Struct")
+		float x;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FEnemyData Struct")
+		float y;
+
+	FEnemyData(){
+
+	}
+};
+
+USTRUCT(BlueprintType)//, Blueprintable)
+struct FPersonData{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FPersonData Struct")
+		FString DisplayName;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FPersonData Struct")
+		float HP;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FPersonData Struct")
+		float x;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FPersonData Struct")
+		float y;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FPersonData Struct")
+		BOOL order;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FPersonData Struct")
+		float order_x;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FPersonData Struct")
+		float order_y;
+
+	FPersonData(){
+
+	}
+};
+
 /**
  * 
  */
@@ -32,7 +80,22 @@ public:
 
 	// Send Message
 	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
-		bool sendMessage(const FString _message);
+		bool sendMessage(const uint8 _message);
+
+	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
+		bool sendShowActivityMSG(const EAndroidActivity _message);
+
+	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
+		bool sendgetTabletNameMSG();
+
+	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
+		bool sendStartDroneCapture();
+
+	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
+		bool sendEnemyData(const uint8 count,const TArray<FEnemyData>& _message);
+
+	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
+		bool sendPersonData(const uint8 type,const TArray<FPersonData>& _message);
 
 	// Grab Data
 	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
@@ -51,7 +114,7 @@ public:
 
 	//--------------------------------------------------------------------------------------------------------------------
 	UFUNCTION(BlueprintCallable, Category = "OneNetworking_temp")
-		UTexture2D* getTexture2D(UTextureRenderTarget2D* _message);////////////////////////////////////////////
+		static UTexture2D* getTexture2D(UObject * InOuter, UTextureRenderTarget2D* _RT);
 	//UTextureRenderTarget2D* aa;
 	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
 		bool sendImage(UTexture2D* t2d);////////////////////////////////////////////

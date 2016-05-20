@@ -45,7 +45,7 @@ UOneNetworking* UOneNetworking::createTCPClient(const FString& _socket_descripti
 
 			}
 			else{
-				if (wrapper->sendMessage(FString::Printf(TEXT("checkConnect")))){
+				if (wrapper->sendMessage(0x01)){		// connect check
 					wrapper->is_connect = true;
 					//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, wrapper->socket_description);
 				}
@@ -79,7 +79,19 @@ void UOneNetworking::Destructor()
 
 
 // Send Message
-bool UOneNetworking::sendMessage(FString _message){
+bool UOneNetworking::sendMessage(const uint8 _message){
+	if (!socket) return false;
+
+	int32 BytesSent;
+	// Send to
+	bool success = socket->SendTo(&_message, 1, BytesSent, *remote_endpoint.ToInternetAddr());
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SendMessage  %d;%d"), success, BytesSent));
+	if (success && BytesSent > 0) // Success
+		return true;
+	else
+		return false;
+}
+	/*
 	if (!socket) return false;
 
 	int32 BytesSent;
@@ -93,6 +105,170 @@ bool UOneNetworking::sendMessage(FString _message){
 	// Send to
 	bool success = socket->SendTo((uint8*)TCHAR_TO_UTF8(serializedChar), size, BytesSent, *remote_endpoint.ToInternetAddr());
 	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SendMessage  %d;%d"), success, BytesSent));
+	if (success && BytesSent > 0) // Success
+		return true;
+	else
+		return false;
+}*/
+
+bool UOneNetworking::sendEnemyData(const uint8 count, const TArray<FEnemyData>& _message){
+	if (!socket) return false;
+	bool success;
+
+	uint8 sendInt[8];
+
+	// send Tag
+	success = sendMessage(0x06);
+
+	// send length
+	int32 length = _message.Num();
+
+	sendInt[0] = (length & 0xFF000000) >> 24;
+	sendInt[1] = (length & 0x00FF0000) >> 16;
+	sendInt[2] = (length & 0x0000FF00) >> 8;
+	sendInt[3] = (length & 0x000000FF);
+
+	int32 BytesSent;
+	// Send to
+	success = socket->SendTo(sendInt, 4, BytesSent, *remote_endpoint.ToInternetAddr());
+
+	// send data
+	int32 x, y;
+	for (auto& data : _message){
+		x = (int32)(-data.x / 12.5f);
+		y = (int32)(data.y / 12.5f);
+
+		sendInt[0] = (x & 0xFF000000) >> 24;
+		sendInt[1] = (x & 0x00FF0000) >> 16;
+		sendInt[2] = (x & 0x0000FF00) >> 8;
+		sendInt[3] = (x & 0x000000FF);
+
+		sendInt[4] = (y & 0xFF000000) >> 24;
+		sendInt[5] = (y & 0x00FF0000) >> 16;
+		sendInt[6] = (y & 0x0000FF00) >> 8;
+		sendInt[7] = (y & 0x000000FF);
+
+		success = socket->SendTo(sendInt, 8, BytesSent, *remote_endpoint.ToInternetAddr());
+		if (!success)
+			break;
+	}
+
+
+	return success;
+}
+
+bool UOneNetworking::sendPersonData(const uint8 type, const TArray<FPersonData>& _message){
+	if (!socket) return false;
+	bool success;
+
+	uint8 sendInt[18];	// hp ; x;y;order;x;y; // Name
+
+	// send Tag
+	success = sendMessage(type);
+
+	// send length
+	int32 length = _message.Num();
+
+	sendInt[0] = (length & 0xFF000000) >> 24;
+	sendInt[1] = (length & 0x00FF0000) >> 16;
+	sendInt[2] = (length & 0x0000FF00) >> 8;
+	sendInt[3] = (length & 0x000000FF);
+
+	int32 BytesSent;
+	// Send to
+	success = socket->SendTo(sendInt, 4, BytesSent, *remote_endpoint.ToInternetAddr());
+
+	// send data
+	int32 x, y;
+	int32 order_x, order_y;
+	FString name;
+	for (auto& data : _message){
+		sendInt[0] = (uint8)((int32)data.HP);	// HP
+		sendInt[1] = (uint8)(data.order);		// order
+
+		x = (int32)(-data.x / 12.5f);
+		y = (int32)(data.y / 12.5f);
+
+		sendInt[2] = (x & 0xFF000000) >> 24;
+		sendInt[3] = (x & 0x00FF0000) >> 16;
+		sendInt[4] = (x & 0x0000FF00) >> 8;
+		sendInt[5] = (x & 0x000000FF);
+
+		sendInt[6] = (y & 0xFF000000) >> 24;
+		sendInt[7] = (y & 0x00FF0000) >> 16;
+		sendInt[8] = (y & 0x0000FF00) >> 8;
+		sendInt[9] = (y & 0x000000FF);
+
+		order_x = (int32)(-data.order_x / 12.5f);
+		order_y = (int32)(data.order_y / 12.5f);
+
+		sendInt[10] = (order_x & 0xFF000000) >> 24;
+		sendInt[11] = (order_x & 0x00FF0000) >> 16;
+		sendInt[12] = (order_x & 0x0000FF00) >> 8;
+		sendInt[13] = (order_x & 0x000000FF);
+
+		sendInt[14] = (order_y & 0xFF000000) >> 24;
+		sendInt[15] = (order_y & 0x00FF0000) >> 16;
+		sendInt[16] = (order_y & 0x0000FF00) >> 8;
+		sendInt[17] = (order_y & 0x000000FF);
+
+		success = socket->SendTo(sendInt, 18, BytesSent, *remote_endpoint.ToInternetAddr());
+		if (!success)
+			break;
+		name = data.DisplayName;
+
+		name.AppendChar('\n');
+		TCHAR *serializedChar = name.GetCharArray().GetData();
+		int32 size = FCString::Strlen(serializedChar);
+		int32 sent = 0;
+
+
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SendMessage  %s (%d,%d)(%d,%d)"), serializedChar, x,y,order_x,order_y));
+
+		success = socket->SendTo((uint8*)TCHAR_TO_UTF8(serializedChar), size, BytesSent, *remote_endpoint.ToInternetAddr());
+		if (!success)
+			break;
+	}
+
+
+	return success;
+}
+bool UOneNetworking::sendgetTabletNameMSG(){
+	return sendMessage(0x02);
+}
+
+bool UOneNetworking::sendStartDroneCapture(){
+	return sendMessage(0x04);
+}
+bool UOneNetworking::sendShowActivityMSG(const EAndroidActivity _message){
+	if (!socket) return false;
+
+	uint8 msg[2] = { 0x03, 0x00 };	// send Activity
+	switch (_message)
+	{
+	case EAndroidActivity::E_WaitACT:
+		msg[1] = 0x01;
+		break;
+	case EAndroidActivity::E_MainACT:
+		msg[1] = 0x02;
+		break;
+	case EAndroidActivity::E_TeamACT:
+		msg[1] = 0x03;
+		break;
+	case EAndroidActivity::E_TacticalACT:
+		msg[1] = 0x04;
+		break;
+	case EAndroidActivity::E_DroneACT:
+		msg[1] = 0x05;
+		break;
+	default:
+		return false;
+		break;
+	}
+
+	int32 BytesSent;
+	// Send to
+	bool success = socket->SendTo(msg, 2, BytesSent, *remote_endpoint.ToInternetAddr());
 	if (success && BytesSent > 0) // Success
 		return true;
 	else
@@ -154,14 +330,15 @@ bool UOneNetworking::isConnection()
 }
 
 //===========================================================================================================================
-UTexture2D* UOneNetworking::getTexture2D(UTextureRenderTarget2D* _RT){
-	UTexture2D* Aux2DTex = _RT->ConstructTexture2D(this, "AlphaTex", EObjectFlags::RF_NoFlags, CTF_Default);
+
+UTexture2D* UOneNetworking::getTexture2D(UObject * InOuter,UTextureRenderTarget2D* _RT){
+	UTexture2D* Aux2DTex = _RT->ConstructTexture2D(InOuter, "Live", EObjectFlags::RF_NoFlags, CTF_Default);
 	Aux2DTex->CompressionSettings = TextureCompressionSettings::TC_VectorDisplacementmap;
 
-#if WITH_EDITORONLY_DATA
+//#if WITH_EDITORONLY_DATA
 	Aux2DTex->MipGenSettings = TextureMipGenSettings::TMGS_NoMipmaps;
-#endif
-	Aux2DTex->SRGB = 1;
+//#endif
+	Aux2DTex->SRGB = 0;
 	//Update the texture with new variable values.
 	Aux2DTex->UpdateResource();
 
@@ -178,73 +355,36 @@ bool UOneNetworking::sendImage(UTexture2D* t2d){
 	FColor* FormatedImageData = NULL;
 	t2d->PlatformData->Mips[0].BulkData.GetCopy((void**)&FormatedImageData);
 
-	FILE *fp = fopen("C:\\Users\\0xFF00FF00\\Documents\\Scan\\temp.bmp", "wb");
-	for (int i = 0; i < 512 * 512; i++){
-		uint32 c32 = FormatedImageData[i].AlignmentDummy;
-		fprintf(fp, "%c", ((uint8)((c32 & 0xFF000000) >> 24)));
-		fprintf(fp, "%c", ((uint8)((c32 & 0x00FF0000) >> 16)));
-		fprintf(fp, "%c", ((uint8)((c32 & 0x0000FF00) >> 8)));
-		fprintf(fp, "%c", ((uint8)((c32 & 0x000000FF) >> 0)));
+	uint8 ch[0x40002] = { 0x0, };
 
-	}
-	fclose(fp);
 
-	/*
-	for (int i = 0; i < 512; i++){
-	uint8 color[514];
-	color[0] = (uint8)(i & 0x000000FF);//.Add();
-	color[1] = (uint8)((i & 0x0000FF00) >> 8);
-	for (int j = 0; j < 10; j++){
-	uint32 c32 = FormatedImageData[(i * 512) + j].AlignmentDummy;
-	color[j + 2] = ((uint8)((c32 & 0x00ff0000) >> 16));	//G
-	UE_LOG(YourLog, Log, TEXT("%d] ;; 0x%02X ;; %08x"), j, color[j + 2], c32);
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, );
+	int k = 0;
+	//*
+	for (int i = 511; i >= 0; i--){
+		for (int j = 0; j < 512; j++){
+			uint32 c32 = FormatedImageData[(i * 512) + j].AlignmentDummy;
+			ch[k++] = ((uint8)((c32 & 0x0000FF00) >> 8));
+		}
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("i ;; %d ; %s"), i, color));
-	//FPlatformProcess::Sleep(5);
-	}*/
+
+	while (k < 0x40002){
+		ch[k++] = 0x00;
+	}
+
 	FMemory::Free(FormatedImageData);
-	/*
-	const bool bAutoDeleteSelf = false;
-	const bool bAutoDeleteRunnable = false;
-
-	RunSend *sendRun = new RunSend(this,t2d);
-	FRunnableThread *thread = FRunnableThread::Create(sendRun, TEXT("FPrimeNumberWorker"), bAutoDeleteSelf, bAutoDeleteRunnable, 0, TPri_BelowNormal);
-	*/
-	/*
-
-	//FColor* FormatedImageData = NULL;
-	t2d->PlatformData->Mips[0].BulkData.GetCopy((void**)&FormatedImageData);
-
-
 	int32 BytesSent;
-	for (int i = 0; i<5; i++){
-	TArray<uint8> color;
-	color.Add((uint8)(i & 0x000000FF));
-	color.Add((uint8) ((i & 0x0000FF00)>>8));
-	for (int j = 0; j < 512;j++){
-	uint32 c32 = FormatedImageData[(i*512)+j].AlignmentDummy;
-	color.Add((uint8)((c32 & 0x00ff0000) >> 16));	//G
-	}
-	bool success = socket->SendTo((uint8*)&color, 514, BytesSent, *remote_endpoint.ToInternetAddr());
+	// Send to
+	bool success = socket->SendTo(ch, 0x40438, BytesSent, *remote_endpoint.ToInternetAddr());
+
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SendMessage  %d;%d"), success, BytesSent));
+
 	if (success && BytesSent > 0) // Success
 	{
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("true")));
-	//		return true;
+		return true;
 	}
 	else
 	{
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("false")));
-	//	return false;
+		return false;
 	}
-	FPlatformProcess::Sleep(1);
-	}
-	*/
-	//int32 sent = 0;
-	//bool success = socket->SendTo((uint8*)FormatedImageData, 512*4, BytesSent, *remote_endpoint.ToInternetAddr());
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("aaa  %x"),color[0]));
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("aaa  %x"), FormatedImageData[0].AlignmentDummy));
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("aaa  %x"), FormatedImageData[1].AlignmentDummy));
-	//FMemory::Free(FormatedImageData);
 	return true;
 }
