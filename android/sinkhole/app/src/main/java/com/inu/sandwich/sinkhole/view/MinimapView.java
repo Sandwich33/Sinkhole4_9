@@ -37,6 +37,7 @@ public class MinimapView extends SurfaceView implements SurfaceHolder.Callback, 
         int color;
         boolean showF;
         Point flage;
+        boolean alive;
     }
     private MinimapViewThread ViewThread;
     private float initX = 0;
@@ -124,7 +125,8 @@ public class MinimapView extends SurfaceView implements SurfaceHolder.Callback, 
             personInfo.flage = new Point(0,0);
             personInfo.color = Color[i%5];
             personInfo.showF = false;
-            persons.put(key,personInfo);
+            personInfo.alive = true;
+            persons.put(key, personInfo);
 
             if(i == data.size()-1){
                 CameraKey = key;
@@ -142,6 +144,17 @@ public class MinimapView extends SurfaceView implements SurfaceHolder.Callback, 
     }
 
     public void setPos(ArrayList<PersonData> data){
+        if( persons == null || persons.size() < 1 ){
+            initPersonInfo(data);
+            handler.sendMessage(handler.obtainMessage(4, data));
+            return;
+        }
+
+        Iterator<String> iter = persons.keySet().iterator();
+        while (iter.hasNext()) {
+            String key = iter.next();
+            persons.get(key).alive = false;
+        }
 
         for(int i=0;i<data.size();i++) {
             PersonData personData = data.get(i);
@@ -149,6 +162,7 @@ public class MinimapView extends SurfaceView implements SurfaceHolder.Callback, 
             int x = personData.pos.x;
             int y = personData.pos.y;
             PersonInfo personInfo = persons.get(key);
+            personInfo.alive = true;
             personInfo.pos.x = x+(440+sizeW);
             personInfo.pos.y = y+1899;
             if(personData.order){
@@ -156,7 +170,7 @@ public class MinimapView extends SurfaceView implements SurfaceHolder.Callback, 
                 personInfo.flage.x = personData.order_pos.x+(440+sizeW);
                 personInfo.flage.y = personData.order_pos.y+1899;
 
-                Log.d("TAG","("+personInfo.pos.toString()+") ; ("+personInfo.flage.toString()+") ("+personData.pos.toString()+") ; ("+personData.order_pos.toString()+")");
+                //Log.d("TAG","("+personInfo.pos.toString()+") ; ("+personInfo.flage.toString()+") ("+personData.pos.toString()+") ; ("+personData.order_pos.toString()+")");
             }else{
                 personInfo.showF = false;
             }
@@ -211,6 +225,8 @@ public class MinimapView extends SurfaceView implements SurfaceHolder.Callback, 
             while (iter.hasNext()) {
                 String key = iter.next();
                 PersonInfo value = persons.get(key);
+                if( !value.alive)
+                    continue;
                 paint.setColor(value.color);
                 if ((startX < value.pos.x && value.pos.x < (startX + sizeW)) && (startY < value.pos.y && value.pos.y < (startY + sizeH))) {
                     canvas.drawCircle(value.pos.x - startX, value.pos.y - startY, 20, paint);

@@ -26,6 +26,7 @@ public class DroneActivity extends FullscreenActivity{
     DroneJoyView MoveFR;
     DroneJoyView MoveTurnUp;
     Thread thread;
+    private boolean stopSend = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class DroneActivity extends FullscreenActivity{
             @Override
             public void run() {
                 String msg = "";
-                while(true){
+                while(!stopSend){
                     msg = "key;";
                     msg += -MoveFR.getMoveY()+":"; // Move Forward
                     msg += MoveFR.getMoveX()+":"; // Move Right
@@ -75,6 +76,7 @@ public class DroneActivity extends FullscreenActivity{
     }
 
     public void onStopDrone(View view){
+        stopSend = true;
         tcp.stopDrone();
         return ;
     }
@@ -113,6 +115,7 @@ public class DroneActivity extends FullscreenActivity{
                 }if (msg.obj.toString().equals("act;TacticalActivity")) {
                     Intent intent = new Intent(DroneActivity.this, TacticalActivity.class);
                     startActivity(intent);
+                    //DroneActivity.this.finish();
                     DroneActivity.this.finish();
                 }
             }

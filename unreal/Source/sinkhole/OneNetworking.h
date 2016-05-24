@@ -92,6 +92,10 @@ public:
 		bool sendStartDroneCapture();
 
 	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
+		bool sendStopDroneCapture();
+	
+
+	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
 		bool sendEnemyData(const uint8 count,const TArray<FEnemyData>& _message);
 
 	UFUNCTION(BlueprintCallable, Category = "OneNetworking")

@@ -236,7 +236,29 @@ bool UOneNetworking::sendPersonData(const uint8 type, const TArray<FPersonData>&
 bool UOneNetworking::sendgetTabletNameMSG(){
 	return sendMessage(0x02);
 }
+bool UOneNetworking::sendStopDroneCapture(){
+	if (!socket) return false;
 
+	uint8 send[8];
+
+	send[0] = 0x73; //s
+	send[1] = 0x74; //t
+	send[2] = 0x70; //p
+	send[3] = 0x64; //d
+	send[4] = 0x72; //r
+	send[5] = 0x6F; //o
+	send[6] = 0x6E; //n
+	send[7] = 0x65; //e
+
+	int32 BytesSent;
+	// Send to
+	bool success = socket->SendTo(send, 8, BytesSent, *remote_endpoint.ToInternetAddr());
+
+	if (success && BytesSent > 0) // Success
+		return true;
+	else
+		return false;
+}
 bool UOneNetworking::sendStartDroneCapture(){
 	return sendMessage(0x04);
 }
@@ -301,7 +323,14 @@ FString UOneNetworking::GrabWaitingMessage()
 		received_data.Init(FMath::Min(Size, 65507u));
 		socket->RecvFrom(received_data.GetData(), received_data.Num(), Read, *Sender);
 	}
-	return StringFromBinaryArray(received_data);
+	int32 len = 0;
+	FString str = StringFromBinaryArray(received_data);
+	len = str.Len();
+	if (str.FindChar('\n', len)){
+		return str.Mid(0, len);
+	}
+
+	return str;
 }
 
 FString UOneNetworking::StringFromBinaryArray(const TArray<uint8>& _binary_array)
@@ -333,11 +362,12 @@ bool UOneNetworking::isConnection()
 
 UTexture2D* UOneNetworking::getTexture2D(UObject * InOuter,UTextureRenderTarget2D* _RT){
 	UTexture2D* Aux2DTex = _RT->ConstructTexture2D(InOuter, "Live", EObjectFlags::RF_NoFlags, CTF_Default);
+
 	Aux2DTex->CompressionSettings = TextureCompressionSettings::TC_VectorDisplacementmap;
 
-//#if WITH_EDITORONLY_DATA
+#if WITH_EDITORONLY_DATA
 	Aux2DTex->MipGenSettings = TextureMipGenSettings::TMGS_NoMipmaps;
-//#endif
+#endif
 	Aux2DTex->SRGB = 0;
 	//Update the texture with new variable values.
 	Aux2DTex->UpdateResource();
@@ -374,7 +404,7 @@ bool UOneNetworking::sendImage(UTexture2D* t2d){
 	FMemory::Free(FormatedImageData);
 	int32 BytesSent;
 	// Send to
-	bool success = socket->SendTo(ch, 0x40438, BytesSent, *remote_endpoint.ToInternetAddr());
+	bool success = socket->SendTo(ch, 0x40002, BytesSent, *remote_endpoint.ToInternetAddr());
 
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SendMessage  %d;%d"), success, BytesSent));
 

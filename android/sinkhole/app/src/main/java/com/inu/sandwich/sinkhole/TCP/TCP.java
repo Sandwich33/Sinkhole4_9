@@ -205,9 +205,9 @@ public class TCP {
                 int max = 0x40438;
                 int temp=0;
 
-                if(!streaming){
-                    break;
-                }
+                //if(!streaming){
+                //    break;
+               // }
 
                 do{
                     if( dataOutputStream == null ){
@@ -223,8 +223,24 @@ public class TCP {
                     if( size < 0)
                         break;
 
+                    if(!streaming && size > 7) {
+                        int i;
+                        Byte[] stpdrone = {0x73 ,0x74 ,0x70 ,0x64 ,0x72 ,0x6F ,0x6E ,0x65};
+                        for(i=0;i<8;i++){
+                            if( stpdrone[i] != bytes[i]){
+                                break;
+                            }
+                        }
+                        if( i >= 8 ) {
+                            sendMessage("set;re");
+                            sendMessage("set;re");
+                            sendMessage("set;re");
+                            break;
+                        }
+                    }
+
                     temp = Math.min(size,max-offset);
-                    dataOutputStream.write(bytes,0,temp);
+                    dataOutputStream.write(bytes, 0, temp);
 
                     offset += temp;
                     if( offset >= max){
@@ -233,9 +249,17 @@ public class TCP {
                         handler.sendMessage(handler.obtainMessage(-1, count,0));
                         count = (count+1)%10;
                         offset = 0;
+                        if(!streaming) {
+                            sendMessage("STOP_DRONE");
+                        }
                     }
                 }while(true);
+
+                if(!streaming) {
+                    break;
+                }
             }
+
         } catch (Exception e) {
             clientInfo.close();
             clientInfo = null;
@@ -306,6 +330,7 @@ public class TCP {
                                             case 0x05:          // set Person Data
                                             case 0x07:          // per Person Data
                                             {
+                                                Log.d(TAG,"per Person Data");
                                                 int len = clientInfo.readBuf.readInt();
                                                 int x,y,ox,oy;
                                                 int hp;
@@ -329,7 +354,7 @@ public class TCP {
 
 
                                                     name = clientInfo.readBuf.readLine();
-                                                    Log.d(TAG,name+"("+x+","+y+") ("+ox+","+oy+")");
+                                                    //Log.d(TAG,name+"("+x+","+y+") ("+ox+","+oy+")");
                                                     data.add(new PersonData(hp,order,new Point(x,y),new Point(ox,oy),name));
                                                 }
                                                 handler.sendMessage(handler.obtainMessage(type,data));

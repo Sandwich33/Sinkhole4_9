@@ -26,6 +26,7 @@ import com.inu.sandwich.sinkhole.view.MinimapView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 
 /**
  * Created by 0xFF00FF00 on 2016-04-02.
@@ -49,10 +50,21 @@ public class TacticalActivity extends FullscreenActivity implements View.OnDragL
         mapView = new MinimapView(this,v_handler);
         fl_map.addView(mapView);
         tcp.setHandler(handler);
-        tcp.sendMessage("get;startInfo");
 
         findViewById(R.id.iv_allfollow).setOnDragListener(this);
         findViewById(R.id.iv_cam).setOnDragListener(this);
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Log.d("aa", "startInfo---------------------------");
+        tcp.sendMessage("get;startInfo");
     }
 
     public void onStartDrone(View v){
@@ -77,11 +89,12 @@ public class TacticalActivity extends FullscreenActivity implements View.OnDragL
                         mapView.setCameraKey(msg.obj.toString());
                         break;
                     case 1: // Long
+                    {
                         HpInfoView hpInfoView = infoViews.get(msg.obj.toString());
-                        Log.d("DragClickListener","Start : "+msg.obj.toString());
+                        Log.d("DragClickListener", "Start : " + msg.obj.toString());
                         ClipData.Item item = new ClipData.Item(msg.obj.toString());//(CharSequence) view.getTag());
-                        String[] mimeTypes = { ClipDescription.MIMETYPE_TEXT_PLAIN };
-                        ClipData data = new ClipData(msg.obj.toString(),mimeTypes, item);
+                        String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
+                        ClipData data = new ClipData(msg.obj.toString(), mimeTypes, item);
                         View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(hpInfoView);
 
                         hpInfoView.startDrag(data, // data to be dragged
@@ -89,6 +102,7 @@ public class TacticalActivity extends FullscreenActivity implements View.OnDragL
                                 hpInfoView, // 드래그 드랍할  Vew
                                 0 // 필요없은 플래그
                         );
+                    }
                         break;
                     case 2: // Double
                         tcp.sendMessage("fol;"+msg.obj.toString());
@@ -98,6 +112,30 @@ public class TacticalActivity extends FullscreenActivity implements View.OnDragL
                         float y = msg.arg2/1000.0f;
                         tcp.sendMessage("pos;" + msg.obj.toString() + ":" + y + ":" + x);
                         break;
+                    case 4:
+                    {
+                        ArrayList<PersonData> data = (ArrayList<PersonData>) msg.obj;
+                        if(infoViews != null){
+                            infoViews.clear();
+                            infoViews = null;
+                        }
+                        infoViews = new HashMap<>();
+
+                        mapView.initPersonInfo(data);
+
+                        for(int i=0;i<data.size();i++) {
+                            String key = data.get(i).Name;
+                            int idx = key.indexOf("Player");
+                            if(idx < 0 || idx > 7){
+                                HpInfoView hpInfoView = new HpInfoView(mContext,v_handler,data.get(i),i);
+                                infoViews.put(key, hpInfoView);
+                                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,90);
+                                layoutParams.setMargins(5, 5, 5, 5);
+                                hpInfoView.setLayoutParams(layoutParams);
+                                ll_info.addView(hpInfoView);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -117,15 +155,44 @@ public class TacticalActivity extends FullscreenActivity implements View.OnDragL
                     {
                         ArrayList<PersonData> data = (ArrayList<PersonData>) msg.obj;
                         mapView.setPos(data);
-                        String[] persons = msg.obj.toString().substring(4).split(";");
-                        for(int i=0;i<persons.length;i++) {
+                        //String[] persons = msg.obj.toString().substring(4).split(";");
+                        for(int i=0;i<data.size();i++) {
                             String key = data.get(i).Name;
                             try{
                                 HpInfoView hpInfoView = infoViews.get(key);
                                 hpInfoView.setHp( data.get(i).hp);
-                                hpInfoView.setOrder(data.get(i).order);
+                                if( data.get(i).hp > 0)
+                                    hpInfoView.setOrder(data.get(i).order);
+                                else
+                                    hpInfoView.setDeath();
+
                             }catch (Exception e){}
                         }
+
+                        try {
+                            if (data.size() < infoViews.size()) {
+                                Iterator<String> iter = infoViews.keySet().iterator();
+                                while (iter.hasNext()) {
+                                    int i = 0;
+                                    String key = iter.next();
+                                    for (i = 0; i < data.size(); i++) {
+                                        if (data.get(i).Name.equals(key)) {
+                                            break;
+                                        }
+                                    }
+                                    if (i >= data.size()) {
+                                        try {
+                                            HpInfoView hpInfoView = infoViews.get(key);
+                                            hpInfoView.setHp(0);
+                                            hpInfoView.setDeath();
+                                        } catch (Exception e) {
+                                        }
+                                    }
+                                }
+                            }
+                        }catch (Exception e){}
+
+
                         return ;
                     }
                     case 0x05:      // set
@@ -158,7 +225,7 @@ public class TacticalActivity extends FullscreenActivity implements View.OnDragL
                 if( msg.obj.toString().equals("act;DroneActivity") ) {
                     Intent intent = new Intent(TacticalActivity.this, DroneActivity.class);
                     startActivity(intent);
-                    ////TacticalActivity.this.finish();
+                    TacticalActivity.this.finish();
                 }else if (msg.obj.toString().equals("act;MainActivity")) {
                     Intent intent = new Intent(TacticalActivity.this, MainActivity.class);
                     startActivity(intent);

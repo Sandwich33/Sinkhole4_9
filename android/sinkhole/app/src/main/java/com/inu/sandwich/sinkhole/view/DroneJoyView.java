@@ -71,6 +71,11 @@ public class DroneJoyView extends SurfaceView implements SurfaceHolder.Callback 
 
 
     public void onDraw(Canvas canvas){
+        if( canvas == null ) {
+            Log.d("aa","00000000000000000000000");
+            return;
+        }
+
         float w = sizeW / 2;
         float h = sizeH / 2;
 
