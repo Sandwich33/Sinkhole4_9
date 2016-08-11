@@ -418,3 +418,64 @@ bool UOneNetworking::sendImage(UTexture2D* t2d){
 	}
 	return true;
 }
+
+
+bool UOneNetworking::sendUpdateImage(UTextureRenderTarget2D* _RT) {
+
+	if (!socket) return false;
+
+
+	FRenderTarget* RenderTarget = _RT->GameThread_GetRenderTargetResource();
+	const EPixelFormat PixelFormat = _RT->GetFormat();
+	ETextureSourceFormat TextureFormat = TSF_Invalid;
+	TextureCompressionSettings CompressionSettings = TC_Default;
+
+	switch (PixelFormat)
+	{
+	case PF_B8G8R8A8:
+		TextureFormat = TSF_BGRA8;
+		break;
+	case PF_FloatRGBA:
+		TextureFormat = TSF_RGBA16F;
+		CompressionSettings = TC_HDR;
+		break;
+	}
+
+	// read the 2d surface
+	if (TextureFormat == TSF_BGRA8)
+	{
+		int k = 0;
+		uint8 ch[0x40002] = { 0x0, };
+		TArray<FColor> SurfData;
+		RenderTarget->ReadPixels(SurfData);
+
+		for (int i = 511; i >= 0; i--) {
+			for (int j = 0; j < 512; j++) {
+				uint8 C = SurfData[(i * 512) + j].R;
+				ch[k++] = C;
+			}
+		}
+
+		while (k < 0x40002) {
+			ch[k++] = 0x00;
+		}
+
+		int32 BytesSent;
+		// Send to
+		bool success = socket->SendTo(ch, 0x40002, BytesSent, *remote_endpoint.ToInternetAddr());
+
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SendMessage  %d;%d"), success, BytesSent));
+
+		if (success && BytesSent > 0) // Success
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	return false;
+
+}

@@ -122,6 +122,8 @@ public:
 	//UTextureRenderTarget2D* aa;
 	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
 		bool sendImage(UTexture2D* t2d);////////////////////////////////////////////
+	UFUNCTION(BlueprintCallable, Category = "OneNetworking")
+		bool sendUpdateImage(UTextureRenderTarget2D* _RT);
 	//--------------------------------------------------------------------------------------------------------------------
 
 private:
